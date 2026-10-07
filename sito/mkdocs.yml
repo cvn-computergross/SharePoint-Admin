@@ -22,7 +22,6 @@ theme:
     primary: custom
     accent: custom
   features:
-    - navigation.expand
     - toc.follow
     - navigation.top
     - content.code.copy

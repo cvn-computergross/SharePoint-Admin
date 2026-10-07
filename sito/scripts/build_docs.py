@@ -139,7 +139,8 @@ def main(src, site):
         copy_md(mod / "README.md", docs / mod.name / "index.md")
         if (mod / "images").is_dir():
             shutil.copytree(mod / "images", docs / mod.name / "images")
-        nav.append(f'  - "{h1(mod / "README.md")}":')
+        # nel menu solo "Modulo N"; il titolo completo resta nella pagina
+        nav.append(f'  - "{h1(mod / "README.md").split(" – ")[0]}":')
         nav.append(f"    - Panoramica: {mod.name}/index.md")
         for ex in sorted(mod.glob("Esercizio-*.md")):
             copy_md(ex, docs / mod.name / ex.name)

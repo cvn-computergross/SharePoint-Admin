@@ -144,7 +144,8 @@ def main(src, site):
         nav.append(f"    - Panoramica: {mod.name}/index.md")
         for ex in sorted(mod.glob("Esercizio-*.md")):
             copy_md(ex, docs / mod.name / ex.name)
-            label = re.sub(r"^Modulo \d+ – ", "", h1(ex))
+            # nel menu solo "Esercizio N"
+            label = re.sub(r"^Modulo \d+ – ", "", h1(ex)).split(":")[0]
             nav.append(f'    - "{label}": {mod.name}/{ex.name}')
     if (src / "Materiale" / "README.md").is_file():
         copy_md(src / "Materiale" / "README.md", docs / "Materiale" / "index.md")

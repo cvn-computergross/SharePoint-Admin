@@ -4,65 +4,65 @@
 
 ## Passo 1 · Verifica iniziale dei permessi di User03 (Member)
 
-**Accedere alla VM `SEA-DEV3` con le credenziali di User03**
+1. Accedere alla VM `SEA-DEV3` con le credenziali di User03.
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+2. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
    ```text
    https://tenant_name.sharepoint.com/sites/MarketingDepartment
    ```
 
-2. Inserire le credenziali di **User03** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
-3. Verificare che User03, in qualità di **Member**, possa attualmente:
-- Accedere e caricare file in **File Condivisi01** e **File Condivisi02**.
-- Modificare le pagine del sito (Home Page e pagina "Novità Marketing").
-- Creare nuovi contenuti: nuove pagine, nuove liste, nuove librerie.
+3. Inserire le credenziali di **User03** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
+4. Verificare che User03, in qualità di **Member**, possa attualmente:
+   - Accedere e caricare file in **File Condivisi01** e **File Condivisi02**.
+   - Modificare le pagine del sito (Home Page e pagina "Novità Marketing").
+   - Creare nuovi contenuti: nuove pagine, nuove liste, nuove librerie.
 
 ![Esercizio 6 – Passo 1 – Verifica iniziale dei permessi di User03 (Member)](images/es06-01.png)
 
 ## Passo 2 · Restrizione dei permessi a livello di sito (da Owner)
 
-**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
-1. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
-2. Selezionare la rotella delle impostazioni (in alto a destra) e scegliere **Site permissions**.
+1. Accedere alla VM `SEA-DEV2` con le credenziali di User02.
+2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
+3. Selezionare la rotella delle impostazioni (in alto a destra) e scegliere **Site permissions**.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-02.png)
 
-3. Individuare il gruppo **Marketing Department Members** e selezionare **Edit permission level** (o, tramite **Advanced permissions settings**, modificare il livello associato al gruppo).
-4. Notare che nei Teams Site con gruppo 365 non è possibile editare direttamente i permessi del gruppo.
+4. Individuare il gruppo **Marketing Department Members** e selezionare **Edit permission level** (o, tramite **Advanced permissions settings**, modificare il livello associato al gruppo).
+5. Notare che nei **Team site con gruppo Microsoft 365** non è possibile modificare direttamente i permessi del gruppo.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-03.png)
 
-5. Per effettuare l'operazione e aggirare le limitazioni è necessario usare SharePoint Online Management Shell.
-6. Aggiungere ai Site Collection Administrator MOD Administrator.
+6. Per effettuare l'operazione e aggirare le limitazioni è necessario usare **SharePoint Online Management Shell**.
+7. Aggiungere **MOD Administrator** ai **Site Collection Administrators**.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-04.png)
 
-7. Andare su `SEA-DEV1` con MOD Administrator aprire Visual Studio Code con il seguente script: `Modulo3\Script\SPO.ps1`.Seguire i seguenti comandi (dove `TENANT` è un segnaposto per il nome del proprio tenant) per cambiare i permessi al gruppo members.
+8. Andare su `SEA-DEV1` con MOD Administrator aprire Visual Studio Code con il seguente script: `Modulo3\Script\SPO.ps1`.Seguire i seguenti comandi (dove `TENANT` è un segnaposto per il nome del proprio tenant) per cambiare i permessi al gruppo members.
 
    ```text
    Modulo3\Script\SPO.ps1
    ```
 
-8. Installare il modulo SharePoint Online Management Shell (se non già presente).
+9. Installare il modulo **SharePoint Online Management Shell** (se non già presente).
 
 ```powershell
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell
 ```
 
-9. Aggiornarlo per evitare problemi con gli Script.
+10. Aggiornarlo per evitare problemi con gli Script.
 
 ```powershell
 Update-Module -Name Microsoft.Online.SharePoint.PowerShell
 ```
 
-10. Effettuare la connessione come amministratore.
+11. Effettuare la connessione come amministratore.
 
 ```powershell
 Connect-SPOService -Url https://TENANT-admin.sharepoint.com -Credential admin@TENANT.onmicrosoft.com
 ```
 
-11. Modificare i permessi del gruppo Members con il seguente comando:
+12. Modificare i permessi del gruppo **Members** con il seguente comando:
 
 ```powershell
 Set-SPOSiteGroup `
@@ -74,7 +74,7 @@ Set-SPOSiteGroup `
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-05.png)
 
-12. Per controllare che sia andato a buon fine eseguire il seguente script:
+13. Per controllare che sia andato a buon fine eseguire il seguente script:
 
 ```powershell
 Get-SPOSiteGroup `
@@ -84,7 +84,7 @@ Get-SPOSiteGroup `
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-06.png)
 
-13. Per ulteriore conferma andare su site permission del sito SharePoint e controllare che i members abbiano assegnato Contributor.
+14. Per ulteriore conferma andare su **Site permissions** del sito e controllare che i **Members** abbiano il livello **Contribute**.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-07.png)
 
@@ -112,7 +112,7 @@ Get-SPOSiteGroup `
 
 ![Esercizio 6 – Passo 3 – Permessi univoci sulla libreria "File Condivisi02"](images/es06-09.png)
 
-6. Salvare le modifiche.
+6. **Salvare** le modifiche.
 
 > [!NOTE]
 > Interrompere l'ereditarietà dei permessi (**Stop Inheriting Permissions**) rende una libreria (o lista, cartella, file) indipendente dalle impostazioni di permesso del sito principale: da questo momento, eventuali modifiche ai permessi del sito non si propagheranno più automaticamente a questa libreria.
@@ -122,10 +122,10 @@ Get-SPOSiteGroup `
 
 ## Passo 4 · Verifica lato User03 dopo le modifiche ai permessi
 
-**Accedere alla VM `SEA-DEV3` con le credenziali di User03**
+1. Accedere alla VM `SEA-DEV3` con le credenziali di User03.
 
-1. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
-2. Verificare che User03 ora:
+2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
+3. Verificare che User03 ora:
 - **Non** possa più creare nuove liste, librerie o pagine dal sito (l'opzione **+ New** risulta limitata o assente per queste azioni).
 - Possa ancora aggiungere, modificare ed eliminare file all'interno di **File Condivisi01** (permesso Contribute, ereditato dal sito).
 - Possa **solo visualizzare e scaricare** i file in **File Condivisi02**, senza poter caricare, modificare o eliminare nulla (permesso Read Only, impostato con permessi univoci).

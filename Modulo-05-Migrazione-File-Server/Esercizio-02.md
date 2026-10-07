@@ -4,29 +4,29 @@
 
 ## Passo 1 · Creazione della struttura di cartelle
 
-**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin**
+1. Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin.
 
-1. Aprire **Esplora file** e accedere all'unità **C:\**.
-2. Creare una nuova cartella chiamata:
+2. Aprire **Esplora file** e accedere all'unità **C:\**.
+3. Creare una nuova cartella chiamata:
 
    ```text
    Fileserver
    ```
 
-3. All'interno di **`Fileserver`**, incollare le due sottocartelle:
+4. All'interno di **`Fileserver`**, incollare le due sottocartelle:
 - **`Amministrazione`**
 - **`HomeUsers`**
 
 ![Esercizio 2 – Passo 1 – Creazione della struttura di cartelle](images/es02-01.png)
 
-4. Aprire la cartella **Amministrazione** e assicurarsi che al suo interno siano presenti tre sottocartelle:
+5. Aprire la cartella **Amministrazione** e assicurarsi che al suo interno siano presenti tre sottocartelle:
 - **`Fatture`**
 - **`Paghe`**
 - **`Generale`**
 
 ![Esercizio 2 – Passo 1 – Creazione della struttura di cartelle](images/es02-02.png)
 
-5. Aprire la cartella **HomeUsers** e verificare la presenza al suo interno della sottocartella:
+6. Aprire la cartella **HomeUsers** e verificare la presenza al suo interno della sottocartella:
 - **`user06`**
 
 ![Esercizio 2 – Passo 1 – Creazione della struttura di cartelle](images/es02-03.png)
@@ -120,7 +120,7 @@
 
 9. Selezionare **OK** per chiudere questa prima voce di permesso.
 10. Selezionare nuovamente **Add > Select a principal**, cercare e selezionare il gruppo **`Paghe`**.
-9. Impostare il permesso su **Full control**.
+11. Impostare il permesso su **Full control**.
 
 ![Esercizio 2 – Passo 5 – Condivisione e permessi della cartella Generale](images/es02-16.png)
 

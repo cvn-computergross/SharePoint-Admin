@@ -36,8 +36,8 @@
 ## Passo 3 · Copia dei file del materiale nelle librerie
 
 1. Aprire la cartella del materiale del corso **MATERIALE_STUDENTI/Modulo3/Data/**.
-2. Copiare Folder1 nella libreria **File Condivisi01**.
-3. Copiare Folder2 nella libreria **File Condivisi02**.
+2. Copiare **Folder1** nella libreria **File Condivisi01**.
+3. Copiare **Folder2** nella libreria **File Condivisi02**.
 
 ![Esercizio 3 – Passo 3 – Copia dei file del materiale nelle librerie](images/es03-03.png)
 
@@ -78,21 +78,21 @@
 
 1. Nella libreria **File Condivisi01**, selezionare **Add view** (accanto al nome della vista corrente, es. "All Documents").
 2. Creare una nuova vista con nome **`Vista Confidenziali`**:
-- Lasciare come di default le opzioni e fare create.
-- Premere Filters e spuntare Confidenziale Yes.
+3. Lasciare le opzioni predefinite e premere **Create**.
+4. Premere **Filters** e spuntare **Confidenziale = Yes**.
 
 ![Esercizio 3 – Passo 5 – Esempi di viste (condivise o personali)](images/es03-09.png)
 
-- Premere Save View.
+5. Premere **Save View**.
 
 ![Esercizio 3 – Passo 5 – Esempi di viste (condivise o personali)](images/es03-10.png)
 
-3. Creare una seconda vista con nome **`Vista Personale per Reparto`**:
-- Togliere la spunta a **Make this a public view**.
+6. Creare una seconda vista con nome **`Vista Personale per Reparto`**:
+7. Togliere la spunta a **Make this a public view**.
 
 ![Esercizio 3 – Passo 5 – Esempi di viste (condivise o personali)](images/es03-11.png)
 
-- Andare su Filters e spuntare il reparto Vendite, poi salvare la View.
+8. Andare su **Filters**, spuntare il reparto **Vendite** e premere **Save View**.
 
 > [!WARNING]
 > Le viste filtrate **non sono un meccanismo di sicurezza**: nascondono gli elementi dalla vista, ma gli utenti con accesso alla libreria possono comunque trovarli (ricerca, altre viste). Per limitare l'accesso usare i **permessi**.

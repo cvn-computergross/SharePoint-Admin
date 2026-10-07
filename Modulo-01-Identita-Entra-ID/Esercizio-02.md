@@ -15,11 +15,11 @@
 
 ## Passo 2 · Creazione del nuovo utente
 
-Entrare su **Entra ID > Users > New user > Create new user**.
+1. Entrare su **Entra ID > Users > New user > Create new user**.
 
 ![Esercizio 2 – Passo 2 – Creazione del nuovo utente](images/es02-01.png)
 
-1. Impostare come **User principal name**: `usertmp01@XXXXXX` (dove `XXXXXX` è il suffisso del proprio tenant).
+2. Impostare come **User principal name**: `usertmp01@XXXXXX` (dove `XXXXXX` è il suffisso del proprio tenant).
 
    ```text
    usertmp01@XXXXXX
@@ -27,47 +27,47 @@ Entrare su **Entra ID > Users > New user > Create new user**.
 
 ![Esercizio 2 – Passo 2 – Creazione del nuovo utente](images/es02-02.png)
 
-2. Nella sezione **Properties**, compilare gli attributi richiesti impostando un **attributo "parlante"** `Department` con un valore riconoscibile, questo attributo sarà usato al Passo 3 come criterio di appartenenza per il gruppo dinamico.
+3. Nella sezione **Properties**, compilare gli attributi richiesti impostando un **attributo "parlante"** `Department` con un valore riconoscibile, questo attributo sarà usato al Passo 3 come criterio di appartenenza per il gruppo dinamico.
 
 ![Esercizio 2 – Passo 2 – Creazione del nuovo utente](images/es02-03.png)
 
-3. Completare la procedura e selezionare **Create** per salvare il nuovo utente.
+4. Completare la procedura e selezionare **Create** per salvare il nuovo utente.
 
 > [!NOTE]
 > Prendere nota del valore esatto scelto per l'attributo (es. `Department = Marketing`): dovrà essere riutilizzato **identico** nella regola del gruppo dinamico al passo successivo.
 
 ## Passo 3 · Creazione del gruppo dinamico
 
-Andare su **Entra ID > Groups > New group**.
+1. Andare su **Entra ID > Groups > New group**.
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-04.png)
 
-Configurare il gruppo seguendo queste specifiche:
+2. Configurare il gruppo seguendo queste specifiche:
 
-1. **Group type:** `Security`
-2. **Group name:**
+3. **Group type:** `Security`
+4. **Group name:**
 
    ```text
    DYN-SEC-Marketing-Team
    ```
 
-3. **Group description:**
+5. **Group description:**
 
    ```text
    Gruppo a membership dinamica che include automaticamente tutti gli utenti del reparto Marketing
    ```
 
-4. **Membership type:** selezionare **Dynamic User**.
+6. **Membership type:** selezionare **Dynamic User**.
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-05.png)
 
-1. Selezionare **Add dynamic query**.
+7. Selezionare **Add dynamic query**.
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-06.png)
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-07.png)
 
-2. Nell'editor della regola (**Rule builder** oppure **Edit** per la sintassi avanzata), impostare la condizione in base all'attributo scelto per `usertmp01`, ad esempio:
+8. Nell'editor della regola (**Rule builder** oppure **Edit** per la sintassi avanzata), impostare la condizione in base all'attributo scelto per `usertmp01`, ad esempio:
 
 ```text
 (user.department -eq "Marketing")
@@ -75,7 +75,7 @@ Configurare il gruppo seguendo queste specifiche:
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-08.png)
 
-3. Selezionare **Save**, poi **Create** per creare il gruppo.
+9. Selezionare **Save**, poi **Create** per creare il gruppo.
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-09.png)
 

@@ -20,7 +20,7 @@
 
 ![Esercizio 4 – Passo 2 – Creazione di una nuova lista da zero](images/es04-01.png)
 
-2. Scegliere l'opzione **List** (sotto Create from blank).
+2. Scegliere l'opzione **List** (sotto **Create from blank**).
 3. Assegnare come nome **`Richieste Marketing`** e selezionare **Create**.
 
 ![Esercizio 4 – Passo 2 – Creazione di una nuova lista da zero](images/es04-02.png)
@@ -57,7 +57,7 @@
 1. Tornare alla home del sito e selezionare **+ New > List**.
 2. Scegliere l'opzione **From Excel**.
 3. Caricare un file Excel di esempio dal materiale del corso (**MATERIALE_STUDENTI/Modulo3/Data/Piano_Editoriale_Marketing.xlsx**), contenente un elenco tabellare con intestazioni di colonna.
-4. Selezionare la tabella giusta e premere Next.
+4. Selezionare la tabella giusta e premere **Next**.
 5. Assegnare un nome alla lista, ad esempio **`Piano Editoriale`**, e selezionare **Create**.
 
 ![Esercizio 4 – Passo 3 – Importazione di una lista da un foglio Excel](images/es04-04.png)
@@ -88,7 +88,7 @@
 
 ![Esercizio 4 – Passo 4 – Personalizzazione del modulo (Form) della lista](images/es04-05.png)
 
-5. Notare come è possibile Copiare il link del form e condividerlo.
+5. Notare come è possibile **copiare il link** del form e condividerlo.
 
 ![Esercizio 4 – Passo 4 – Personalizzazione del modulo (Form) della lista](images/es04-06.png)
 

@@ -7,9 +7,9 @@
 
 ## Passo 1 · Creazione di USER02 e primo accesso da SEA-DEV2
 
-Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
-1. Andare su **Users > All Users > Create new user.**
-2. Creare **USER02**, compilando gli attributi richiesti:
+1. Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
+2. Andare su **Users > All Users > Create new user.**
+3. Creare **USER02**, compilando gli attributi richiesti:
 
 | Campo                 | Valore            |
 | --------------------- | ----------------- |
@@ -20,27 +20,27 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-01.png)
 
-3. Accedere alla **VM `SEA-DEV2` come administrator locale**.
-4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER02**.
+4. Accedere alla **VM `SEA-DEV2` come administrator locale**.
+5. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER02**.
 
    ```text
    https://portal.office.com
    ```
 
-5. Seguire il flusso guidato al primo accesso:
+6. Seguire il flusso guidato al primo accesso:
     - **Configurazione MFA** (es. Microsoft Authenticator), se richiesta dalle policy configurate negli esercizi precedenti.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-02.png)
 
-6. Cambiare **password** come da procedura guidata e salvarla.
+7. Cambiare **password** come da procedura guidata e salvarla.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-03.png)
 
 ## Passo 2 · Creazione di USER03 e primo accesso da SEA-DEV3
 
-Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
-1. Andare su **Users > All Users > Create new user.**
-2. Creare **USER03**, compilando gli attributi richiesti:
+1. Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
+2. Andare su **Users > All Users > Create new user.**
+3. Creare **USER03**, compilando gli attributi richiesti:
 
 | Campo                 | Valore            |
 | --------------------- | ----------------- |
@@ -51,14 +51,14 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-04.png)
 
-3. Accedere alla **VM `SEA-DEV3` come administrator locale**.
-4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER03**.
+4. Accedere alla **VM `SEA-DEV3` come administrator locale**.
+5. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER03**.
 
    ```text
    https://portal.office.com
    ```
 
-5. Seguire il flusso guidato di **cambio password** e **configurazione MFA** se richiesta.
+6. Seguire il flusso guidato di **cambio password** e **configurazione MFA** se richiesta.
 
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-05.png)
 
@@ -66,61 +66,61 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ## Passo 3 · Creazione del Security Group statico
 
-Riaprire la VM `SEA-DEV1` e recarsi su https://entra.microsoft.com/.
+1. Riaprire la VM `SEA-DEV1` e recarsi su https://entra.microsoft.com/.
 
-Andare su **Groups > All groups > New group**
+2. Andare su **Groups > All groups > New group**
 
 ![Esercizio 3 – Passo 3 – Creazione del Security Group statico](images/es03-07.png)
 
-Configurare il gruppo con le seguenti specifiche:
-1. **Group type:** `Security`
-2. **Membership type:** `Assigned` (statico).
-3. **Group name**:
+3. Configurare il gruppo con le seguenti specifiche:
+4. **Group type:** `Security`
+5. **Membership type:** `Assigned` (statico).
+6. **Group name**:
 
    ```text
    GRP_SEC_STATIC
    ```
 
-4. **Group description**:
+7. **Group description**:
 
    ```text
    Gruppo di sicurezza statico per l'assegnazione centralizzata delle licenze Microsoft 365 E5
    ```
 
-5. In **Members**, aggiungere manualmente:
+8. In **Members**, aggiungere manualmente:
     - **User02**
     - **User03**
 
 ![Esercizio 3 – Passo 3 – Creazione del Security Group statico](images/es03-08.png)
 
-6. Selezionare **Create** per salvare il gruppo.
+9. Selezionare **Create** per salvare il gruppo.
 
 ![Esercizio 3 – Passo 3 – Creazione del Security Group statico](images/es03-09.png)
 
 ## Passo 4 · Assegnazione licenze Microsoft 365 E5 al gruppo
 
-Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licenses**.
+1. Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licenses**.
 
 ![Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo](images/es03-10.png)
 
-1. Selezionare il prodotto **Office 365 E5** e premere **Assign licenses**.
+2. Selezionare il prodotto **Office 365 E5** e premere **Assign licenses**.
 
 ![Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo](images/es03-11.png)
 
-2. Aggiungere il gruppo **`GRP_SEC_STATIC`** come destinatario della licenza.
+3. Aggiungere il gruppo **`GRP_SEC_STATIC`** come destinatario della licenza.
 
 ![Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo](images/es03-12.png)
 
-3. Confermare l'assegnazione.
+4. Confermare l'assegnazione con **Assign**.
 
 > [!NOTE]
 > L'assegnazione tramite gruppo può richiedere alcuni minuti prima che le licenze risultino effettivamente attive sugli account di **User02** e **User03**.
 
-4. Ripetere anche per le licenze **Microsoft Teams Enterprise**.
+5. Ripetere anche per le licenze **Microsoft Teams Enterprise**.
 
 ![Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo](images/es03-13.png)
 
-5. Controllare che l'assegnazione delle licenze ai due utenti sia andata a buon fine.
+6. Controllare che l'assegnazione delle licenze ai due utenti sia andata a buon fine.
 
 > [!IMPORTANT]
 > L'assegnazione delle licenze **basata su gruppo** richiede **Microsoft Entra ID P1** (o superiore). Per assegnare licenze è necessario impostare la **Usage location** dell'utente, altrimenti l'assegnazione fallisce.
@@ -129,20 +129,20 @@ Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licen
 
 ## Passo 5 · Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
 
-Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Active Teams & Groups > Add a Microsoft 365 group** con le seguenti specifiche:
+1. Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Active Teams & Groups > Add a Microsoft 365 group** con le seguenti specifiche:
 
-1. **Group name** `GRP_365_STATIC`
-2. **Group description** `Gruppo Microsoft 365 statico per collaborazione tra User02 e User03`
+2. **Group name** `GRP_365_STATIC`
+3. **Group description** `Gruppo Microsoft 365 statico per collaborazione tra User02 e User03`
 
 ![Esercizio 3 – Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)](images/es03-14.png)
 
-3. Inserire **User02** come **Owner**; come **Member** inserire **User02** e **User03**.
-4. Come **Group mail** mettere: GRP_365_STATIC
-5. Impostare **Privacy Private**.
+4. Inserire **User02** come **Owner**; come **Member** inserire **User02** e **User03**.
+5. Come **Group mail** mettere: GRP_365_STATIC
+6. Impostare **Privacy Private**.
 
  ![Esercizio 3 – Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)](images/es03-15.png)
 
-6. Selezionare **Create Group** per salvare il gruppo.
+7. Selezionare **Create Group** per salvare il gruppo.
 
 ## Passo 6 · Verifica lato USER03 (da SEA-DEV3) e invito guest
 
@@ -164,7 +164,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 ![Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest](images/es03-18.png)
 
-4. Dalla pagina del gruppo **GRP_365_STATIC** di Outlook andare nella sezione Members, selezionare **Add members** e **invitare un guest** inserendo il proprio indirizzo email personale, come `personal@xxx.com`.
+4. Dalla pagina del gruppo **GRP_365_STATIC** di Outlook andare nella sezione **Members**, selezionare **Add members** e **invitare un guest** inserendo il proprio indirizzo email personale, come `personal@xxx.com`.
 
 ![Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest](images/es03-19.png)
 
@@ -213,7 +213,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
    ```
 
 3. Andare sul gruppo **GRP_365_STATIC** e andare su **members**.
-4. Premere su Add members e invitare una mail personale del tipo:
+4. Premere su **Add members** e invitare una mail personale del tipo:
 
    ```text
    personal@xxx.com

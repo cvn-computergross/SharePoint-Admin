@@ -4,14 +4,14 @@
 
 ## Passo 1 · Accesso al sito con User02
 
-**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+1. Accedere alla VM `SEA-DEV2` con le credenziali di User02.
+2. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
    ```text
    https://tenant_name.sharepoint.com/sites/MarketingDepartment
    ```
 
-2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
+3. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
 ## Passo 2 · Site Information
 
@@ -32,11 +32,11 @@
 
 ![Esercizio 7 – Passo 3 – Add an App](images/es07-03.png)
 
-2. Visualizzare lo store premendo su Find more apps in the Sharepoint Store.
+2. Visualizzare lo store premendo su **Find more apps in the SharePoint Store**.
 
    ![Esercizio 7 – Passo 3 – Add an App](images/es07-04.png)
 
-3. Cercare Approval System e premere su Request aggiungere un commento a piacere e inviare la richiesta..
+3. Cercare **Approval System**, premere **Request**, aggiungere un commento a piacere e inviare la richiesta.
 
    ![Esercizio 7 – Passo 3 – Add an App](images/es07-05.png)
 
@@ -46,7 +46,7 @@
 >
 >Nel caso refreshare la pagina e aspettare un minuto.
 
-4. Tornare su `SEA-DEV1` sullo sharepoint admin center -> more features -> apps e visualizzare i menù di controllo sulle apps per sharepoint.
+4. Tornare su `SEA-DEV1` su **SharePoint admin center > More features > Apps** e visualizzare i menù di controllo sulle apps per sharepoint.
 
 ![Esercizio 7 – Passo 3 – Add an App](images/es07-06.png)
 

@@ -62,16 +62,16 @@
 ## Passo 3 · Creazione di una nuova pagina
 
 1. Nel menu laterale, selezionare **Home > + New > Page**.
-2. Scegliere Create Blank e assegnare come titolo **`Novità Marketing`**.
+2. Scegliere **Create Blank** e assegnare come titolo **`Novità Marketing`**.
 
 ![Esercizio 5 – Passo 3 – Creazione di una nuova pagina](images/es05-04.png)
 
 3. Personalizzare la pagina:
-- Impostare un **'immagine di sfondo per l'intestazione** (Header), tramite l'opzione **Change** sull'immagine di intestazione.
+4. Impostare un **'immagine di sfondo per l'intestazione** (Header), tramite l'opzione **Change** sull'immagine di intestazione.
 
 ![Esercizio 5 – Passo 3 – Creazione di una nuova pagina](images/es05-05.png)
 
-4. Selezionare **Publish** per pubblicare la nuova pagina.
+5. Selezionare **Publish** per pubblicare la nuova pagina.
 
 ## Passo 4 · Promuovere la pagina a Home Page
 
@@ -84,7 +84,7 @@
 
 ![Esercizio 5 – Passo 4 – Promuovere la pagina a Home Page](images/es05-07.png)
 
-5. Ripetere la stessa procedura sulla pagina originale (**Home**) per **ripristinarla come Home Page**: da **Pages**, selezionare i tre puntini sulla pagina **Home** e scegliere nuovamente **Promote > Make homepage**.
+4. Ripetere la stessa procedura sulla pagina originale (**Home**) per **ripristinarla come Home Page**: da **Pages**, selezionare i tre puntini sulla pagina **Home** e scegliere nuovamente **Promote > Make homepage**.
 
 ## Passo 5 · Verifica lato User03 (membro) su SEA-DEV3
 

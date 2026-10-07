@@ -4,15 +4,15 @@
 
 ## Passo 1 · Accesso al SharePoint Admin Center
 
-**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
+1. Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant.
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+2. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
    ```text
    https://admin.microsoft.com
    ```
 
-2. Aprire **Show all > Admin centers > SharePoint**.
+3. Aprire **Show all > Admin centers > SharePoint**.
 
 ![Esercizio 4 – Passo 1 – Accesso al SharePoint Admin Center](images/es04-01.png)
 
@@ -24,7 +24,7 @@
 
 2. Individuare il sito **Comunicazioni Aziendali** (il Communication Site creato nel **Modulo 3 - Esercizio 1, Passo 3.1**).
 3. Selezionare il sito (spunta accanto al nome) e scegliere **Delete**.
-4. Confermare l'eliminazione nella finestra di conferma.
+4. Confermare l'eliminazione con **Delete** nella finestra di conferma.
 
 ![Esercizio 4 – Passo 2 – Eliminazione del sito Communication](images/es04-03.png)
 

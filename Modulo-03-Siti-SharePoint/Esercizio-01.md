@@ -4,15 +4,15 @@
 
 ## Passo 1 · Accesso all'Admin Center e a SharePoint
 
-**Accedere alla VM `SEA-DEV1` come User01 con credenziali admin**
+1. Accedere alla VM `SEA-DEV1` come User01 con credenziali admin.
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+2. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
    ```text
    https://admin.microsoft.com
    ```
 
-2. Nel menu laterale, aprire **Show all** (Mostra tutto) e selezionare **Admin centers > SharePoint**, per accedere all'**Admin Center di SharePoint**.
+3. Nel menu laterale, aprire **Show all** (Mostra tutto) e selezionare **Admin centers > SharePoint**, per accedere all'**Admin Center di SharePoint**.
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center e a SharePoint](images/es01-01.png)
 
@@ -30,7 +30,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ### Sezione 1 · Informazioni di base
 
-3. Compilare i campi:
+1. Compilare i campi:
     - **Site Name**:
 
       ```text
@@ -51,7 +51,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ### Sezione 2 · Impostazioni aggiuntive
 
-4. Selezionare **Next** e compilare:
+1. Selezionare **Next** e compilare:
     - **Privacy settings**: `Private`
     - **Select language**: `English`
     - **Time zone**: `UTC+1`
@@ -59,7 +59,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ![Esercizio 1 – Sezione 2 – Impostazioni aggiuntive](images/es01-05.png)
 
-4. Selezionare **Create site** per completare la creazione.
+2. Selezionare **Create site** per completare la creazione.
 
 > [!NOTE]
 > Un **Team site** collegato a un **Microsoft 365 Group** crea automaticamente, insieme al sito, anche una cassetta postale condivisa, un calendario di gruppo e ,come vedremo nell'Esercizio 8 , può diventare la base per un Team di Microsoft Teams.

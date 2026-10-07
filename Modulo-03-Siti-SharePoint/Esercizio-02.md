@@ -4,9 +4,9 @@
 
 ## Passo 1 · Accesso al sito con User02
 
-**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
+1. Accedere alla VM `SEA-DEV2` con le credenziali di User02.
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment` (dove `tenant_name` è il nome del proprio tenant)
+2. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment` (dove `tenant_name` è il nome del proprio tenant)
 
    ```text
    https://tenant_name.sharepoint.com/sites/MarketingDepartment
@@ -14,7 +14,7 @@
 
 ![Esercizio 2 – Passo 1 – Accesso al sito con User02](images/es02-01.png)
 
-2. Inserire le credenziali di **User02** solo se richiesto: essendo User02 già autenticato su Windows/Microsoft 365, l'accesso dovrebbe avvenire in automatico tramite SSO, senza richiedere nuovamente le credenziali.
+3. Inserire le credenziali di **User02** solo se richiesto: essendo User02 già autenticato su Windows/Microsoft 365, l'accesso dovrebbe avvenire in automatico tramite SSO, senza richiedere nuovamente le credenziali.
 
 ## Passo 2 · Gestione del menu di navigazione (Edit Navigation)
 
@@ -39,7 +39,7 @@
 
 ## Passo 3 · Change the Look del sito
 
-Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look**
+1. Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look**
 
 ![Esercizio 2 – Passo 3 – Change the Look del sito](images/es02-05.png)
 
@@ -51,13 +51,13 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 
 ### Header · Layout
 
-2. Nella sezione **Header**, impostare il **Layout** su **Extended** (esteso), per un'intestazione più ampia e visivamente d'impatto.
+1. Nella sezione **Header**, impostare il **Layout** su **Extended** (esteso), per un'intestazione più ampia e visivamente d'impatto.
 
 ![Esercizio 2 – Header Layout](images/es02-07.png)
 
 ### Header · Design
 
-3. Configurare le seguenti opzioni nella sezione **Header > Design**:
+1. Configurare le seguenti opzioni nella sezione **Header > Design**:
 - **Theme**: selezionare `#1267B5 background, white accent`.
 
 ![Esercizio 2 – Header Design](images/es02-08.png)
@@ -73,7 +73,7 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 
 ### Logo
 
-4. Configurare i loghi del sito:
+1. Configurare i loghi del sito:
     - **Site logo thumbnail**: caricare il file `icon1.png` dal percorso materiale:
 
       ```text
@@ -90,7 +90,7 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 
 ![Esercizio 2 – Logo](images/es02-11.png)
 
-5. Selezionare **Save** per applicare il nuovo aspetto al sito.
+2. Selezionare **Save** per applicare il nuovo aspetto al sito.
 
 > [!TIP]
 > Gli amministratori possono aggiungere **temi personalizzati** con i colori aziendali (`Add-SPOTheme`) e nascondere i temi predefiniti, così che i site owner scelgano solo tra quelli approvati.

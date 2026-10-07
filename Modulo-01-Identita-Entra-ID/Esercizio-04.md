@@ -4,18 +4,18 @@
 
 ## Passo 1 · Installazione strumenti dal pacchetto del corso
 
-Accedere alla VM `SEA-DEV1` come administrator locale.
+1. Accedere alla VM `SEA-DEV1` come administrator locale.
 
 Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1 perché superano i 100 MB: si scaricano dai siti ufficiali indicati sotto.
 
-1. Scaricare e avviare l'installer di **Visual Studio Code** (User Installer, Windows x64) da [code.visualstudio.com](https://code.visualstudio.com/download).
-2. Completare l'installazione guidata.
+2. Scaricare e avviare l'installer di **Visual Studio Code** (User Installer, Windows x64) da [code.visualstudio.com](https://code.visualstudio.com/download).
+3. Completare l'installazione guidata.
 
 ![Esercizio 4 – Passo 1 – Installazione strumenti dal pacchetto del corso](images/es04-01.png)
 
-3. Scaricare e avviare l'installer `.msi` di **PowerShell 7** (x64) dalla pagina [Installare PowerShell in Windows](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-windows).
-4. Completare l'installazione guidata.
-5. Riavviare la VM.
+4. Scaricare e avviare l'installer `.msi` di **PowerShell 7** (x64) dalla pagina [Installare PowerShell in Windows](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-windows).
+5. Completare l'installazione guidata.
+6. **Riavviare** la VM.
 
 ## Passo 2 · Abilitare la modalità "PowerShell ISE" in VS Code
 
@@ -42,7 +42,7 @@ Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1
 
 ## Passo 3 · Installazione dei moduli PowerShell (MS Graph, PnP, SPO)
 
-1. In VS Code, aprire il file di script fornito dal corso:
+1. In **Visual Studio Code**, aprire il file di script fornito dal corso:
 
    ```text
    LAB/Modulo1/Script/Es4.ps1

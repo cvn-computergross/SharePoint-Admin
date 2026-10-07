@@ -4,28 +4,28 @@
 
 ## Passo 1 · Accesso al SharePoint Admin Center
 
-**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
+1. Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant.
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+2. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
    ```text
    https://admin.microsoft.com
    ```
 
-2. Aprire **Show all > Admin centers > SharePoint**.
-3. Nel menu laterale, selezionare **Reports**.
+3. Aprire **Show all > Admin centers > SharePoint**.
+4. Nel menu laterale, selezionare **Reports**.
 
 ![Esercizio 5 – Passo 1 – Accesso al SharePoint Admin Center](images/es05-01.png)
 
 ## Passo 2 · Report Data Access Governance: Sharing Links
 
-Aprire **Reports > Data access governance**
+1. Aprire **Reports > Data access governance**
 
-1. Selezionare **Data access governance**, quindi **Sharing links**.
+2. Selezionare **Data access governance**, quindi **Sharing links**.
 
 ![Esercizio 5 – Passo 2 – Report Data Access Governance: Sharing Links](images/es05-02.png)
 
-2. Eseguire i seguenti tre report, uno alla volta (selezionare il tipo di report e **Run report**):
+3. Eseguire i seguenti tre report, uno alla volta (selezionare il tipo di report e **Run report**):
 
 **"Anyone" links**
 - Mostra i siti nei quali è stato creato il **maggior numero di collegamenti che non richiedono l'accesso** (link anonimi, senza necessità di sign-in).
@@ -64,32 +64,32 @@ Prerequisito:
 
 Terminato il prerequisito:
 
-1. Andare su `SEA-DEV1` come **Administrator**.
-2. Aprire l'**Admin Center 365**.
-3. Premere nel menù laterale **Show All**.
+6. Andare su `SEA-DEV1` come **Administrator**.
+7. Aprire l'**Admin Center 365**.
+8. Premere nel menù laterale **Show All**.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-07.png)
 
-4. Andare su **Reports -> Usage**.
+9. Andare su **Reports -> Usage**.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-08.png)
 
-5. Selezionare **SharePoint** e visualizzare la schermata di **Activity**.
+10. Selezionare **SharePoint** e visualizzare la schermata di **Activity**.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-09.png)
 
-6. Passare alla finestra di **Site Usage** e visualizzare il report.
+11. Passare alla finestra di **Site Usage** e visualizzare il report.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-10.png)
 
-7. Infine passare alla sezione **Storage** e controllare il Report.
+12. Infine passare alla sezione **Storage** e controllare il Report.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-11.png)
 
 E' possibile visualizzare anche l'Activity e lo Usage di OneDrive.
 
-1. Andare su **Reports -> Usage ->OneDrive**
-2. Visualizzare i report sia della sezione **Activity** che **Usage**.
+13. Andare su **Reports -> Usage ->OneDrive**
+14. Visualizzare i report sia della sezione **Activity** che **Usage**.
 
 ![Esercizio 5 – Passo 3 – Reports da Admin Center 365](images/es05-12.png)
 

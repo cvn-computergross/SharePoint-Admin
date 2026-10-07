@@ -96,7 +96,7 @@
 3. Nel campo **People you choose**, selezionare:
    - L'utente interno **User03**
    - L'utente **Guest** (l'account guest invitato nell'esercizio precedente)
-3. Selezionare **Send** (non **Copy Link**), in modo che venga inviata un'email di notifica diretta ai destinatari.
+4. Selezionare **Send** (non **Copy Link**), in modo che venga inviata un'email di notifica diretta ai destinatari.
 
 ![Esercizio 1 – Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)](images/es01-12.png)
 
@@ -124,19 +124,19 @@
 ![Esercizio 1 – Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese](images/es01-16.png)
 
 4. Selezionare **Anyone** come opzione di sharing.
-5. Questa volta selezionare **Copy Link** (invece di Send), per ottenere l'URL del link di condivisione.
+5. Questa volta selezionare **Copy Link** (invece di **Send**), per ottenere l'URL del link di condivisione.
 
 ![Esercizio 1 – Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese](images/es01-17.png)
 
-4. Aprire una finestra del browser in **modalità anonima/InPrivate**.
-5. Incollare il link copiato e aprirlo.
+6. Aprire una finestra del browser in **modalità anonima/InPrivate**.
+7. Incollare il **link copiato** e aprirlo.
 
 ![Esercizio 1 – Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese](images/es01-18.png)
 
-6. Verificare che:
+8. Verificare che:
    - **Non venga richiesta alcuna autenticazione** per visualizzare il file.
    - Il file venga mostrato **solo in visualizzazione** (senza possibilità di scaricarlo o modificarlo).
-6. **Non chiudere** questa finestra: servirà per il Passo 5 come terzo "spettatore" collegato al file.
+9. **Non chiudere** questa finestra: servirà per il Passo 5 come terzo "spettatore" collegato al file.
 
 > [!WARNING]
 > I link **Anyone** non richiedono autenticazione: chiunque riceva il link (anche inoltrato) accede al file e non è possibile tracciare chi lo ha aperto. Usarli solo per contenuti non sensibili e sempre con **scadenza**.
@@ -222,7 +222,7 @@
 
 ![Esercizio 1 – Passo 8 – Eliminazione cartelle e recupero dal cestino](images/es01-32.png)
 
-   - Selezionare **`FOLDER02`** ed **eliminarla definitivamente** da qui (Delete).
+   - Selezionare **`FOLDER02`** ed **eliminarla definitivamente** da qui (**Delete**).
 
 ![Esercizio 1 – Passo 8 – Eliminazione cartelle e recupero dal cestino](images/es01-33.png)
 
@@ -285,9 +285,9 @@
 
 **A) Prevent users from synchronizing personal OneDrive accounts**
 
-Entrare in **User Configuration > Policies > Administrative Templates > OneDrive > Prevent users from synchronizing personal OneDrive accounts**
+6. Entrare in **User Configuration > Policies > Administrative Templates > OneDrive > Prevent users from synchronizing personal OneDrive accounts**
 
-Premere su Edit e poi: **Enabled**. Premere OK.
+7. Premere su **Edit**, selezionare **Enabled** e premere **OK**.
 
 ![Esercizio 1 – Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)](images/es01-42.png)
 
@@ -298,9 +298,9 @@ Premere su Edit e poi: **Enabled**. Premere OK.
 
 **B) Allow syncing OneDrive accounts for only specific organizations**
 
-Andare in **Computer Configuration > Policies > Administrative Templates > OneDrive > Allow syncing OneDrive accounts for only specific organizations**
+8. Andare in **Computer Configuration > Policies > Administrative Templates > OneDrive > Allow syncing OneDrive accounts for only specific organizations**
 
-Mettere **Enabled**, e inserire il **Tenant ID** dell'organizzazione consentita (quello del tenant di laboratorio) nel riquadro rosso vuoto dopo aver premuto Show.
+9. Mettere **Enabled**, e inserire il **Tenant ID** dell'organizzazione consentita (quello del tenant di laboratorio) nel riquadro rosso vuoto dopo aver premuto **Show**.
 
 ![Esercizio 1 – Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)](images/es01-44.png)
 
@@ -309,9 +309,9 @@ Mettere **Enabled**, e inserire il **Tenant ID** dell'organizzazione consentita 
 
 **C) Silently sign in users to the OneDrive sync app with their Windows credentials**
 
-Andare su **Computer Configuration > Policies > Administrative Templates > OneDrive > Silently sign in users to the OneDrive sync app with their Windows credentials**
+10. Andare su **Computer Configuration > Policies > Administrative Templates > OneDrive > Silently sign in users to the OneDrive sync app with their Windows credentials**
 
-Premere **Enabled** e poi Ok.
+11. Selezionare **Enabled** e premere **OK**.
 
 > [!NOTE]
 > Riduce gli **errori di autenticazione** e le **configurazioni incomplete**, effettuando il login automatico dell'utente Windows già autenticato nel tenant.
@@ -325,16 +325,16 @@ Premere **Enabled** e poi Ok.
 
 **D) Use OneDrive Files On-Demand**
 
-Entrare in **Computer Configuration > Policies > Administrative Templates > OneDrive > Use OneDrive Files On-Demand**
+1. Entrare in **Computer Configuration > Policies > Administrative Templates > OneDrive > Use OneDrive Files On-Demand**
 
-Impostare la policy su **Enabled**.
+2. Impostare la policy su **Enabled**.
 
 > [!NOTE]
 > Rende visibili i file in **Esplora file** senza scaricare automaticamente tutto il contenuto sul dispositivo (i file restano "on-demand", scaricati solo all'apertura).
 
 **E) Silently move Windows known folders to OneDrive**
 
-Andare su **Computer Configuration > Policies > Administrative Templates > OneDrive > Silently move Windows known folders to OneDrive** e configurare **Enabled**, specificando il **Tenant ID** e selezionando **solo Documenti e Immagini** come cartelle da spostare (lasciando **Desktop** deselezionato)
+3. Andare su **Computer Configuration > Policies > Administrative Templates > OneDrive > Silently move Windows known folders to OneDrive** e configurare **Enabled**, specificando il **Tenant ID** e selezionando **solo Documenti e Immagini** come cartelle da spostare (lasciando **Desktop** deselezionato)
 
 ![Esercizio 1 – Passo 11 – Ulteriori policy OneDrive](images/es01-45.png)
 
@@ -343,12 +343,12 @@ Andare su **Computer Configuration > Policies > Administrative Templates > OneDr
 
 **F) Prevent users from redirecting their Windows known folders to their PC**
 
-Recarsi su **Computer Configuration > Policies > Administrative Templates > OneDrive > Prevent users from redirecting their Windows known folders to their PC** impostare: **Enabled**
+4. Recarsi su **Computer Configuration > Policies > Administrative Templates > OneDrive > Prevent users from redirecting their Windows known folders to their PC** impostare: **Enabled**
 
 > [!NOTE]
 > Impedisce agli utenti di **spostare indietro** le cartelle note protette da OneDrive al disco locale del PC.
 
-Riavviare `SEA-DEV3` per applicare tutte le policy configurate ai Passi 10 e 11.
+5. Riavviare `SEA-DEV3` per applicare tutte le policy configurate ai Passi 10 e 11.
 
 > [!IMPORTANT]
 > Il **Tenant ID** si trova in **Entra ID > Overview**. Le policy **Silently move Windows known folders** e **Silent sign-in** funzionano solo con account di lavoro su dispositivi Microsoft Entra joined o ibridi.

@@ -16,11 +16,11 @@
 3. Andare su **Migration > File share > View task**.
 4. Nella sezione **Scan**, selezionare **Add source path** come spiegato:
 
-- Selezionare **Specify a single source path**, inserire `\\SEA-DEV1\Fatture` , togliere il flag a **Add all folders as source paths** e lasciare il resto default e premere add
+5. Selezionare **Specify a single source path**, inserire `\\SEA-DEV1\Fatture` , togliere il flag a **Add all folders as source paths** e lasciare il resto default e premere add
 
 ![Esercizio 4 – Passo 1 – Scansione dei percorsi sorgente](images/es04-01.png)
 
-5. Ripetere per i seguenti path:
+6. Ripetere per i seguenti path:
 -:
 
   ```text
@@ -65,19 +65,19 @@
   Migrazione Fatture da FS on prem a Document Library [Fatture]
   ```
 
-- Selezionare **Preserve file share permission**.
-- Aprire All Settings, sotto Users togliere la spunta a Microsoft Entra ID lookup
+8. Selezionare **Preserve file share permission**.
+9. Aprire **All settings** e, sotto **Users**, togliere la spunta a **Microsoft Entra ID lookup**.
 
 ![Esercizio 4 – Passo 2 – Migrazione della cartella Fatture verso SharePoint](images/es04-04.png)
 
-- Mettere la spunta a User mapping file e caricare il CSV presente in:
+10. Mettere la spunta a **User mapping file** e caricare il CSV presente in:
 
   ```text
   Modulo5\Data\Migration.csv
   ```
 
-- Lasciare il resto delle opzioni sui valori predefiniti.
-7. Selezionare **Run**.
+11. Lasciare il resto delle opzioni sui valori predefiniti.
+12. Selezionare **Run**.
 
 ![Esercizio 4 – Passo 2 – Migrazione della cartella Fatture verso SharePoint](images/es04-05.png)
 
@@ -109,19 +109,19 @@
   Migrazione Paghe da FS on prem a Document Library [Paghe]
   ```
 
-- Selezionare **Preserve file share permission**.
-- Aprire All Settings, sotto Users togliere la spunta a Microsoft Entra ID lookup
+8. Selezionare **Preserve file share permission**.
+9. Aprire **All settings** e, sotto **Users**, togliere la spunta a **Microsoft Entra ID lookup**.
 
 ![Esercizio 4 – Passo 3 – Migrazione della cartella Paghe verso SharePoint](images/es04-04.png)
 
-- Mettere la spunta a User mapping file e caricare il CSV presente in:
+10. Mettere la spunta a **User mapping file** e caricare il CSV presente in:
 
   ```text
   Modulo5\Data\Migration.csv
   ```
 
-- Lasciare il resto delle opzioni sui valori predefiniti.
-7. Selezionare **Run**.
+11. Lasciare il resto delle opzioni sui valori predefiniti.
+12. Selezionare **Run**.
 
 ## Passo 4 · Migrazione della cartella Generale verso SharePoint
 
@@ -146,19 +146,19 @@
   Migrazione Generale da FS on prem a Document Library [Generale]
   ```
 
-- Selezionare **Preserve file share permission**.
-- Aprire All Settings, sotto Users togliere la spunta a Microsoft Entra ID lookup
+8. Selezionare **Preserve file share permission**.
+9. Aprire **All settings** e, sotto **Users**, togliere la spunta a **Microsoft Entra ID lookup**.
 
 ![Esercizio 4 – Passo 4 – Migrazione della cartella Generale verso SharePoint](images/es04-04.png)
 
-- Mettere la spunta a User mapping file e caricare il CSV presente in:
+10. Mettere la spunta a **User mapping file** e caricare il CSV presente in:
 
   ```text
   Modulo5\Data\Migration.csv
   ```
 
-- Lasciare il resto delle opzioni sui valori predefiniti.
-7. Selezionare **Run**.
+11. Lasciare il resto delle opzioni sui valori predefiniti.
+12. Selezionare **Run**.
 
 ![Esercizio 4 – Passo 4 – Migrazione della cartella Generale verso SharePoint](images/es04-08.png)
 
@@ -172,9 +172,9 @@
 
 4. Prima di poter inserire l'indirizzo, è necessario **recuperare l'URL del OneDrive di user06** dall'Admin Center:
 
-- Aprire una nuova scheda su `https://admin.microsoft.com > Users > Active users`.
-- Selezionare **user06**, aprire la scheda **OneDrive**.
-- Selezionare **Create link to files** per ottenere/copiare l'URL del OneDrive personale di `user06` (nel formato `https://tenant_name-my.sharepoint.com/personal/user06_tenant_name_onmicrosoft_com`).
+5. Aprire una nuova scheda su `https://admin.microsoft.com > Users > Active users`.
+6. Selezionare **user06**, aprire la scheda **OneDrive**.
+7. Selezionare **Create link to files** per ottenere/copiare l'URL del OneDrive personale di `user06` (nel formato `https://tenant_name-my.sharepoint.com/personal/user06_tenant_name_onmicrosoft_com`).
 
   ```text
   https://tenant_name-my.sharepoint.com/personal/user06_tenant_name_onmicrosoft_com
@@ -182,14 +182,14 @@
 
 ![Esercizio 4 – Passo 5 – Migrazione della cartella user06 verso OneDrive](images/es04-10.png)
 
-5. Tornare alla schermata di migrazione e incollare l'URL del OneDrive di **user06** appena recuperato.
+8. Tornare alla schermata di migrazione e incollare l'URL del OneDrive di **user06** appena recuperato.
 
-6. Nella sezione **Select the location you want to copy your content**, selezionare la cartella **`Documents`**.
+9. Nella sezione **Select the location you want to copy your content**, selezionare la cartella **`Documents`**.
 
 ![Esercizio 4 – Passo 5 – Migrazione della cartella user06 verso OneDrive](images/es04-11.png)
 
-7. Selezionare **Next**.
-8. Compilare i campi del task:
+10. Selezionare **Next**.
+11. Compilare i campi del task:
     - **Task name**:
 
       ```text
@@ -198,7 +198,7 @@
 
     - **Non** selezionare **Preserve file share permission** (a differenza dei task precedenti verso SharePoint).
     - Lasciare il resto delle opzioni sui valori predefiniti.
-9. Selezionare **Run**.
+12. Selezionare **Run**.
 
 ![Esercizio 4 – Passo 5 – Migrazione della cartella user06 verso OneDrive](images/es04-12.png)
 
@@ -210,7 +210,7 @@
 ## Passo 6 · Monitoraggio dell'avanzamento
 
 1. Su **Migrations > File share**, selezionare la scheda **Migration**.
-2. Osservare l'avanzamento dei quattro task creati (Fatture, Paghe, Generale, user06).
+2. Osservare l'avanzamento dei quattro task creati (**Fatture**, **Paghe**, **Generale**, **user06**).
 3. Attendere che tutti i task risultino completati, indicati da un **pallino verde** accanto a ciascuno.
 
 ![Esercizio 4 – Passo 6 – Monitoraggio dell'avanzamento](images/es04-13.png)

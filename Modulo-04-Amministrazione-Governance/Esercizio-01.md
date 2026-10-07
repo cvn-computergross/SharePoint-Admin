@@ -4,15 +4,15 @@
 
 ## Passo 1 · Accesso all'Admin Center
 
-**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
+1. Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant.
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+2. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
    ```text
    https://admin.microsoft.com
    ```
 
-2. Nel menu laterale, selezionare **Users > Active users**.
+3. Nel menu laterale, selezionare **Users > Active users**.
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center](images/es01-01.png)
 
@@ -32,7 +32,7 @@
 
 5. Tornare sull'admin center 365 e individuare la sezione **Storage Used** e selezionare **Edit**.
 6. Impostare il valore su **512 GB** (rispetto ai 1024 GB predefiniti) premendo **Maximum storage for this user**.
-7. Salvare la modifica.
+7. **Salvare** la modifica.
 
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-05.png)
 
@@ -41,7 +41,7 @@
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-06.png)
 
 9. **Togliere la spunta** dall'opzione **Let people outside your organization access your OneDrive**.
-10. Salvare la modifica.
+10. **Salvare** la modifica.
 
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-07.png)
 
@@ -52,19 +52,19 @@
 
 ## Passo 3 · Verifica lato User02 su SEA-DEV2
 
-**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
+1. Accedere alla VM `SEA-DEV2` con le credenziali di User02.
 
-1. Aprire il browser e accedere a `https://portal.office.com`, quindi aprire **OneDrive**.
+2. Aprire il browser e accedere a `https://portal.office.com`, quindi aprire **OneDrive**.
 
    ```text
    https://portal.office.com
    ```
 
-2. Verificare che la **quota disponibile** mostrata risulti ora **512 GB** (invece di 1 TB).
+3. Verificare che la **quota disponibile** mostrata risulti ora **512 GB** (invece di 1 TB).
 
 ![Esercizio 1 – Passo 3 – Verifica lato User02 su SEA-DEV2](images/es01-08.png)
 
-3. Provare a condividere un file:
+4. Provare a condividere un file:
 - Tentare una condivisione **anonima** ("Anyone with the link"): l'opzione non dovrebbe più essere disponibile o dovrebbe risultare bloccata.
 
 ![Esercizio 1 – Passo 3 – Verifica lato User02 su SEA-DEV2](images/es01-09.png)
@@ -73,7 +73,7 @@
 
 ![Esercizio 1 – Passo 3 – Verifica lato User02 su SEA-DEV2](images/es01-10.png)
 
-- Verificare che resti possibile condividere solo con utenti **interni al tenant** (Member).
+5. Verificare che resti possibile condividere solo con utenti **interni al tenant** (Member).
 
 ![Esercizio 1 – Passo 3 – Verifica lato User02 su SEA-DEV2](images/es01-11.png)
 

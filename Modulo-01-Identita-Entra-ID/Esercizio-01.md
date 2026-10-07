@@ -19,17 +19,17 @@
 
 ## Passo 3 · Verificare/configurare i metodi di autenticazione
 
-Entrare su **Entra ID > Authentication methods > Policy**.
+1. Entrare su **Entra ID > Authentication methods > Policy**.
 
 ![Esercizio 1 – Passo 3 – Verificare/configurare i metodi di autenticazione](images/es01-01.png)
 
-1. Verificare che **Microsoft Authenticator** sia impostato su **All users**.
+2. Verificare che **Microsoft Authenticator** sia impostato su **All users**.
 
 ![Esercizio 1 – Passo 3 – Verificare/configurare i metodi di autenticazione](images/es01-02.png)
 
    - In caso contrario, **abilitarlo per tutti gli utenti**.
 
-2. **Disattivare** i seguenti metodi di autenticazione:
+3. **Disattivare** i seguenti metodi di autenticazione:
 
 - **Passkey**
 - **Software OATH token**
@@ -48,11 +48,11 @@ Entrare su **Entra ID > Authentication methods > Policy**.
 
 ## Passo 4 · Creare la Conditional Access Policy per la MFA
 
-Entrare su **Entra ID > Conditional Access > + Create new policy**.
+1. Entrare su **Entra ID > Conditional Access > + Create new policy**.
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-05.png)
 
-Inserire nel campo Name:
+2. Inserire nel campo **Name**:
 
 ```text
 MFA Required - All User (exclude administrator)
@@ -60,7 +60,7 @@ MFA Required - All User (exclude administrator)
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-06.png)
 
-In Users configurare:
+3. In **Users** configurare:
 
 - **Include:** `All users`
 
@@ -73,26 +73,23 @@ In Users configurare:
 > [!WARNING]
 > **IMPORTANTE:** non dimenticare di escludere l'account amministratore, per evitare il rischio di lockout dal tenant.
 
-In **Target resources** configurare:
+4. In **Target resources** configurare:
 - **Include:** `All resources` _(in precedenza denominato "All cloud apps")_
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-09.png)
 
-Andare su **Grant** e configurare:
-
-- **Grant access**
-- Selezionare: **Require multifactor authentication**
+5. Andare su **Grant**, selezionare **Grant access** e spuntare **Require multifactor authentication**.
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-10.png)
 
-Mettere **Enable policy** su `On`
+6. Mettere **Enable policy** su `On`
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-11.png)
 
 > [!NOTE]
 >**Chiamare il docente per conferma della corretta configurazione** prima di procedere.
 
-Premere **Create** per salvare la policy.
+7. Premere **Create** per salvare la policy.
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-12.png)
 

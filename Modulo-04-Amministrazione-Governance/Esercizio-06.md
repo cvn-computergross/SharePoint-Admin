@@ -14,7 +14,7 @@ Install-Module PnP.PowerShell -Scope CurrentUser -Force
 Install-Module Microsoft.Graph -Scope CurrentUser -Force
 ```
 
-1. Tutti gli script di questo esercizio si autenticano in modalità **app-only**, riutilizzando la stessa **Enterprise Application** e lo stesso **certificato** creati nel **Modulo 1 - Esercizio 5** (registrazione app + `New-PnPAzureCertificate` + import del certificato sul certificate store della VM). Impostare le variabili comuni una sola volta a inizio sessione:
+3. Tutti gli script di questo esercizio si autenticano in modalità **app-only**, riutilizzando la stessa **Enterprise Application** e lo stesso **certificato** creati nel **Modulo 1 - Esercizio 5** (registrazione app + `New-PnPAzureCertificate` + import del certificato sul certificate store della VM). Impostare le variabili comuni una sola volta a inizio sessione:
 
 ```powershell
 $AppId          = "<APP_ID_dell'Enterprise_Application>"
@@ -29,7 +29,7 @@ $AdminSiteUrl   = "https://tenant_name-admin.sharepoint.com"
 # dove tenant_name è il nome del proprio tenant
 ```
 
-2. Connettersi con **Microsoft Graph** usando il certificato (come già fatto nel Modulo 1 - Esercizio 5):
+4. Connettersi con **Microsoft Graph** usando il certificato (come già fatto nel Modulo 1 - Esercizio 5):
 
 ```powershell
 Connect-MgGraph -ClientId $AppId -TenantId $TenantId -CertificateThumbprint $Thumbprint
@@ -38,13 +38,13 @@ Get-MgContext   # verificare che AuthType risulti "AppOnly"
 
 ![Esercizio 6 – Passo 1 – Preparazione dell'ambiente PowerShell](images/es06-01.png)
 
-3. Connettersi con **PnP PowerShell**, in app-only con lo stesso certificato:
+5. Connettersi con **PnP PowerShell**, in app-only con lo stesso certificato:
 
 ```powershell
 Connect-PnPOnline -Url $AdminSiteUrl -ClientId $AppId -Tenant $TenantId -Thumbprint $Thumbprint
 ```
 
-4. Connettersi con **SharePoint Online Management Shell** (Connect-SPOService), che supporta anch'esso l'autenticazione app-only con certificato:
+6. Connettersi con **SharePoint Online Management Shell** (Connect-SPOService), che supporta anch'esso l'autenticazione app-only con certificato:
 
 ```powershell
 Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -CertificatePath "C:\Cert\cert.pfx"

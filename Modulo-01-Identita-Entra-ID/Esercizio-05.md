@@ -4,23 +4,23 @@
 
 ## Passo 1 · Registrazione della nuova Enterprise Application (App ID)
 
-Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
+1. Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-01.png)
 
-1. Assegnare un nome all'applicazione, ad esempio `App-Graph-CertAuth`.
-2. Lasciare il tipo di account supportato sull'impostazione predefinita per il tenant singolo (**Accounts in this organizational directory only**).
-3. Selezionare **Register** per creare l'app.
+2. Assegnare un nome all'applicazione, ad esempio `App-Graph-CertAuth`.
+3. Lasciare il tipo di account supportato sull'impostazione predefinita per il tenant singolo (**Accounts in this organizational directory only**).
+4. Selezionare **Register** per creare l'app.
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-02.png)
 
-4. Aprire l'app appena creata e andare su **API permissions > Add a permission > Microsoft Graph > Application permissions**.
+5. Aprire l'app appena creata e andare su **API permissions > Add a permission > Microsoft Graph > Application permissions**.
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-03.png)
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-04.png)
 
-5. Aggiungere i seguenti permessi applicativi :
+6. Aggiungere i seguenti permessi applicativi :
 
 **Microsoft Graph**:
 - `Group.ReadWrite.All`
@@ -32,11 +32,11 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successi
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-05.png)
 
-6. Aggiungere anche quello di SharePoint e proseguire.
+7. Aggiungere anche il permesso **SharePoint > Sites.FullControl.All** e proseguire.
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-06.png)
 
-7. Selezionare **Grant admin consent for** per approvare i permessi a livello di amministratore: tutti devono risultare con stato **Granted for** (segno di spunta verde).
+8. Selezionare **Grant admin consent for** per approvare i permessi a livello di amministratore: tutti devono risultare con stato **Granted for** (segno di spunta verde).
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-07.png)
 
@@ -50,7 +50,7 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successi
 
 ## Passo 2 · Generazione del certificato da PowerShell
 
-1. Aprire su Visual Studio Code il file:
+1. Aprire su **Visual Studio Code** il file:
 
    ```text
    LAB/Modulo1/Script/Es5.ps1
@@ -80,7 +80,7 @@ New-PnPAzureCertificate -OutPfx "C:\Cert\cert.pfx" -OutCert "C:\Cert\cert.cer"
 
 ![Esercizio 5 – Passo 3 – Importazione del certificato PFX sulla VM](images/es05-09.png)
 
-6. Verificare l'importazione da PowerShell:
+6. Verificare l'importazione da **PowerShell**:
  ```powershell
  Get-ChildItem Cert:\LocalMachine\My
  ```

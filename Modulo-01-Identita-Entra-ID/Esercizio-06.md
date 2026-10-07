@@ -24,19 +24,19 @@
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-02.png)
 
-3. Al termine dell'installazione, andare su **Impostazioni (Settings) > Accounts > Access work or school** (in italiano: **Impostazioni > Account > Accesso a lavoro o istituto di istruzione**).
+4. Al termine dell'installazione, andare su **Impostazioni (Settings) > Accounts > Access work or school** (in italiano: **Impostazioni > Account > Accesso a lavoro o istituto di istruzione**).
 
-4. Selezionare **Connect** e avviare la procedura di **Cloud Join** (Microsoft Entra join), inserendo le credenziali dell'amministratore del tenant quando richiesto.
+5. Selezionare **Connect** e avviare la procedura di **Cloud Join** (Microsoft Entra join), inserendo le credenziali dell'amministratore del tenant quando richiesto.
 
  ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-03.png)
 
-3. Completare la procedura guidata.
+6. Completare la procedura guidata.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-04.png)
 
-4. **Riavviare (Reboot)** la VM per applicare il join al tenant.
-5. Nel frattempo recarsi sulla VM `SEA-DEV1` e aprire Entra ID https://entra.microsoft.com/.
-6. Andare su **Devices -> All Devices** e verificare il join type.
+7. **Riavviare (Reboot)** la VM per applicare il join al tenant.
+8. Nel frattempo recarsi sulla VM `SEA-DEV1` e aprire Entra ID https://entra.microsoft.com/.
+9. Andare su **Devices -> All Devices** e verificare il join type.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-05.png)
 
@@ -53,7 +53,7 @@
 
 ![Esercizio 6 – Passo 2 – Primo accesso con User02 (utente non amministratore)](images/es06-06.png)
 
-3. Il sistema guiderà l'utente nella configurazione di **Windows Hello for Business (WHFB)**, richiede **MFA** e impostazione del **PIN** mettere `137900`.
+4. Il sistema guiderà l'utente nella configurazione di **Windows Hello for Business (WHFB)**, richiede **MFA** e impostazione del **PIN** mettere `137900`.
 
 ![Esercizio 6 – Passo 2 – Primo accesso con User02 (utente non amministratore)](images/es06-07.png)
 
@@ -92,13 +92,13 @@
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-09.png)
 
-3. Al termine dell'installazione, andare su **Impostazioni (Settings) > Accounts > Access work or school**.
-4. Selezionare **Connect** e avviare la procedura di **Cloud Join**, inserendo le credenziali dell'amministratore del tenant quando richiesto.
+4. Al termine dell'installazione, andare su **Impostazioni (Settings) > Accounts > Access work or school**.
+5. Selezionare **Connect** e avviare la procedura di **Cloud Join**, inserendo le credenziali dell'amministratore del tenant quando richiesto.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-10.png)
 
-5. Completare la procedura guidata.
-6. **Riavviare (Reboot)** la VM per applicare il join al tenant.
+6. Completare la procedura guidata.
+7. **Riavviare (Reboot)** la VM per applicare il join al tenant.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-11.png)
 
@@ -119,7 +119,7 @@
 ### Passo 3 · Verifica del Single Sign-On (SSO)
 
 1. Aspettare 1 minuto dal login sul PC.
-2. Aprire **Word** e premere su Sign in or create account.
+2. Aprire **Word** e premere su **Sign in or create account**.
 
 ![Esercizio 6 – Passo 3 – Verifica del Single Sign-On (SSO)](images/es06-08.png)
 

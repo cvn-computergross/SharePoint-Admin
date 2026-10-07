@@ -7,16 +7,10 @@ Gli esercizi partono dalla preparazione delle identità in Microsoft Entra ID e 
 
 ## Indice
 
-- [A chi è rivolto](#a-chi-è-rivolto)
 - [Programma](#programma)
 - [Ambiente di laboratorio](#ambiente-di-laboratorio)
 - [Materiale del corso](#materiale-del-corso)
 - [Convenzioni](#convenzioni)
-- [Struttura della repository](#struttura-della-repository)
-
-## A chi è rivolto
-
-Amministratori e tecnici IT che gestiscono o gestiranno SharePoint Online e OneDrive. Si danno per acquisite le basi dell'amministrazione di Microsoft 365 e di Windows; gli esercizi riprendono l'ambiente del corso MD-102.
 
 ## Programma
 
@@ -63,19 +57,3 @@ Visual Studio Code, PowerShell 7 e il client OneDrive si scaricano dai siti uffi
 - **Segnaposto:** nei comandi e negli URL sostituire `XXXXXX`, `TENANT` e `tenant_name` con il dominio e il nome del proprio tenant.
 - **Valori da copiare:** nomi, descrizioni, URL e comandi sono nei riquadri di codice, con il pulsante di copia.
 - **Callout:** i riquadri *Nota*, *Suggerimento*, *Importante*, *Attenzione* e *Pericolo* riportano approfondimenti, requisiti e rischi, con il link alla documentazione ufficiale.
-
-## Struttura della repository
-
-```text
-SharePoint-Admin/
-├── Modulo-01-Identita-Entra-ID/   esercizi del modulo (README + Esercizio-NN.md + images/)
-├── Modulo-02-OneDrive/
-├── Modulo-03-Siti-SharePoint/
-├── Modulo-04-Amministrazione-Governance/
-├── Modulo-05-Migrazione-File-Server/
-├── Materiale/                     zip del materiale per modulo
-├── website/                       sorgenti del sito GitHub Pages (tema, pagina iniziale, build)
-└── .github/workflows/             pubblicazione automatica del sito
-```
-
-Il sito viene rigenerato automaticamente a ogni aggiornamento del branch `main`; i dettagli sono in [website/README.md](website/README.md).

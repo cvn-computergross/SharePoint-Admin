@@ -17,6 +17,7 @@ Il branch `GitHub-Page` contiene solo il sito compilato e viene riscritto a ogni
 
 | Percorso | Contenuto |
 |---|---|
+| `home.md` | Pagina iniziale del sito: guida al laboratorio e schede dei moduli |
 | `mkdocs.yml` | Configurazione del sito (titolo, tema, estensioni Markdown) |
 | `requirements.txt` | Versioni di MkDocs e del tema Material |
 | `overrides/` | Personalizzazioni del tema (footer) |

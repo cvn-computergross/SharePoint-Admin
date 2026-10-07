@@ -133,8 +133,14 @@ def main(src, site):
         text = convert(md.read_text(encoding="utf-8"), checklist=md.name.startswith("Esercizio-"))
         dest.write_text(text, encoding="utf-8")
 
-    copy_md(src / "README.md", docs / "index.md")
-    nav = ["  - Home: index.md"]
+    # pagina iniziale del sito: la guida al laboratorio (website/home.md),
+    # già scritta in sintassi MkDocs; in mancanza si usa il README della repo
+    home = site / "home.md"
+    if home.is_file():
+        shutil.copyfile(home, docs / "index.md")
+    else:
+        copy_md(src / "README.md", docs / "index.md")
+    nav = ["  - Guida al laboratorio: index.md"]
     for mod in sorted(src.glob("Modulo-*")):
         copy_md(mod / "README.md", docs / mod.name / "index.md")
         if (mod / "images").is_dir():

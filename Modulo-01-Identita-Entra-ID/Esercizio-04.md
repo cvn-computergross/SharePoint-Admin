@@ -2,7 +2,7 @@
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 
-## Passo 1 – Installazione strumenti dal pacchetto del corso
+## Passo 1 · Installazione strumenti dal pacchetto del corso
 
 Accedere alla VM `SEA-DEV1` come administrator locale.
 
@@ -17,7 +17,7 @@ Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1
 4. Completare l'installazione guidata.
 5. Riavviare la VM.
 
-## Passo 2 – Abilitare la modalità "PowerShell ISE" in VS Code
+## Passo 2 · Abilitare la modalità "PowerShell ISE" in VS Code
 
 1. Aprire **Visual Studio Code**.
 2. Nella barra laterale sinistra, selezionare l'icona **Estensioni** (quella con i quattro quadratini).
@@ -40,7 +40,7 @@ Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1
 
 ![Esercizio 4 – Passo 2 – Abilitare la modalità "PowerShell ISE" in VS Code](images/es04-06.png)
 
-## Passo 3 – Installazione dei moduli PowerShell (MS Graph, PnP, SPO)
+## Passo 3 · Installazione dei moduli PowerShell (MS Graph, PnP, SPO)
 
 1. In VS Code, aprire il file di script fornito dal corso:
 

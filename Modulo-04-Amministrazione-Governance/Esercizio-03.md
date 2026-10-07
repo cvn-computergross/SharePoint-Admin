@@ -2,7 +2,7 @@
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 
-## Passo 1 – Accesso al SharePoint Admin Center
+## Passo 1 · Accesso al SharePoint Admin Center
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -12,7 +12,7 @@
    https://admin.microsoft.com
    ```
 
-## Passo 2 – SharePoint: Pages
+## Passo 2 · SharePoint: Pages
 
 1. Aprire **Show all > Admin centers > SharePoint**.
 2. Nel menu laterale, selezionare **Settings**.
@@ -40,7 +40,7 @@
 > [!WARNING]
 > **Errore comune:** molti amministratori pensano che questa impostazione serva a impedire ai **Member** di modificare le pagine esistenti. **Non è così**: questa policy blocca solo la **creazione di nuove pagine** e i **commenti**, non la modifica di pagine già presenti. Per limitare davvero la possibilità di un Member di modificare le pagine, è necessario intervenire sui **permessi** del sito, come mostrato nel **Modulo 3 - Esercizio 6 (Passo 2)**.
 
-## Passo 3 – SharePoint: Site Storage Limit
+## Passo 3 · SharePoint: Site Storage Limit
 
 1. Nella pagina **Settings**, individuare la sezione **SharePoint** e selezionare **Site storage limit**.
 2. Cambiare l'impostazione da **Automatic** a **Manual**.
@@ -54,7 +54,7 @@
 >
 > Questa impostazione riguarda esclusivamente **SharePoint Online** e **non OneDrive for Business** (per il quale esiste un'impostazione separata, vedi Passo 5). Inoltre, **non si applica automaticamente** alle librerie SharePoint già esistenti: la nuova gestione manuale vale per le quote assegnate da questo momento in poi.
 
-## Passo 4 – OneDrive: Retention
+## Passo 4 · OneDrive: Retention
 
 1. Nella pagina **Settings**, individuare la sezione **OneDrive** e selezionare **Retention**.
 2. Modificare il valore da **30** giorni a **365** giorni.
@@ -71,7 +71,7 @@
 >
 > [Impostare la retention di OneDrive per gli utenti eliminati](https://learn.microsoft.com/sharepoint/set-retention) · [OneDrive retention and deletion](https://learn.microsoft.com/sharepoint/retention-and-deletion)
 
-## Passo 5 – OneDrive: Storage Limit
+## Passo 5 · OneDrive: Storage Limit
 
 1. Nella pagina **Settings**, sezione **OneDrive**, selezionare **Storage limit**.
 2. Modificare il valore da **1024 GB** a **2048 GB**.
@@ -82,7 +82,7 @@
 > [!NOTE]
 > Questa impostazione definisce il limite di spazio di archiviazione OneDrive per **tutti gli utenti** (nuovi) che dispongono di una licenza idonea. **Non si applica retroattivamente** agli utenti per i quali sia già stato impostato un limite specifico e diverso (come, ad esempio, User02 al Passo 2 dell'Esercizio 1, dove la quota è stata limitata manualmente a 512 GB): quella impostazione individuale resta prioritaria.
 
-## Passo 6 – OneDrive: Sync (blocco estensioni file)
+## Passo 6 · OneDrive: Sync (blocco estensioni file)
 
 1. Nella pagina **Settings**, sezione **OneDrive**, selezionare **Sync**.
 2. Selezionare la casella **Block upload of specific file types**.
@@ -105,7 +105,7 @@ msi
 >
 > [Bloccare la sincronizzazione di tipi di file specifici](https://learn.microsoft.com/sharepoint/block-file-types)
 
-## Passo 7 – Verifica con User04 e User03
+## Passo 7 · Verifica con User04 e User03
 
 **Accedere alla VM `SEA-DEV1` con le credenziali di Admin**
 

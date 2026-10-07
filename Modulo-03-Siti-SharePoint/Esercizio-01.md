@@ -2,7 +2,7 @@
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 
-## Passo 1 – Accesso all'Admin Center e a SharePoint
+## Passo 1 · Accesso all'Admin Center e a SharePoint
 
 **Accedere alla VM `SEA-DEV1` come User01 con credenziali admin**
 
@@ -16,7 +16,7 @@
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center e a SharePoint](images/es01-01.png)
 
-## Passo 2 – Creazione del sito Team Site "Marketing Department"
+## Passo 2 · Creazione del sito Team Site "Marketing Department"
 
 Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
@@ -28,7 +28,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ![Esercizio 1 – Passo 2 – Creazione del sito Team Site "Marketing Department"](images/es01-03.png)
 
-### Sezione 1 – Informazioni di base
+### Sezione 1 · Informazioni di base
 
 3. Compilare i campi:
     - **Site Name**:
@@ -49,7 +49,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ![Esercizio 1 – Sezione 1 – Informazioni di base](images/es01-04.png)
 
-### Sezione 2 – Impostazioni aggiuntive
+### Sezione 2 · Impostazioni aggiuntive
 
 4. Selezionare **Next** e compilare:
     - **Privacy settings**: `Private`
@@ -69,11 +69,11 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 >
 > [Gestire chi può creare gruppi Microsoft 365](https://learn.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
-## Passo 3 – Creazione guidata di un Site Communication e di un Team Site senza gruppo M365
+## Passo 3 · Creazione guidata di un Site Communication e di un Team Site senza gruppo M365
 
 > Questi due siti servono solo a mostrare le differenze di tipologia disponibili in fase di creazione: non verranno utilizzati negli esercizi successivi. Usare valori uniformi e prestabiliti, senza personalizzazioni aggiuntive.
 
-### 3.1 – Communication Site
+### 3.1 · Communication Site
 
 1. Tornare su **SharePoint Admin Center > Sites > Active sites > Create**.
 2. Selezionare il tipo **Communication site**.
@@ -100,7 +100,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 
 ![Esercizio 1 – 3.1 – Communication Site](images/es01-06.png)
 
-### 3.2 – Team Site senza Microsoft 365 Group
+### 3.2 · Team Site senza Microsoft 365 Group
 
 1. Ripetere la procedura da **Create**, selezionando questa volta **Browse more site**.
 2. Nella scelta del tipo di collaborazione, selezionare l'opzione **Team site**.

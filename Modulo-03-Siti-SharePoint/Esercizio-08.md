@@ -2,7 +2,7 @@
 
 [← Esercizio 7](Esercizio-07.md) · [Indice modulo →](README.md)
 
-## Passo 1 – Accesso a Microsoft Teams con User02
+## Passo 1 · Accesso a Microsoft Teams con User02
 
 **Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
@@ -16,7 +16,7 @@
 
 ![Esercizio 8 – Passo 1 – Accesso a Microsoft Teams con User02](images/es08-01.png)
 
-## Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente
+## Passo 2 · Creazione del Team a partire dal gruppo Microsoft 365 esistente
 
 1. Nel menu laterale di Teams, selezionare **Chat**.
 2. In alto a sinistra (o in alto a destra, a seconda della versione del client), selezionare **New Items**.

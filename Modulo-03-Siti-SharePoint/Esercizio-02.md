@@ -2,7 +2,7 @@
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 
-## Passo 1 – Accesso al sito con User02
+## Passo 1 · Accesso al sito con User02
 
 **Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 
@@ -16,7 +16,7 @@
 
 2. Inserire le credenziali di **User02** solo se richiesto: essendo User02 già autenticato su Windows/Microsoft 365, l'accesso dovrebbe avvenire in automatico tramite SSO, senza richiedere nuovamente le credenziali.
 
-## Passo 2 – Gestione del menu di navigazione (Edit Navigation)
+## Passo 2 · Gestione del menu di navigazione (Edit Navigation)
 
 1. Nel menu laterale sinistro del sito, in fondo, selezionare **Edit Navigation** (Modifica) per aprire la gestione della navigazione.
 
@@ -37,7 +37,7 @@
 > [!NOTE]
 > Le modifiche alla navigazione sono visibili immediatamente a tutti gli utenti che accedono al sito, in base ai permessi di visualizzazione di ciascuna voce.
 
-## Passo 3 – Change the Look del sito
+## Passo 3 · Change the Look del sito
 
 Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look**
 
@@ -49,13 +49,13 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 
 ![Esercizio 2 – Tema](images/es02-06.png)
 
-### Header – Layout
+### Header · Layout
 
 2. Nella sezione **Header**, impostare il **Layout** su **Extended** (esteso), per un'intestazione più ampia e visivamente d'impatto.
 
 ![Esercizio 2 – Header Layout](images/es02-07.png)
 
-### Header – Design
+### Header · Design
 
 3. Configurare le seguenti opzioni nella sezione **Header > Design**:
 - **Theme**: selezionare `#1267B5 background, white accent`.

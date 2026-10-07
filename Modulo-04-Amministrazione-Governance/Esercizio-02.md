@@ -2,7 +2,7 @@
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 
-## Passo 1 – Accesso al SharePoint Admin Center
+## Passo 1 · Accesso al SharePoint Admin Center
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -16,7 +16,7 @@
 
 ![Esercizio 2 – Passo 1 – Accesso al SharePoint Admin Center](images/es02-01.png)
 
-## Passo 2 – Policy di condivisione esterna (Policies > Sharing)
+## Passo 2 · Policy di condivisione esterna (Policies > Sharing)
 
 Andare su **Policies > Sharing**
 
@@ -50,7 +50,7 @@ Andare su **Policies > Sharing**
 >
 > [Gestire le impostazioni di condivisione per SharePoint e OneDrive](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
 
-## Passo 3 – Access Control: Idle session sign-out
+## Passo 3 · Access Control: Idle session sign-out
 
 Raggiungere **Access control > Idle session sign-out**
 
@@ -72,7 +72,7 @@ Raggiungere **Access control > Idle session sign-out**
 >
 > [Idle session timeout per Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/manage/idle-session-timeout-web-apps)
 
-## Passo 4 – Verifica lato User03 su `SEA-DEV3`
+## Passo 4 · Verifica lato User03 su `SEA-DEV3`
 
 **Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 

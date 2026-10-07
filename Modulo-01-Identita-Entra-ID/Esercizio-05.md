@@ -2,7 +2,7 @@
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 
-## Passo 1 – Registrazione della nuova Enterprise Application (App ID)
+## Passo 1 · Registrazione della nuova Enterprise Application (App ID)
 
 Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
 
@@ -48,7 +48,7 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successi
 >
 > [Panoramica dei permessi Microsoft Graph](https://learn.microsoft.com/graph/permissions-overview)
 
-## Passo 2 – Generazione del certificato da PowerShell
+## Passo 2 · Generazione del certificato da PowerShell
 
 1. Aprire su Visual Studio Code il file:
 
@@ -70,7 +70,7 @@ New-PnPAzureCertificate -OutPfx "C:\Cert\cert.pfx" -OutCert "C:\Cert\cert.cer"
 
 ![Esercizio 5 – Passo 2 – Generazione del certificato da PowerShell](images/es05-08.png)
 
-## Passo 3 – Importazione del certificato PFX sulla VM
+## Passo 3 · Importazione del certificato PFX sulla VM
 
 1. Fare doppio clic sul file **`cert.pfx`** generato al passo precedente.
 2. Si apre la procedura guidata **Certificate Import Wizard**.
@@ -89,7 +89,7 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 
 ![Esercizio 5 – Passo 3 – Importazione del certificato PFX sulla VM](images/es05-10.png)
 
-## Passo 4 – Caricamento del certificato pubblico sull'Enterprise Application
+## Passo 4 · Caricamento del certificato pubblico sull'Enterprise Application
 
 1. Tornare su **Entra ID > App registrations**, selezionare l'app creata al Passo 1.
 2. Andare su **Certificates & secrets > Certificates > Upload certificate**.
@@ -113,7 +113,7 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 >
 > [Credenziali con certificato per le applicazioni](https://learn.microsoft.com/entra/identity-platform/certificate-credentials)
 
-## Passo 5 – Verifica con comandi Microsoft Graph tramite l'Enterprise Application
+## Passo 5 · Verifica con comandi Microsoft Graph tramite l'Enterprise Application
 
 1. Tornare su **Visual Studio Code** con il seguente file aperto:
 

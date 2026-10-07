@@ -5,7 +5,7 @@
 > [!NOTE]
 > In questo modulo si simula un file server on-premises usando **utenti e gruppi locali** della VM `SEA-DEV1`. Il collegamento con gli utenti cloud omonimi avverrà tramite un **file di mapping utenti** (Esercizio 4).
 
-## Passo 1 – Creazione Utenti e Gruppi su Entra
+## Passo 1 · Creazione Utenti e Gruppi su Entra
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin di dominio**
 
@@ -75,7 +75,7 @@
 
 ![Esercizio 1 – Passo 1 – Creazione Utenti e Gruppi su Entra](images/es01-03.png)
 
-## Passo 2 – Creazione degli utenti locali
+## Passo 2 · Creazione degli utenti locali
 
 1. Aprire Computer Management, andare su System Tools > Local Users and Groups > Users
 2. Premere tasto destro e selezionare **New User**.
@@ -129,7 +129,7 @@
 
 ![Esercizio 1 – Utente user07](images/es01-04.png)
 
-## Passo 3 – Creazione dei gruppi locali
+## Passo 3 · Creazione dei gruppi locali
 
 Andare su Computer Management, andare su System Tools > Local Users and Groups > Groups
 
@@ -156,7 +156,7 @@ Andare su Computer Management, andare su System Tools > Local Users and Groups >
 
 ![Esercizio 1 – Gruppo Paghe](images/es01-05.png)
 
-## Passo 4 – Aggiunta degli utenti ai gruppi
+## Passo 4 · Aggiunta degli utenti ai gruppi
 
 1. Fare doppio clic sul gruppo **Fatture** per aprirne le proprietà.
 2. Selezionare la scheda **Members**, poi **Add...**.

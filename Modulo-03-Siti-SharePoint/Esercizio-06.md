@@ -2,7 +2,7 @@
 
 [← Esercizio 5](Esercizio-05.md) · [Indice modulo](README.md) · [Esercizio 7 →](Esercizio-07.md)
 
-## Passo 1 – Verifica iniziale dei permessi di User03 (Member)
+## Passo 1 · Verifica iniziale dei permessi di User03 (Member)
 
 **Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 
@@ -20,7 +20,7 @@
 
 ![Esercizio 6 – Passo 1 – Verifica iniziale dei permessi di User03 (Member)](images/es06-01.png)
 
-## Passo 2 – Restrizione dei permessi a livello di sito (da Owner)
+## Passo 2 · Restrizione dei permessi a livello di sito (da Owner)
 
 **Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 1. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
@@ -98,7 +98,7 @@ Get-SPOSiteGroup `
 >
 > [Gestire gli amministratori dei siti](https://learn.microsoft.com/sharepoint/manage-site-collection-administrators)
 
-## Passo 3 – Permessi univoci sulla libreria "File Condivisi02"
+## Passo 3 · Permessi univoci sulla libreria "File Condivisi02"
 
 1. Aprire la libreria **File Condivisi02**.
 2. Selezionare la rotella delle impostazioni e scegliere **Library settings** (Impostazioni raccolta).
@@ -120,7 +120,7 @@ Get-SPOSiteGroup `
 > [!TIP]
 > Rompere l'ereditarietà a livello di libreria è accettabile; evitare invece permessi univoci su **molti singoli file o cartelle**: rendono la gestione e l'audit difficili e possono degradare le prestazioni.
 
-## Passo 4 – Verifica lato User03 dopo le modifiche ai permessi
+## Passo 4 · Verifica lato User03 dopo le modifiche ai permessi
 
 **Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 
@@ -132,7 +132,7 @@ Get-SPOSiteGroup `
 
 ![Esercizio 6 – Passo 4 – Verifica lato User03 dopo le modifiche ai permessi](images/es06-10.png)
 
-## Passo 5 – Collegamento del sito a OneDrive lato User03
+## Passo 5 · Collegamento del sito a OneDrive lato User03
 
 1. Sempre da **`SEA-DEV3` con User03**, aprire il browser e accedere a `https://portal.office.com` oppure direttamente a `https://tenant_name-my.sharepoint.com` per aprire **OneDrive sul Web**.
 

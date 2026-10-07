@@ -2,7 +2,7 @@
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 
-## Passo 1 – Accesso al SharePoint Admin Center
+## Passo 1 · Accesso al SharePoint Admin Center
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -16,7 +16,7 @@
 
 ![Esercizio 4 – Passo 1 – Accesso al SharePoint Admin Center](images/es04-01.png)
 
-## Passo 2 – Eliminazione del sito Communication
+## Passo 2 · Eliminazione del sito Communication
 
 1. Aprire **Sites > Active sites**
 
@@ -31,7 +31,7 @@
 > [!NOTE]
 > Quando un sito viene eliminato dall'Admin Center, non scompare definitivamente: viene spostato nel **cestino dei siti** (site collection Recycle Bin a livello di tenant), da cui può essere ripristinato entro un periodo limitato.
 
-## Passo 3 – Ripristino del sito eliminato
+## Passo 3 · Ripristino del sito eliminato
 
 1. Andare su **Sites > Deleted Sites**
 2. Individuare il sito **Comunicazioni Aziendali**, ora presente nell'elenco dei siti eliminati.

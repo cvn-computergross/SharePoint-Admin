@@ -2,7 +2,7 @@
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 
-## Passo 1 – Accesso al SharePoint Admin Center
+## Passo 1 · Accesso al SharePoint Admin Center
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -17,7 +17,7 @@
 
 ![Esercizio 5 – Passo 1 – Accesso al SharePoint Admin Center](images/es05-01.png)
 
-## Passo 2 – Report Data Access Governance: Sharing Links
+## Passo 2 · Report Data Access Governance: Sharing Links
 
 Aprire **Reports > Data access governance**
 
@@ -50,7 +50,7 @@ Aprire **Reports > Data access governance**
 >
 > [Report di Data access governance](https://learn.microsoft.com/sharepoint/data-access-governance-reports)
 
-## Passo 3 – Reports da Admin Center 365
+## Passo 3 · Reports da Admin Center 365
 
 Prerequisito:
 1. Vai su **admin.microsoft.com**

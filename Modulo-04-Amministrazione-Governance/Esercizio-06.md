@@ -2,7 +2,7 @@
 
 [← Esercizio 5](Esercizio-05.md) · [Indice modulo →](README.md)
 
-## Passo 1 – Preparazione dell'ambiente PowerShell
+## Passo 1 · Preparazione dell'ambiente PowerShell
 
 **Accesso alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -50,7 +50,7 @@ Connect-PnPOnline -Url $AdminSiteUrl -ClientId $AppId -Tenant $TenantId -Thumbpr
 Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -CertificatePath "C:\Cert\cert.pfx"
 ```
 
-## Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)
+## Script 1 · Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)
 
 1. Prerequisito: su `SEA-DEV3` con **User03** cancellare un documento per metterlo nel cestino di OneDrive.
 2. Su `SEA-DEV1` come Administrator creare la cartella **Temp** in:
@@ -114,7 +114,7 @@ $report | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-03.png)
 
-## Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples
+## Script 2 · Report permessi dei siti (con sottositi), adattato da PnP Script Samples
 
 1. Scaricare **Script2.ps1** presente in:
 
@@ -198,7 +198,7 @@ $permessi | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 
 ![Esercizio 6 – Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples](images/es06-05.png)
 
-## Script 3 – Elenco utenti guest in tutti i siti del tenant
+## Script 3 · Elenco utenti guest in tutti i siti del tenant
 
 Per questo script è necessario avere almeno un **Guest** in un sito SharePoint.
 
@@ -290,7 +290,7 @@ Write-Host "Trovati $($guestReport.Count) guest totali." -ForegroundColor Green
 
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-09.png)
 
-## Script 4 – Audit file nelle librerie documentali
+## Script 4 · Audit file nelle librerie documentali
 
 1. Scaricare **Script4.ps1** presente in:
 

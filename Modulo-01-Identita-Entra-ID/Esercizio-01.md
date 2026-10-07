@@ -2,12 +2,12 @@
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 
-## Passo 1 – Copiare il materiale del corso sul desktop della VM
+## Passo 1 · Copiare il materiale del corso sul desktop della VM
 
 1. Aprire il browser web sulla VM `SEA-DEV1`.
 2. Scaricare il materiale del corso ([Modulo1.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo1.zip)) ed estrarlo sul desktop. Gli zip degli altri moduli sono nella cartella [Materiale](../Materiale/README.md).
 
-## Passo 2 – Accedere a Microsoft Entra
+## Passo 2 · Accedere a Microsoft Entra
 
 1. Accedere come **amministratore del tenant Microsoft 365** al portale:
 
@@ -17,7 +17,7 @@
 
 2. Se richiesto, **impostare la MFA (Multi-Factor Authentication)** seguendo la procedura guidata proposta dal portale.
 
-## Passo 3 – Verificare/configurare i metodi di autenticazione
+## Passo 3 · Verificare/configurare i metodi di autenticazione
 
 Entrare su **Entra ID > Authentication methods > Policy**.
 
@@ -46,7 +46,7 @@ Entrare su **Entra ID > Authentication methods > Policy**.
 >
 > [Gestire i metodi di autenticazione in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods-manage)
 
-## Passo 4 – Creare la Conditional Access Policy per la MFA
+## Passo 4 · Creare la Conditional Access Policy per la MFA
 
 Entrare su **Entra ID > Conditional Access > + Create new policy**.
 

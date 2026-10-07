@@ -2,7 +2,7 @@
 
 [← Indice modulo](README.md) · [Indice modulo →](README.md)
 
-## Passo 0 – Installazione del client OneDrive da CMD
+## Passo 0 · Installazione del client OneDrive da CMD
 
 > [!IMPORTANT]
 > La reinstallazione di OneDrive descritta in questo passo va eseguita su **entrambe** le macchine: `SEA-DEV2` (con **User02**) e `SEA-DEV3` (con **User03**).
@@ -34,7 +34,7 @@
 >
 > [Installare l'app di sincronizzazione per-machine](https://learn.microsoft.com/sharepoint/per-machine-installation)
 
-## Passo 1 – Primo accesso al client OneDrive con User02
+## Passo 1 · Primo accesso al client OneDrive con User02
 
 1. Avviare il client **OneDrive** (di solito parte automaticamente dopo l'installazione, oppure cercarlo nel menu Start).
 
@@ -52,7 +52,7 @@
 
 ![Esercizio 1 – Passo 1 – Primo accesso al client OneDrive con User02](images/es01-07.png)
 
-## Passo 2 – Copia dei file da Modulo2/Dati sulla root di OneDrive
+## Passo 2 · Copia dei file da Modulo2/Dati sulla root di OneDrive
 
 1. Aprire la cartella del materiale del corso:
 
@@ -79,7 +79,7 @@
 >
 > [Nomi e tipi di file non validi in OneDrive e SharePoint](https://support.microsoft.com/office/64883a5d-228e-48f5-b3d2-eb39e07630fa)
 
-## Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)
+## Passo 3 · Condivisione di Powerpoint01.pptx in modifica (Can Edit)
 
 1. Da **User02**, fare clic destro su **`Powerpoint01.pptx`** nella cartella OneDrive e selezionare **Share** (Condividi).
 
@@ -112,7 +112,7 @@
 
 9. **Lasciare il file aperto** nel browser di `SEA-DEV3` (necessario per il Passo 5).
 
-## Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese
+## Passo 4 · Condivisione con link "Can't Download" e scadenza a 1 mese
 
 1. Tornare sulla VM `SEA-DEV2`.
 2. Da **User02**, condividere nuovamente **`Powerpoint01.pptx`**, questa volta con l'opzione **Can't Download** (Blocca download).
@@ -143,7 +143,7 @@
 >
 > [Best practice per la condivisione con utenti non autenticati](https://learn.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing)
 
-## Passo 5 – Co-authoring e cronologia versioni
+## Passo 5 · Co-authoring e cronologia versioni
 
 1. Tornare su `SEA-DEV2` con **User02** e aprire **`Powerpoint01.pptx`** dalla cartella OneDrive locale.
 2. Apportare una modifica (es. aggiungere del testo su una slide) e **salvare**.
@@ -161,7 +161,7 @@
 
 ![Esercizio 1 – Passo 5 – Co-authoring e cronologia versioni](images/es01-21.png)
 
-## Passo 6 – Gestione degli accessi condivisi (Manage Access)
+## Passo 6 · Gestione degli accessi condivisi (Manage Access)
 
 1. Sempre da **User02** su `SEA-DEV2`, fare clic destro su **`Powerpoint01.pptx`** > **OneDrive** > **Manage Access** (Gestisci accesso).
 
@@ -187,7 +187,7 @@
 
 ![Esercizio 1 – Passo 6 – Gestione degli accessi condivisi (Manage Access)](images/es01-26.png)
 
-## Passo 7 – OneDrive lato User03 via Web (Edge)
+## Passo 7 · OneDrive lato User03 via Web (Edge)
 
 1. Accedere a **`SEA-DEV3` con User03** e aprire **Microsoft Edge**.
 2. Accedere a OneDrive via Web (`https://portal.office.com` e poi OneDrive).
@@ -204,7 +204,7 @@
 
 ![Esercizio 1 – Passo 7 – OneDrive lato User03 via Web (Edge)](images/es01-28.png)
 
-## Passo 8 – Eliminazione cartelle e recupero dal cestino
+## Passo 8 · Eliminazione cartelle e recupero dal cestino
 
 1. Tornare su `SEA-DEV2` con **User02**.
 2. Dalla cartella OneDrive locale, **eliminare** le cartelle **`FOLDER01`** e **`FOLDER02`**.
@@ -242,7 +242,7 @@
 >
 > [Ripristinare elementi dal cestino della raccolta siti](https://learn.microsoft.com/sharepoint/restore-deleted-items-from-site-collection-recycle-bin)
 
-## Passo 9 – "Always keep on this device" e "Free up space"
+## Passo 9 · "Always keep on this device" e "Free up space"
 
 1. Su `SEA-DEV2`, fare clic destro sull'icona **OneDrive** nella barra delle applicazioni (o sulla cartella OneDrive in Esplora file) e selezionare **"Always keep on this device"** (Mantieni sempre su questo dispositivo).
 
@@ -260,7 +260,7 @@
 
 ![Esercizio 1 – Passo 9 – "Always keep on this device" e "Free up space"](images/es01-39.png)
 
-## Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da `SEA-DEV3`, User03)
+## Passo 10 · Configurazione delle policy OneDrive tramite GPEDIT (da `SEA-DEV3`, User03)
 
 1. Andare su `SEA-DEV3` come **User03**.
 2. Copiare il file **`onedrive.admx`** da **MATERIALE_STUDENTI/Modulo2/Installer/** (da [Modulo2.zip](../Materiale/README.md)) nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.
@@ -321,7 +321,7 @@ Premere **Enabled** e poi Ok.
 >
 > [Usare i criteri OneDrive per controllare la sincronizzazione](https://learn.microsoft.com/sharepoint/use-group-policy)
 
-## Passo 11 – Ulteriori policy OneDrive
+## Passo 11 · Ulteriori policy OneDrive
 
 **D) Use OneDrive Files On-Demand**
 
@@ -355,7 +355,7 @@ Riavviare `SEA-DEV3` per applicare tutte le policy configurate ai Passi 10 e 11.
 >
 > [Reindirizzare e spostare le cartelle note di Windows in OneDrive](https://learn.microsoft.com/sharepoint/redirect-known-folders)
 
-## Passo 12 – Login con User03 e verifica delle policy applicate
+## Passo 12 · Login con User03 e verifica delle policy applicate
 
 1. Dopo il riavvio, accedere a **`SEA-DEV3` con le credenziali di User03**.
 2. Verificare i seguenti comportamenti automatici, conseguenza delle policy configurate:

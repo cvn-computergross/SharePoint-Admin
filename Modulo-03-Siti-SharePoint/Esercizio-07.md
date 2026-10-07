@@ -2,7 +2,7 @@
 
 [← Esercizio 6](Esercizio-06.md) · [Indice modulo](README.md) · [Esercizio 8 →](Esercizio-08.md)
 
-## Passo 1 – Accesso al sito con User02
+## Passo 1 · Accesso al sito con User02
 
 **Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
@@ -13,7 +13,7 @@
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
-## Passo 2 – Site Information
+## Passo 2 · Site Information
 
 1. Selezionare la rotella delle impostazioni (in alto a destra) e scegliere **Site information**.
 
@@ -26,7 +26,7 @@
 
 ![Esercizio 7 – Passo 2 – Site Information](images/es07-02.png)
 
-## Passo 3 – Add an App
+## Passo 3 · Add an App
 
 1. Dalla rotella delle impostazioni, selezionare **Add an app**.
 
@@ -55,7 +55,7 @@
 >
 > [Gestire le app con il sito App Catalog](https://learn.microsoft.com/sharepoint/use-app-catalog)
 
-## Passo 4 – Site Usage
+## Passo 4 · Site Usage
 
 1. Tornare su `SEA-DEV2` con User02 e aprire Marketing Department.
 2. Dalla rotella delle impostazioni, selezionare **Site usage**.
@@ -66,7 +66,7 @@
 
 ![Esercizio 7 – Passo 4 – Site Usage](images/es07-08.png)
 
-## Passo 5 – View all site settings (solo visualizzazione)
+## Passo 5 · View all site settings (solo visualizzazione)
 
 1. Dalla rotella delle impostazioni, selezionare **Site information**, poi in fondo al pannello selezionare **View all site settings**.
 

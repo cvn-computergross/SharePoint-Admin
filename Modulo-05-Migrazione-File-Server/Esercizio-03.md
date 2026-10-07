@@ -2,7 +2,7 @@
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 
-## Passo 1 – Creazione del sito Amministrazione
+## Passo 1 · Creazione del sito Amministrazione
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -36,7 +36,7 @@
 
 8. Selezionare **Create Site** per completare la creazione.
 
-## Passo 2 – Creazione delle document library
+## Passo 2 · Creazione delle document library
 
 1. Accedere al sito **Amministrazione** appena creato.
 2. Nella home del sito, selezionare **+ New > Document library > Blank library**.
@@ -65,7 +65,7 @@
 
 ![Esercizio 3 – Passo 2 – Creazione delle document library](images/es03-06.png)
 
-## Passo 3 – Installazione del Migration Agent
+## Passo 3 · Installazione del Migration Agent
 
 1. Tornare su `SEA-DEV1` e aprire lo **SharePoint Admin Center**, andare su **Migration > File share**.
 2. Selezionare **Get started**.

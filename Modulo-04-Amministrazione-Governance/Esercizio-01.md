@@ -2,7 +2,7 @@
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 
-## Passo 1 – Accesso all'Admin Center
+## Passo 1 · Accesso all'Admin Center
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -16,7 +16,7 @@
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center](images/es01-01.png)
 
-## Passo 2 – Gestione delle impostazioni OneDrive di User02
+## Passo 2 · Gestione delle impostazioni OneDrive di User02
 
 1. Nell'elenco degli utenti attivi, selezionare **User02**.
 2. Nel pannello laterale che si apre, selezionare la scheda **OneDrive**.
@@ -50,7 +50,7 @@
 >
 > [Accedere ai file OneDrive di un altro utente](https://learn.microsoft.com/sharepoint/user-onedrive-access)
 
-## Passo 3 – Verifica lato User02 su `SEA-DEV2`
+## Passo 3 · Verifica lato User02 su `SEA-DEV2`
 
 **Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 

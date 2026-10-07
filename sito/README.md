@@ -1,6 +1,7 @@
 # Sorgenti del sito GitHub Pages
 
 Questa cartella contiene i componenti del sito (tema MkDocs Material, loghi, CSS, script di build).
+
 Le guide **non** vanno copiate qui: il sito si genera dalle cartelle `Modulo-*`, `Materiale` e dal `README.md` della repo.
 
 Sito pubblicato: <https://cvn-computergross.github.io/SharePoint-Admin/>

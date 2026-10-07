@@ -5,7 +5,7 @@
 > [!NOTE]
 > In questo esercizio le password temporanee sono valori **di laboratorio**: non riutilizzarle in ambienti reali.
 
-## Passo 1 – Creazione di USER02 e primo accesso da `SEA-DEV2`
+## Passo 1 · Creazione di USER02 e primo accesso da `SEA-DEV2`
 
 Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
@@ -36,7 +36,7 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-03.png)
 
-## Passo 2 – Creazione di USER03 e primo accesso da `SEA-DEV3`
+## Passo 2 · Creazione di USER03 e primo accesso da `SEA-DEV3`
 
 Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
@@ -64,7 +64,7 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-06.png)
 
-## Passo 3 – Creazione del Security Group statico
+## Passo 3 · Creazione del Security Group statico
 
 Riaprire la VM `SEA-DEV1` e recarsi su https://entra.microsoft.com/.
 
@@ -97,7 +97,7 @@ Configurare il gruppo con le seguenti specifiche:
 
 ![Esercizio 3 – Passo 3 – Creazione del Security Group statico](images/es03-09.png)
 
-## Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo
+## Passo 4 · Assegnazione licenze Microsoft 365 E5 al gruppo
 
 Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licenses**.
 
@@ -127,7 +127,7 @@ Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licen
 >
 > [Assegnare licenze tramite appartenenza a gruppi](https://learn.microsoft.com/entra/identity/users/licensing-groups-assign)
 
-## Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
+## Passo 5 · Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
 
 Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Active Teams & Groups > Add a Microsoft 365 group** con le seguenti specifiche:
 
@@ -144,7 +144,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 6. Selezionare **Create Group** per salvare il gruppo.
 
-## Passo 6 – Verifica lato USER03 (da `SEA-DEV3`) e invito guest
+## Passo 6 · Verifica lato USER03 (da `SEA-DEV3`) e invito guest
 
 1. Accedere alla **VM `SEA-DEV3` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User03**.
@@ -184,7 +184,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 >
 > [Configurare le impostazioni di collaborazione esterna](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
 
-## Passo 7 – Verifica lato USER02 (da `SEA-DEV2`): approvazione della richiesta
+## Passo 7 · Verifica lato USER02 (da `SEA-DEV2`): approvazione della richiesta
 
 1. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.
@@ -203,7 +203,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 5. **Autorizzare** la richiesta.
 
-## Passo 8 – Invitare external users da Owner
+## Passo 8 · Invitare external users da Owner
 
 1. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.

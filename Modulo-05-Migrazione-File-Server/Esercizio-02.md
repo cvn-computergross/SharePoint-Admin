@@ -2,7 +2,7 @@
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 
-## Passo 1 – Creazione della struttura di cartelle
+## Passo 1 · Creazione della struttura di cartelle
 
 **Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin**
 
@@ -31,7 +31,7 @@
 
 ![Esercizio 2 – Passo 1 – Creazione della struttura di cartelle](images/es02-03.png)
 
-## Passo 2 – Condivisione e permessi della cartella user06
+## Passo 2 · Condivisione e permessi della cartella user06
 
 1. Selezionare la cartella **`user06`** (dentro `HomeUsers`), tasto destro **> Properties**.
 
@@ -69,7 +69,7 @@
 >
 > [Permessi di file e cartelle durante la migrazione](https://learn.microsoft.com/sharepointmigration/understanding-permissions-when-migrating)
 
-## Passo 3 – Condivisione e permessi della cartella Fatture
+## Passo 3 · Condivisione e permessi della cartella Fatture
 
 1. Selezionare la cartella **`Fatture`** (dentro `Amministrazione`), tasto destro **> Properties**.
 2. Selezionare la scheda **Sharing**, poi condividere la cartella.
@@ -83,7 +83,7 @@
 7. Impostare il permesso su **Full control**.
 8. Selezionare **OK**, poi nuovamente **OK**.
 
-## Passo 4 – Condivisione e permessi della cartella Paghe
+## Passo 4 · Condivisione e permessi della cartella Paghe
 
 1. Selezionare la cartella **`Paghe`** (dentro `Amministrazione`), tasto destro **> Properties**.
 2. Selezionare la scheda **Sharing**, poi condividere la cartella.
@@ -100,7 +100,7 @@
 
 8. Selezionare **OK**, poi nuovamente **OK**.
 
-## Passo 5 – Condivisione e permessi della cartella Generale
+## Passo 5 · Condivisione e permessi della cartella Generale
 
 1. Selezionare la cartella **`Generale`** (dentro `Amministrazione`), tasto destro **> Properties**.
 
@@ -126,7 +126,7 @@
 
 12. Selezionare **OK**, poi nuovamente **OK** per chiudere la finestra avanzata.
 
-## Passo 6 – Copia dei file del materiale del corso
+## Passo 6 · Copia dei file del materiale del corso
 
 1. Aprire la cartella del materiale del corso **Modulo5/Data/**.
 2. Copiare il contenuto secondo questa corrispondenza (se non già presente nelle cartelle):

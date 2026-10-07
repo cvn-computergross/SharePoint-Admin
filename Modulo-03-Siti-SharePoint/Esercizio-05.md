@@ -2,7 +2,7 @@
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 
-## Passo 1 – Accesso al sito con User02
+## Passo 1 · Accesso al sito con User02
 
 **Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
@@ -14,7 +14,7 @@
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
-## Passo 2 – Modifica della Home Page
+## Passo 2 · Modifica della Home Page
 
 1. Nella home del sito, selezionare **Edit** (in alto a destra della pagina).
 
@@ -59,7 +59,7 @@
 >
 > [Usare le web part nelle pagine SharePoint](https://support.microsoft.com/office/336e8e92-3e2d-4298-ae01-d404bbe751e0)
 
-## Passo 3 – Creazione di una nuova pagina
+## Passo 3 · Creazione di una nuova pagina
 
 1. Nel menu laterale, selezionare **Home > + New > Page**.
 2. Scegliere Create Blank e assegnare come titolo **`Novità Marketing`**.
@@ -73,7 +73,7 @@
 
 4. Selezionare **Publish** per pubblicare la nuova pagina.
 
-## Passo 4 – Promuovere la pagina a Home Page
+## Passo 4 · Promuovere la pagina a Home Page
 
 1. Tornare su **Pages**, individuare la pagina **Novità Marketing** appena creata.
 2. Selezionare i tre puntini (**...**) accanto alla pagina e scegliere **Promote > Make homepage** (Imposta come pagina iniziale).
@@ -86,7 +86,7 @@
 
 5. Ripetere la stessa procedura sulla pagina originale (**Home**) per **ripristinarla come Home Page**: da **Pages**, selezionare i tre puntini sulla pagina **Home** e scegliere nuovamente **Promote > Make homepage**.
 
-## Passo 5 – Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 5 · Verifica lato User03 (membro) su `SEA-DEV3`
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.

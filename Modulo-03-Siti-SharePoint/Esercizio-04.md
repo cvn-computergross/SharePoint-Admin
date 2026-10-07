@@ -2,7 +2,7 @@
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 
-## Passo 1 – Accesso al sito con User02
+## Passo 1 · Accesso al sito con User02
 
 **Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
@@ -14,7 +14,7 @@
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
-## Passo 2 – Creazione di una nuova lista da zero
+## Passo 2 · Creazione di una nuova lista da zero
 
 1. Nella home del sito, selezionare **+ New > List**.
 
@@ -52,7 +52,7 @@
 | **Revisione Brochure Prodotto X** | Materiale Grafico | Media    | 30/09/2026    | No         | Giulia Bianchi |
 | **Newsletter Mensile Settembre**  | Email Marketing   | Bassa    | 10/09/2026    | Sì         | Luca Verdi     |
 
-## Passo 3 – Importazione di una lista da un foglio Excel
+## Passo 3 · Importazione di una lista da un foglio Excel
 
 1. Tornare alla home del sito e selezionare **+ New > List**.
 2. Scegliere l'opzione **From Excel**.
@@ -65,7 +65,7 @@
 > [!NOTE]
 > Per l'importazione da Excel i dati devono essere formattati come **tabella** (Inserisci > Tabella): SharePoint propone il tipo di ogni colonna in base al contenuto, modificabile prima della creazione.
 
-## Passo 4 – Personalizzazione del modulo (Form) della lista
+## Passo 4 · Personalizzazione del modulo (Form) della lista
 
 1. Aprire la lista **Richieste Marketing** creata al Passo 2.
 2. Selezionare **Forms**.
@@ -92,7 +92,7 @@
 
 ![Esercizio 4 – Passo 4 – Personalizzazione del modulo (Form) della lista](images/es04-06.png)
 
-## Passo 5 – Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 5 · Verifica lato User03 (membro) su `SEA-DEV3`
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.

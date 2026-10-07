@@ -2,7 +2,7 @@
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 
-## Passo 1 – Accesso a Microsoft Entra
+## Passo 1 · Accesso a Microsoft Entra
 
 1. Aprire il browser web sulla VM `SEA-DEV1`, dopo aver effettuato l'accesso come **administrator locale**.
 2. Accedere come **amministratore del tenant Microsoft 365** al portale:
@@ -13,7 +13,7 @@
 
 3. Se richiesto, **impostare la MFA (Multi-Factor Authentication)** seguendo la procedura guidata proposta dal portale.
 
-## Passo 2 – Creazione del nuovo utente
+## Passo 2 · Creazione del nuovo utente
 
 Entrare su **Entra ID > Users > New user > Create new user**.
 
@@ -36,7 +36,7 @@ Entrare su **Entra ID > Users > New user > Create new user**.
 > [!NOTE]
 > Prendere nota del valore esatto scelto per l'attributo (es. `Department = Marketing`): dovrà essere riutilizzato **identico** nella regola del gruppo dinamico al passo successivo.
 
-## Passo 3 – Creazione del gruppo dinamico
+## Passo 3 · Creazione del gruppo dinamico
 
 Andare su **Entra ID > Groups > New group**.
 
@@ -89,7 +89,7 @@ Configurare il gruppo seguendo queste specifiche:
 >
 > [Regole di membership dinamica per i gruppi](https://learn.microsoft.com/entra/identity/users/groups-dynamic-membership)
 
-## Passo 4 – Verifica dell'appartenenza al gruppo
+## Passo 4 · Verifica dell'appartenenza al gruppo
 
 1. Andare su **Entra ID > Groups**, selezionare il gruppo dinamico appena creato.
 2. Aprire la sezione **Members**.

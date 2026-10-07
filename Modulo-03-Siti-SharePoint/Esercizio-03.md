@@ -2,7 +2,7 @@
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 
-## Passo 1 – Accesso al sito con User02
+## Passo 1 · Accesso al sito con User02
 
 **Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
@@ -14,7 +14,7 @@
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
-## Passo 2 – Creazione della libreria "File Condivisi02"
+## Passo 2 · Creazione della libreria "File Condivisi02"
 
 1. Nella home del sito, selezionare **+ New > Document library > Blank library**.
 
@@ -33,7 +33,7 @@
 > [!NOTE]
 > Il sito dispone ora di due librerie documentali: **File Condivisi01** (la libreria "Documents" rinominata nell'Esercizio 2) e **File Condivisi02** (appena creata).
 
-## Passo 3 – Copia dei file del materiale nelle librerie
+## Passo 3 · Copia dei file del materiale nelle librerie
 
 1. Aprire la cartella del materiale del corso **MATERIALE_STUDENTI/Modulo3/Data/**.
 2. Copiare Folder1 nella libreria **File Condivisi01**.
@@ -41,7 +41,7 @@
 
 ![Esercizio 3 – Passo 3 – Copia dei file del materiale nelle librerie](images/es03-03.png)
 
-## Passo 4 – Esempi di metadati e colonne personalizzate
+## Passo 4 · Esempi di metadati e colonne personalizzate
 
 1. Aprire la libreria **File Condivisi01**.
 2. Selezionare **+ Add column** e creare le seguenti colonne di esempio:
@@ -74,7 +74,7 @@
 >
 > [Creare e gestire i tipi di contenuto](https://learn.microsoft.com/sharepoint/create-content-type)
 
-## Passo 5 – Esempi di viste (condivise o personali)
+## Passo 5 · Esempi di viste (condivise o personali)
 
 1. Nella libreria **File Condivisi01**, selezionare **Add view** (accanto al nome della vista corrente, es. "All Documents").
 2. Creare una nuova vista con nome **`Vista Confidenziali`**:
@@ -101,7 +101,7 @@
 >
 > [Gestire elenchi e raccolte di grandi dimensioni](https://support.microsoft.com/office/b8588dae-9387-48c2-9248-c24122f07c59)
 
-## Passo 6 – Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 6 · Verifica lato User03 (membro) su `SEA-DEV3`
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito:

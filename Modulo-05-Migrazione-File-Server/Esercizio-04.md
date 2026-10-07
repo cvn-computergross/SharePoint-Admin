@@ -2,7 +2,7 @@
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo →](README.md)
 
-## Passo 1 – Scansione dei percorsi sorgente
+## Passo 1 · Scansione dei percorsi sorgente
 
 **Accesso alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
@@ -39,7 +39,7 @@
   \\SEA-DEV1\user06
   ```
 
-## Passo 2 – Migrazione della cartella Fatture verso SharePoint
+## Passo 2 · Migrazione della cartella Fatture verso SharePoint
 
 1. Sempre su **Migration > File share > View task**, nella sezione **Scan** individuare l'elemento **`\\SEA-DEV1\Fatture`**.
 2. Selezionare l'elemento e, dal menu, scegliere **Copy to migrations**.
@@ -86,7 +86,7 @@
 >
 > [Creare un file di mapping utenti](https://learn.microsoft.com/sharepointmigration/mm-user-mapping-file) · [Impostazioni di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-settings)
 
-## Passo 3 – Migrazione della cartella Paghe verso SharePoint
+## Passo 3 · Migrazione della cartella Paghe verso SharePoint
 
 1. Tornare su **Migration > File share > View task**, sezione **Scan**, individuare l'elemento **`\\SEA-DEV1\Paghe`**.
 2. Selezionare l'elemento e scegliere **Copy to migrations**.
@@ -123,7 +123,7 @@
 - Lasciare il resto delle opzioni sui valori predefiniti.
 7. Selezionare **Run**.
 
-## Passo 4 – Migrazione della cartella Generale verso SharePoint
+## Passo 4 · Migrazione della cartella Generale verso SharePoint
 
 1. Tornare su **Migration > File share > View task**, sezione **Scan**, individuare l'elemento **`\\SEA-DEV1\Generale`**.
 2. Selezionare l'elemento e scegliere **Copy to migrations**.
@@ -162,7 +162,7 @@
 
 ![Esercizio 4 – Passo 4 – Migrazione della cartella Generale verso SharePoint](images/es04-08.png)
 
-## Passo 5 – Migrazione della cartella user06 verso OneDrive
+## Passo 5 · Migrazione della cartella user06 verso OneDrive
 
 1. Tornare su **Migration > File share > View task**, sezione **Scan**, individuare l'elemento **`\\SEA-DEV1\user06`**.
 2. Selezionare l'elemento e scegliere **Copy to migrations**.
@@ -207,7 +207,7 @@
 >
 > [Pre-provisioning di OneDrive](https://learn.microsoft.com/sharepoint/pre-provision-accounts)
 
-## Passo 6 – Monitoraggio dell'avanzamento
+## Passo 6 · Monitoraggio dell'avanzamento
 
 1. Su **Migrations > File share**, selezionare la scheda **Migration**.
 2. Osservare l'avanzamento dei quattro task creati (Fatture, Paghe, Generale, user06).
@@ -220,7 +220,7 @@
 >
 > [Risolvere i problemi di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-troubleshoot)
 
-## Passo 7 – Verifica lato user06
+## Passo 7 · Verifica lato user06
 
 1. Aprire una finestra del browser in **modalità anonima/InPrivate**.
 2. Accedere a `https://myapps.microsoft.com` con le credenziali di **`user06@TENANT.onmicrosoft.com`**, con password `Computergross@!`.
@@ -282,7 +282,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
 
 6. Al termine dei test, effettuare **Sign out** e chiudere il browser.
 
-## Passo 8 – Verifica lato user07
+## Passo 8 · Verifica lato user07
 
 1. Aprire una nuova finestra del browser in **modalità anonima/InPrivate**.
 2. Accedere a `https://myapps.microsoft.com` con le credenziali di **`user07@tenant_name.onmicrosoft.com`**, con password `Computergross@!`.

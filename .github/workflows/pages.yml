@@ -1,5 +1,5 @@
 # Aggiorna il sito GitHub Pages.
-#   main        -> guide (Modulo-*, Materiale, README) + sorgenti del sito (cartella sito/)
+#   main        -> guide (Modulo-*, Materiale, README) + sorgenti del sito (cartella website/)
 #   GitHub-Page -> sito compilato (HTML), riscritto a ogni esecuzione: non modificarlo a mano
 # GitHub Pages pubblica il branch GitHub-Page (Settings > Pages > Deploy from a branch).
 name: Aggiorna sito GitHub Pages
@@ -31,19 +31,19 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: sito/requirements.txt
+          cache-dependency-path: website/requirements.txt
 
       - name: Installa MkDocs
-        run: pip install -r sito/requirements.txt
+        run: pip install -r website/requirements.txt
 
       - name: Genera le pagine dalle guide
-        run: python sito/scripts/build_docs.py . sito
+        run: python website/scripts/build_docs.py . website
 
       - name: Compila e pubblica sul branch GitHub-Page
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           mkdocs gh-deploy --strict --force --no-history \
-            --config-file sito/mkdocs.gen.yml \
+            --config-file website/mkdocs.gen.yml \
             --remote-branch GitHub-Page \
             --message "Aggiornamento sito da main {sha}"

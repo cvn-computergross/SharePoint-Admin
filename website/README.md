@@ -29,9 +29,9 @@ Dalla cartella principale della repo:
 
 ```powershell
 python -m venv .venv
-.venv\Scripts\pip install -r sito/requirements.txt
-python sito/scripts/build_docs.py . sito
-.venv\Scripts\mkdocs serve -f sito/mkdocs.gen.yml
+.venv\Scripts\pip install -r website/requirements.txt
+python website/scripts/build_docs.py . website
+.venv\Scripts\mkdocs serve -f website/mkdocs.gen.yml
 ```
 
-Aprire <http://127.0.0.1:8000>. I file generati (`sito/docs/index.md`, `sito/docs/Modulo-*`, `sito/docs/Materiale`, `sito/mkdocs.gen.yml`) non vanno committati.
+Aprire <http://127.0.0.1:8000>. I file generati (`website/docs/index.md`, `website/docs/Modulo-*`, `website/docs/Materiale`, `website/mkdocs.gen.yml`) non vanno committati.

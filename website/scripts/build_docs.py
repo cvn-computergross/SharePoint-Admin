@@ -1,8 +1,8 @@
 """Prepara il sorgente MkDocs a partire dalle guide del branch main.
 
 Uso:
-    python sito/scripts/build_docs.py <cartella-repo> <cartella-sito>
-    (es. dalla radice della repo: python sito/scripts/build_docs.py . sito)
+    python website/scripts/build_docs.py <cartella-repo> <cartella-sito>
+    (es. dalla radice della repo: python website/scripts/build_docs.py . website)
 
 Lo script:
   1. copia README, moduli (esercizi + immagini) e Materiale dal branch main in docs/;

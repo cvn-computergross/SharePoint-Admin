@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al sito con User02
 
-**Accesso alla VM SEA-DEV2 con le credenziali di User02**
+**Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
@@ -101,9 +101,9 @@
 >
 > [Gestire elenchi e raccolte di grandi dimensioni](https://support.microsoft.com/office/b8588dae-9387-48c2-9248-c24122f07c59)
 
-## Passo 6 – Verifica lato User03 (membro) su SEA-DEV3
+## Passo 6 – Verifica lato User03 (membro) su `SEA-DEV3`
 
-1. Accedere alla **VM SEA-DEV3 con le credenziali di User03**.
+1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito:
 
    ```text

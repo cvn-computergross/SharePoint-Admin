@@ -5,9 +5,9 @@
 ## Passo 0 – Installazione del client OneDrive da CMD
 
 > [!IMPORTANT]
-> La reinstallazione di OneDrive descritta in questo passo va eseguita su **entrambe** le macchine: **SEA-DEV2** (con **User02**) e **SEA-DEV3** (con **User03**).
+> La reinstallazione di OneDrive descritta in questo passo va eseguita su **entrambe** le macchine: `SEA-DEV2` (con **User02**) e `SEA-DEV3` (con **User03**).
 
-1. Accedere a **SEA-DEV2** con le credenziali di **User02** (poi ripetere su **SEA-DEV3** con **User03**)
+1. Accedere a `SEA-DEV2` con le credenziali di **User02** (poi ripetere su `SEA-DEV3` con **User03**)
 2. Copiare l'eseguibile **`onedrive.exe`** dal pacchetto materiale del corso (**Modulo2/Install/**) sul **desktop** di User02.
 3. Disinstallare **OneDrive**.
 
@@ -100,7 +100,7 @@
 
 ![Esercizio 1 – Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)](images/es01-12.png)
 
-5. Accedere a **SEA-DEV3 con User03** (login tramite **Windows Hello for Business**, come configurato nell'Esercizio 6).
+5. Accedere a **`SEA-DEV3` con User03** (login tramite **Windows Hello for Business**, come configurato nell'Esercizio 6).
 6. Aprire **Outlook sul Web** e individuare l'email di condivisione ricevuta.
 
 ![Esercizio 1 – Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)](images/es01-13.png)
@@ -110,11 +110,11 @@
 
 ![Esercizio 1 – Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)](images/es01-14.png)
 
-9. **Lasciare il file aperto** nel browser di SEA-DEV3 (necessario per il Passo 5).
+9. **Lasciare il file aperto** nel browser di `SEA-DEV3` (necessario per il Passo 5).
 
 ## Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese
 
-1. Tornare sulla VM **SEA-DEV2**.
+1. Tornare sulla VM `SEA-DEV2`.
 2. Da **User02**, condividere nuovamente **`Powerpoint01.pptx`**, questa volta con l'opzione **Can't Download** (Blocca download).
 
 ![Esercizio 1 – Passo 4 – Condivisione con link "Can't Download" e scadenza a 1 mese](images/es01-15.png)
@@ -145,10 +145,10 @@
 
 ## Passo 5 – Co-authoring e cronologia versioni
 
-1. Tornare su **SEA-DEV2** con **User02** e aprire **`Powerpoint01.pptx`** dalla cartella OneDrive locale.
+1. Tornare su `SEA-DEV2` con **User02** e aprire **`Powerpoint01.pptx`** dalla cartella OneDrive locale.
 2. Apportare una modifica (es. aggiungere del testo su una slide) e **salvare**.
 3. **Lasciare il file aperto.**
-4. Con il file ancora aperto su **SEA-DEV2**, andare su **File > Info > Version History** (Cronologia versioni).
+4. Con il file ancora aperto su `SEA-DEV2`, andare su **File > Info > Version History** (Cronologia versioni).
 
 ![Esercizio 1 – Passo 5 – Co-authoring e cronologia versioni](images/es01-19.png)
 
@@ -163,7 +163,7 @@
 
 ## Passo 6 – Gestione degli accessi condivisi (Manage Access)
 
-1. Sempre da **User02** su SEA-DEV2, fare clic destro su **`Powerpoint01.pptx`** > **OneDrive** > **Manage Access** (Gestisci accesso).
+1. Sempre da **User02** su `SEA-DEV2`, fare clic destro su **`Powerpoint01.pptx`** > **OneDrive** > **Manage Access** (Gestisci accesso).
 
    ```text
    Powerpoint01.pptx
@@ -189,7 +189,7 @@
 
 ## Passo 7 – OneDrive lato User03 via Web (Edge)
 
-1. Accedere a **SEA-DEV3 con User03** e aprire **Microsoft Edge**.
+1. Accedere a **`SEA-DEV3` con User03** e aprire **Microsoft Edge**.
 2. Accedere a OneDrive via Web (`https://portal.office.com` e poi OneDrive).
 
    ```text
@@ -206,7 +206,7 @@
 
 ## Passo 8 – Eliminazione cartelle e recupero dal cestino
 
-1. Tornare su **SEA-DEV2** con **User02**.
+1. Tornare su `SEA-DEV2` con **User02**.
 2. Dalla cartella OneDrive locale, **eliminare** le cartelle **`FOLDER01`** e **`FOLDER02`**.
 
 ![Esercizio 1 – Passo 8 – Eliminazione cartelle e recupero dal cestino](images/es01-29.png)
@@ -244,7 +244,7 @@
 
 ## Passo 9 – "Always keep on this device" e "Free up space"
 
-1. Su **SEA-DEV2**, fare clic destro sull'icona **OneDrive** nella barra delle applicazioni (o sulla cartella OneDrive in Esplora file) e selezionare **"Always keep on this device"** (Mantieni sempre su questo dispositivo).
+1. Su `SEA-DEV2`, fare clic destro sull'icona **OneDrive** nella barra delle applicazioni (o sulla cartella OneDrive in Esplora file) e selezionare **"Always keep on this device"** (Mantieni sempre su questo dispositivo).
 
 ![Esercizio 1 – Passo 9 – "Always keep on this device" e "Free up space"](images/es01-36.png)
 
@@ -260,9 +260,9 @@
 
 ![Esercizio 1 – Passo 9 – "Always keep on this device" e "Free up space"](images/es01-39.png)
 
-## Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)
+## Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da `SEA-DEV3`, User03)
 
-1. Andare su **SEA-DEV3** come **User03**.
+1. Andare su `SEA-DEV3` come **User03**.
 2. Copiare il file **`onedrive.admx`** da **Materiale/Modulo2/Installer/** nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.
 
    ```text
@@ -348,7 +348,7 @@ Recarsi su **Computer Configuration > Policies > Administrative Templates > OneD
 > [!NOTE]
 > Impedisce agli utenti di **spostare indietro** le cartelle note protette da OneDrive al disco locale del PC.
 
-Riavviare **SEA-DEV3** per applicare tutte le policy configurate ai Passi 10 e 11.
+Riavviare `SEA-DEV3` per applicare tutte le policy configurate ai Passi 10 e 11.
 
 > [!IMPORTANT]
 > Il **Tenant ID** si trova in **Entra ID > Overview**. Le policy **Silently move Windows known folders** e **Silent sign-in** funzionano solo con account di lavoro su dispositivi Microsoft Entra joined o ibridi.
@@ -357,7 +357,7 @@ Riavviare **SEA-DEV3** per applicare tutte le policy configurate ai Passi 10 e 1
 
 ## Passo 12 – Login con User03 e verifica delle policy applicate
 
-1. Dopo il riavvio, accedere a **SEA-DEV3 con le credenziali di User03**.
+1. Dopo il riavvio, accedere a **`SEA-DEV3` con le credenziali di User03**.
 2. Verificare i seguenti comportamenti automatici, conseguenza delle policy configurate:
    - **Nessuna configurazione richiesta**: avviando OneDrive, il client non chiede alcun setup guidato (login silenzioso grazie alla policy C).
 

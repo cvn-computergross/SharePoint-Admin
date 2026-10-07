@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso all'Admin Center e a SharePoint
 
-**Accedere alla VM SEA-DEV1 come User01 con credenziali admin**
+**Accedere alla VM `SEA-DEV1` come User01 con credenziali admin**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 

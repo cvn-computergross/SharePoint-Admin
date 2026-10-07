@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso a Microsoft Teams con User02
 
-**Accesso alla VM SEA-DEV2 con le credenziali di User02**
+**Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire **Microsoft Edge** e accedere a:
 

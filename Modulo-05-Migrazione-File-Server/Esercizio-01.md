@@ -3,11 +3,11 @@
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 
 > [!NOTE]
-> In questo modulo si simula un file server on-premises usando **utenti e gruppi locali** della VM SEA-DEV1. Il collegamento con gli utenti cloud omonimi avverrà tramite un **file di mapping utenti** (Esercizio 4).
+> In questo modulo si simula un file server on-premises usando **utenti e gruppi locali** della VM `SEA-DEV1`. Il collegamento con gli utenti cloud omonimi avverrà tramite un **file di mapping utenti** (Esercizio 4).
 
 ## Passo 1 – Creazione Utenti e Gruppi su Entra
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin di dominio**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin di dominio**
 
 1. Aprire Edge e entrare su https://admin.cloud.microsoft/ .
 2. Andare su Users -> Active Users -> Add a User.

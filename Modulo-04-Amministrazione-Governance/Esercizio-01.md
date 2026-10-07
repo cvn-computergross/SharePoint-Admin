@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso all'Admin Center
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
@@ -50,9 +50,9 @@
 >
 > [Accedere ai file OneDrive di un altro utente](https://learn.microsoft.com/sharepoint/user-onedrive-access)
 
-## Passo 3 – Verifica lato User02 su SEA-DEV2
+## Passo 3 – Verifica lato User02 su `SEA-DEV2`
 
-**Accedere alla VM SEA-DEV2 con le credenziali di User02**
+**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire il browser e accedere a `https://portal.office.com`, quindi aprire **OneDrive**.
 

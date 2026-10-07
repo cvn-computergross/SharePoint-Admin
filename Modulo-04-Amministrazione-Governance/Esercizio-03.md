@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al SharePoint Admin Center
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
@@ -107,7 +107,7 @@ msi
 
 ## Passo 7 – Verifica con User04 e User03
 
-**Accedere alla VM SEA-DEV1 con le credenziali di Admin**
+**Accedere alla VM `SEA-DEV1` con le credenziali di Admin**
 
 1. Da Admin Center 365 creare un nuovo utente User04 con le seguenti specifiche:
 
@@ -131,13 +131,13 @@ msi
 
 ![Esercizio 3 – Passo 7 – Verifica con User04 e User03](images/es03-06.png)
 
-5. Andare sulla VM SEA-DEV3 con le credenziali di User03 e scaricare i seguenti materiali:
+5. Andare sulla VM `SEA-DEV3` con le credenziali di User03 e scaricare i seguenti materiali:
 
    ```text
    Modulo4\Data\File .msi e .exe demo
    ```
 
-6. Sul client OneDrive desktop di SEA-DEV3, provare a sincronizzare (copiare nella cartella OneDrive locale) due file di prova:
+6. Sul client OneDrive desktop di `SEA-DEV3`, provare a sincronizzare (copiare nella cartella OneDrive locale) due file di prova:
 
 - **`7z2603.exe`**
 - **`7z2603.msi`**

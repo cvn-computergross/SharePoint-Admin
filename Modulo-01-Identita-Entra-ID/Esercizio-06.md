@@ -5,14 +5,14 @@
 > [!IMPORTANT]
 > Disattivare l'**Enhanced session mode** della VM (Hyper-V) se attiva.
 
-## Blocco 1 – Cloud Join di User02 su SEA-DEV2
+## Blocco 1 – Cloud Join di User02 su `SEA-DEV2`
 
 > [!WARNING]
 >Questo blocco deve essere svolto **in parallelo** al [Blocco 2](#blocco-2--cloud-join-di-user03-su-sea-dev3) .
 
 ### Passo 1 – Installazione app Microsoft 365 e Cloud Join
 
-1. Accedere alla **VM SEA-DEV2 come administrator**.
+1. Accedere alla **VM `SEA-DEV2` come administrator**.
 2. **Disinstallare la versione di Office già presente** sulla VM: **Settings > Apps > Installed apps**, selezionare **Microsoft 365 / Office** > **Uninstall** e riavviare se richiesto.
 3. Aprire il browser e accedere a `https://portal.office.com` per scaricare e **reinstallare** le **app di Microsoft 365** (Word, Excel, Outlook, ecc.).
 
@@ -35,7 +35,7 @@
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-04.png)
 
 4. **Riavviare (Reboot)** la VM per applicare il join al tenant.
-5. Nel frattempo recarsi sulla VM SEA-DEV1 e aprire Entra ID https://entra.microsoft.com/.
+5. Nel frattempo recarsi sulla VM `SEA-DEV1` e aprire Entra ID https://entra.microsoft.com/.
 6. Andare su **Devices -> All Devices** e verificare il join type.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-05.png)
@@ -47,7 +47,7 @@
 
 ### Passo 2 – Primo accesso con User02 (utente non amministratore)
 
-1. Tornare su **SEA-DEV2**.
+1. Tornare su `SEA-DEV2`.
 2. Dopo il riavvio, alla schermata di login selezionare **User02** (utente **non amministratore**, creato nell'Esercizio 3).
 3. Accedere con la password di **User02**.
 
@@ -75,14 +75,14 @@
 3. Verificare che l'accesso avvenga **senza richiesta di login** (SSO sulle app installate).
 4. Se non esegue il **SSO** mettere l'email e chiederà solo **MFA**.
 
-## Blocco 2 – Cloud Join di User03 su SEA-DEV3
+## Blocco 2 – Cloud Join di User03 su `SEA-DEV3`
 
 > [!WARNING]
 >Questo blocco deve essere svolto **in parallelo** al [Blocco 1](#blocco-1--cloud-join-di-user02-su-sea-dev2).
 
 ### Passo 1 – Installazione app Microsoft 365 e Cloud Join
 
-1. Accedere alla **VM SEA-DEV3 come administrator**.
+1. Accedere alla **VM `SEA-DEV3` come administrator**.
 2. **Disinstallare la versione di Office già presente** sulla VM: **Settings > Apps > Installed apps**, selezionare **Microsoft 365 / Office** > **Uninstall** e riavviare se richiesto.
 3. Aprire il browser e accedere a `https://portal.office.com` per scaricare e **reinstallare** le **app di Microsoft 365**.
 

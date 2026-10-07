@@ -16,9 +16,9 @@ Laboratori pratici SharePoint Online per amministratori, da eseguire a partire d
 
 | VM | Utilizzo |
 |---|---|
-| **SEA-DEV1** | Postazione amministrativa (admin del tenant, PowerShell, file server del Modulo 5) |
-| **SEA-DEV2** | Client di **User02** (owner) |
-| **SEA-DEV3** | Client di **User03** (member) |
+| `SEA-DEV1` | Postazione amministrativa (admin del tenant, PowerShell, file server del Modulo 5) |
+| `SEA-DEV2` | Client di **User02** (owner) |
+| `SEA-DEV3` | Client di **User03** (member) |
 
 - Un tenant Microsoft 365 di prova con licenze **Office 365 E5** / **Microsoft 365 E5** (include Microsoft Entra ID P1/P2).
 - Il materiale del corso (`Modulo1` … `Modulo5`: installer, script, dati) fornito dal docente.

@@ -4,7 +4,7 @@
 
 ## Passo 1 – Scansione dei percorsi sorgente
 
-**Accesso alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accesso alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 

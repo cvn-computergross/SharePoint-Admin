@@ -4,7 +4,7 @@
 
 ## Passo 1 – Installazione strumenti dal pacchetto del corso
 
-Accedere alla VM **SEA-DEV1** come administrator locale.
+Accedere alla VM `SEA-DEV1` come administrator locale.
 
 Prendere il materiale in:
 

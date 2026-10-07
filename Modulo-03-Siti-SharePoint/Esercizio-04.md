@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al sito con User02
 
-**Accesso alla VM SEA-DEV2 con le credenziali di User02**
+**Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
@@ -92,9 +92,9 @@
 
 ![Esercizio 4 – Passo 4 – Personalizzazione del modulo (Form) della lista](images/es04-06.png)
 
-## Passo 5 – Verifica lato User03 (membro) su SEA-DEV3
+## Passo 5 – Verifica lato User03 (membro) su `SEA-DEV3`
 
-1. Accedere alla **VM SEA-DEV3 con le credenziali di User03**.
+1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
 3. Verificare che User03, in qualità di **Member**, possa visualizzare entrambe le liste (**Richieste Marketing** e **Piano Editoriale**), aggiungere nuovi elementi tramite il modulo personalizzato e modificare gli elementi esistenti.
 

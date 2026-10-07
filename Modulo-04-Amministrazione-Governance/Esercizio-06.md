@@ -4,7 +4,7 @@
 
 ## Passo 1 – Preparazione dell'ambiente PowerShell
 
-**Accesso alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accesso alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire **Visual Studio Code** con la modalità **PowerShell ISE** già abilitata (vedi Modulo 1 - Esercizio 4).
 
@@ -52,8 +52,8 @@ Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -Cert
 
 ## Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)
 
-1. Prerequisito: su **SEA-DEV3** con **User03** cancellare un documento per metterlo nel cestino di OneDrive.
-2. Su **SEA-DEV1** come Administrator creare la cartella **Temp** in:
+1. Prerequisito: su `SEA-DEV3` con **User03** cancellare un documento per metterlo nel cestino di OneDrive.
+2. Su `SEA-DEV1` come Administrator creare la cartella **Temp** in:
 
    ```text
    C:\Temp
@@ -202,7 +202,7 @@ $permessi | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 
 Per questo script è necessario avere almeno un **Guest** in un sito SharePoint.
 
-1. Aprire su **SEA-DEV2** il sito SharePoint **Marketing Department**.
+1. Aprire su `SEA-DEV2` il sito SharePoint **Marketing Department**.
 2. Premere su **Settings** in alto a destra.
 
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-06.png)
@@ -211,7 +211,7 @@ Per questo script è necessario avere almeno un **Guest** in un sito SharePoint.
 
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-07.png)
 
-4. Tornare su **SEA-DEV1** come **Administrator**.
+4. Tornare su `SEA-DEV1` come **Administrator**.
 5. Scaricare **Script3.ps1** presente in:
 
    ```text

@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al sito con User02
 
-**Accedere alla VM SEA-DEV2 con le credenziali di User02**
+**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
    ```text
@@ -46,7 +46,7 @@
 >
 >Nel caso refreshare la pagina e aspettare un minuto.
 
-4. Tornare su SEA-DEV1 sullo sharepoint admin center -> more features -> apps e visualizzare i menù di controllo sulle apps per sharepoint.
+4. Tornare su `SEA-DEV1` sullo sharepoint admin center -> more features -> apps e visualizzare i menù di controllo sulle apps per sharepoint.
 
 ![Esercizio 7 – Passo 3 – Add an App](images/es07-06.png)
 
@@ -57,7 +57,7 @@
 
 ## Passo 4 – Site Usage
 
-1. Tornare su SEA-DEV2 con User02 e aprire Marketing Department.
+1. Tornare su `SEA-DEV2` con User02 e aprire Marketing Department.
 2. Dalla rotella delle impostazioni, selezionare **Site usage**.
 
 ![Esercizio 7 – Passo 4 – Site Usage](images/es07-07.png)

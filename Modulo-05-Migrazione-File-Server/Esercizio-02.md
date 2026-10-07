@@ -4,7 +4,7 @@
 
 ## Passo 1 – Creazione della struttura di cartelle
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin**
 
 1. Aprire **Esplora file** e accedere all'unità **C:\**.
 2. Creare una nuova cartella chiamata:

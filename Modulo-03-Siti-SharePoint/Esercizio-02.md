@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al sito con User02
 
-**Accedere alla VM SEA-DEV2 con le credenziali di User02**
+**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment` (dove `tenant_name` è il nome del proprio tenant)
 

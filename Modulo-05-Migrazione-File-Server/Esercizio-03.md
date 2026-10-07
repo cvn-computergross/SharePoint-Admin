@@ -4,7 +4,7 @@
 
 ## Passo 1 – Creazione del sito Amministrazione
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
@@ -67,7 +67,7 @@
 
 ## Passo 3 – Installazione del Migration Agent
 
-1. Tornare su **SEA-DEV1** e aprire lo **SharePoint Admin Center**, andare su **Migration > File share**.
+1. Tornare su `SEA-DEV1` e aprire lo **SharePoint Admin Center**, andare su **Migration > File share**.
 2. Selezionare **Get started**.
 
 ![Esercizio 3 – Passo 3 – Installazione del Migration Agent](images/es03-07.png)

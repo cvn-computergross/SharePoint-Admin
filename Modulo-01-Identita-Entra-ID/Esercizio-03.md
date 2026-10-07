@@ -5,9 +5,9 @@
 > [!NOTE]
 > In questo esercizio le password temporanee sono valori **di laboratorio**: non riutilizzarle in ambienti reali.
 
-## Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2
+## Passo 1 – Creazione di USER02 e primo accesso da `SEA-DEV2`
 
-Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
+Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
 2. Creare **USER02**, compilando gli attributi richiesti:
 
@@ -20,7 +20,7 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-01.png)
 
-3. Accedere alla **VM SEA-DEV2 come administrator locale**.
+3. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER02**.
 
    ```text
@@ -36,9 +36,9 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-03.png)
 
-## Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3
+## Passo 2 – Creazione di USER03 e primo accesso da `SEA-DEV3`
 
-Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
+Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
 2. Creare **USER03**, compilando gli attributi richiesti:
 
@@ -51,7 +51,7 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-04.png)
 
-3. Accedere alla **VM SEA-DEV3 come administrator locale**.
+3. Accedere alla **VM `SEA-DEV3` come administrator locale**.
 4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER03**.
 
    ```text
@@ -66,7 +66,7 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
 
 ## Passo 3 – Creazione del Security Group statico
 
-Riaprire la VM SEA-DEV1 e recarsi su https://entra.microsoft.com/.
+Riaprire la VM `SEA-DEV1` e recarsi su https://entra.microsoft.com/.
 
 Andare su **Groups > All groups > New group**
 
@@ -144,9 +144,9 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 6. Selezionare **Create Group** per salvare il gruppo.
 
-## Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest
+## Passo 6 – Verifica lato USER03 (da `SEA-DEV3`) e invito guest
 
-1. Accedere alla **VM SEA-DEV3 come administrator locale**.
+1. Accedere alla **VM `SEA-DEV3` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User03**.
 
    ```text
@@ -184,9 +184,9 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 >
 > [Configurare le impostazioni di collaborazione esterna](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
 
-## Passo 7 – Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta
+## Passo 7 – Verifica lato USER02 (da `SEA-DEV2`): approvazione della richiesta
 
-1. Accedere alla **VM SEA-DEV2 come administrator locale**.
+1. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.
 
    ```text
@@ -205,7 +205,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 ## Passo 8 – Invitare external users da Owner
 
-1. Accedere alla **VM SEA-DEV2 come administrator locale**.
+1. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.
 
    ```text

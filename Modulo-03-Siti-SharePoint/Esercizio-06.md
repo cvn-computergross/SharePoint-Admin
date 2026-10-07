@@ -4,7 +4,7 @@
 
 ## Passo 1 – Verifica iniziale dei permessi di User03 (Member)
 
-**Accedere alla VM SEA-DEV3 con le credenziali di User03**
+**Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
@@ -22,7 +22,7 @@
 
 ## Passo 2 – Restrizione dei permessi a livello di sito (da Owner)
 
-**Accedere alla VM SEA-DEV2 con le credenziali di User02**
+**Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 1. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
 2. Selezionare la rotella delle impostazioni (in alto a destra) e scegliere **Site permissions**.
 
@@ -38,7 +38,7 @@
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-04.png)
 
-7. Andare su SEA-DEV1 con MOD Administrator aprire Visual Studio Code con il seguente script: `Modulo3\Script\SPO.ps1`.Seguire i seguenti comandi (dove `TENANT` è un segnaposto per il nome del proprio tenant) per cambiare i permessi al gruppo members.
+7. Andare su `SEA-DEV1` con MOD Administrator aprire Visual Studio Code con il seguente script: `Modulo3\Script\SPO.ps1`.Seguire i seguenti comandi (dove `TENANT` è un segnaposto per il nome del proprio tenant) per cambiare i permessi al gruppo members.
 
    ```text
    Modulo3\Script\SPO.ps1
@@ -122,7 +122,7 @@ Get-SPOSiteGroup `
 
 ## Passo 4 – Verifica lato User03 dopo le modifiche ai permessi
 
-**Accedere alla VM SEA-DEV3 con le credenziali di User03**
+**Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 
 1. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
 2. Verificare che User03 ora:
@@ -134,7 +134,7 @@ Get-SPOSiteGroup `
 
 ## Passo 5 – Collegamento del sito a OneDrive lato User03
 
-1. Sempre da **SEA-DEV3 con User03**, aprire il browser e accedere a `https://portal.office.com` oppure direttamente a `https://tenant_name-my.sharepoint.com` per aprire **OneDrive sul Web**.
+1. Sempre da **`SEA-DEV3` con User03**, aprire il browser e accedere a `https://portal.office.com` oppure direttamente a `https://tenant_name-my.sharepoint.com` per aprire **OneDrive sul Web**.
 
    ```text
    https://portal.office.com

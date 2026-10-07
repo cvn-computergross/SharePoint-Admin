@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al sito con User02
 
-**Accesso alla VM SEA-DEV2 con le credenziali di User02**
+**Accesso alla VM `SEA-DEV2` con le credenziali di User02**
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
 
@@ -86,9 +86,9 @@
 
 5. Ripetere la stessa procedura sulla pagina originale (**Home**) per **ripristinarla come Home Page**: da **Pages**, selezionare i tre puntini sulla pagina **Home** e scegliere nuovamente **Promote > Make homepage**.
 
-## Passo 5 – Verifica lato User03 (membro) su SEA-DEV3
+## Passo 5 – Verifica lato User03 (membro) su `SEA-DEV3`
 
-1. Accedere alla **VM SEA-DEV3 con le credenziali di User03**.
+1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.
 3. Verificare che User03 veda:
 - La Home Page originale, con tutte le web part aggiunte al Passo 2 (calendario, libreria, lista, quick link, pulsante, video).

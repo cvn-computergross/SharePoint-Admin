@@ -4,7 +4,7 @@
 
 ## Passo 1 – Registrazione della nuova Enterprise Application (App ID)
 
-Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
+Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-01.png)
 
@@ -56,7 +56,7 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/ e succes
    LAB/Modulo1/Script/Es5.ps1
    ```
 
-2. Sulla VM SEA-DEV1, aprire **PowerShell (Run as administrator)** da VSC.
+2. Sulla VM `SEA-DEV1`, aprire **PowerShell (Run as administrator)** da VSC.
 3. Creare la cartella **C:\Cert**.
 4. Eseguire il comando per generare il certificato in formato PFX e CER:
 

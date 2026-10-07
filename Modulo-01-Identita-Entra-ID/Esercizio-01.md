@@ -4,7 +4,7 @@
 
 ## Passo 1 – Copiare il materiale del corso sul desktop della VM
 
-1. Aprire il browser web sulla VM SEA-DEV1.
+1. Aprire il browser web sulla VM `SEA-DEV1`.
 2. Copiare il **link del materiale** (fornito dal docente) e scaricare il materiale.
 
 ## Passo 2 – Accedere a Microsoft Entra

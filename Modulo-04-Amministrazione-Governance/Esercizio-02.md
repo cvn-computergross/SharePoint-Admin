@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso al SharePoint Admin Center
 
-**Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
+**Accedere alla VM `SEA-DEV1` come administrator, con credenziali admin del tenant**
 
 1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
 
@@ -72,9 +72,9 @@ Raggiungere **Access control > Idle session sign-out**
 >
 > [Idle session timeout per Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/manage/idle-session-timeout-web-apps)
 
-## Passo 4 – Verifica lato User03 su SEA-DEV3
+## Passo 4 – Verifica lato User03 su `SEA-DEV3`
 
-**Accedere alla VM SEA-DEV3 con le credenziali di User03**
+**Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 
 1. Accedere via **Web** con **Microsoft Edge** a `https://portal.office.com`, quindi aprire **OneDrive**.
 

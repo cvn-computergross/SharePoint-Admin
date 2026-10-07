@@ -4,7 +4,7 @@
 
 ## Passo 1 – Accesso a Microsoft Entra
 
-1. Aprire il browser web sulla VM SEA-DEV1, dopo aver effettuato l'accesso come **administrator locale**.
+1. Aprire il browser web sulla VM `SEA-DEV1`, dopo aver effettuato l'accesso come **administrator locale**.
 2. Accedere come **amministratore del tenant Microsoft 365** al portale:
 
    ```text

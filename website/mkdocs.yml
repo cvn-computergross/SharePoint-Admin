@@ -13,7 +13,6 @@ theme:
   logo: assets/img/edulabs-cvn.png
   icon:
     repo: fontawesome/brands/github
-  favicon: assets/img/favicon.webp
   font:
     text: Inter
     code: JetBrains Mono

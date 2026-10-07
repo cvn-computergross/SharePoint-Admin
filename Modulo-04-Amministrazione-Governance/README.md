@@ -4,6 +4,8 @@
 
 Gestione amministrativa di SharePoint e OneDrive: impostazioni per utente, condivisione esterna, controllo accessi, quote e retention, ciclo di vita dei siti, report e automazione con PowerShell.
 
+**Materiale:** [Modulo4.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo4.zip)
+
 ## Esercizi
 
 1. [Gestione del OneDrive di un utente](Esercizio-01.md)

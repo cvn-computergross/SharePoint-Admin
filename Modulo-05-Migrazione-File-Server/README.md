@@ -4,6 +4,8 @@
 
 Migrazione di un file server on-premises verso SharePoint e OneDrive con Migration Manager, preservando i permessi tramite file di mapping utenti.
 
+**Materiale:** [Modulo5.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo5.zip)
+
 ## Esercizi
 
 1. [Utenti e gruppi (cloud e locali)](Esercizio-01.md)

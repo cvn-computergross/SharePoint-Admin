@@ -4,6 +4,8 @@
 
 Creazione e personalizzazione dei siti: tipologie di sito, navigazione e aspetto, librerie, metadati e viste, liste e moduli, pagine e web part, permessi, impostazioni del sito e integrazione con Microsoft Teams.
 
+**Materiale:** [Modulo3.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo3.zip)
+
 ## Esercizi
 
 1. [Creazione dei siti](Esercizio-01.md)

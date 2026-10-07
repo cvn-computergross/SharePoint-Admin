@@ -4,6 +4,8 @@
 
 Preparazione del tenant: MFA e Conditional Access, utenti e gruppi (statici, dinamici, Microsoft 365), licenze, utenti guest, strumenti PowerShell, autenticazione app-only con certificato e Microsoft Entra join dei client.
 
+**Materiale:** [Modulo1.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo1.zip) (gli installer più pesanti sono elencati in [Materiale](../Materiale/README.md))
+
 ## Esercizi
 
 1. [MFA e Conditional Access](Esercizio-01.md)

@@ -35,7 +35,7 @@
 
 ## Passo 3 – Copia dei file del materiale nelle librerie
 
-1. Aprire la cartella del materiale del corso **Materiale Studenti/Modulo3/Data/**.
+1. Aprire la cartella del materiale del corso **MATERIALE_STUDENTI/Modulo3/Data/**.
 2. Copiare Folder1 nella libreria **File Condivisi01**.
 3. Copiare Folder2 nella libreria **File Condivisi02**.
 

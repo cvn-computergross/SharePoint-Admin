@@ -56,7 +56,7 @@
 
 1. Tornare alla home del sito e selezionare **+ New > List**.
 2. Scegliere l'opzione **From Excel**.
-3. Caricare un file Excel di esempio dal materiale del corso (**Materiale Studenti/Modulo3/Data/Piano_Editoriale_Marketing.xlsx**), contenente un elenco tabellare con intestazioni di colonna.
+3. Caricare un file Excel di esempio dal materiale del corso (**MATERIALE_STUDENTI/Modulo3/Data/Piano_Editoriale_Marketing.xlsx**), contenente un elenco tabellare con intestazioni di colonna.
 4. Selezionare la tabella giusta e premere Next.
 5. Assegnare un nome alla lista, ad esempio **`Piano Editoriale`**, e selezionare **Create**.
 

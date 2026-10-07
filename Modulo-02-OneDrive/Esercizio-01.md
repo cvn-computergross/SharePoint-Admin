@@ -8,7 +8,7 @@
 > La reinstallazione di OneDrive descritta in questo passo va eseguita su **entrambe** le macchine: `SEA-DEV2` (con **User02**) e `SEA-DEV3` (con **User03**).
 
 1. Accedere a `SEA-DEV2` con le credenziali di **User02** (poi ripetere su `SEA-DEV3` con **User03**)
-2. Copiare l'eseguibile **`onedrive.exe`** dal pacchetto materiale del corso (**Modulo2/Install/**) sul **desktop** di User02.
+2. Scaricare l'installer di OneDrive (`OneDriveSetup.exe`) da [microsoft.com](https://www.microsoft.com/microsoft-365/onedrive/download) e salvarlo sul **desktop** dell'utente. Il resto del materiale del modulo è in [Modulo2.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo2.zip).
 3. Disinstallare **OneDrive**.
 
 ![Esercizio 1 – Passo 0 – Installazione del client OneDrive da CMD](images/es01-01.png)
@@ -21,7 +21,7 @@
 
    ```cmd
    cd %userprofile%\Desktop
-   onedrive.exe /allusers
+   OneDriveSetup.exe /allusers
    ```
 
 ![Esercizio 1 – Passo 0 – Installazione del client OneDrive da CMD](images/es01-03.png)
@@ -263,7 +263,7 @@
 ## Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da `SEA-DEV3`, User03)
 
 1. Andare su `SEA-DEV3` come **User03**.
-2. Copiare il file **`onedrive.admx`** da **Materiale/Modulo2/Installer/** nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.
+2. Copiare il file **`onedrive.admx`** da **MATERIALE_STUDENTI/Modulo2/Installer/** (da [Modulo2.zip](../Materiale/README.md)) nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.
 
    ```text
    C:\Windows\PolicyDefinitions\
@@ -271,7 +271,7 @@
 
 ![Esercizio 1 – Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)](images/es01-40.png)
 
-3. Copiare il file **`onedrive.adml`** da **Materiale/Modulo2/Installer/** nella cartella locale **`C:\Windows\PolicyDefinitions\en-US\`**, richiede permessi da amministratore.
+3. Copiare il file **`onedrive.adml`** da **MATERIALE_STUDENTI/Modulo2/Installer/** (da [Modulo2.zip](../Materiale/README.md)) nella cartella locale **`C:\Windows\PolicyDefinitions\en-US\`**, richiede permessi da amministratore.
 
    ```text
    C:\Windows\PolicyDefinitions\en-US\

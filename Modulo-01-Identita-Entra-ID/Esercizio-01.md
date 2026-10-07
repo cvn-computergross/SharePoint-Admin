@@ -5,7 +5,7 @@
 ## Passo 1 – Copiare il materiale del corso sul desktop della VM
 
 1. Aprire il browser web sulla VM `SEA-DEV1`.
-2. Copiare il **link del materiale** (fornito dal docente) e scaricare il materiale.
+2. Scaricare il materiale del corso ([Modulo1.zip](https://github.com/cvn-computergross/SharePoint-Admin/raw/main/Materiale/Modulo1.zip)) ed estrarlo sul desktop. Gli zip degli altri moduli sono nella cartella [Materiale](../Materiale/README.md).
 
 ## Passo 2 – Accedere a Microsoft Entra
 

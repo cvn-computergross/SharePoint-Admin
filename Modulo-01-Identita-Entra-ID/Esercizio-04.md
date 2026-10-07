@@ -6,18 +6,14 @@
 
 Accedere alla VM `SEA-DEV1` come administrator locale.
 
-Prendere il materiale in:
+Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1 perché superano i 100 MB: si scaricano dai siti ufficiali indicati sotto.
 
-```text
-Modulo1/Installer
-```
-
-1. Individuare e avviare l'eseguibile di **Visual Studio Code** nella stessa cartella.
+1. Scaricare e avviare l'installer di **Visual Studio Code** (User Installer, Windows x64) da [code.visualstudio.com](https://code.visualstudio.com/download).
 2. Completare l'installazione guidata.
 
 ![Esercizio 4 – Passo 1 – Installazione strumenti dal pacchetto del corso](images/es04-01.png)
 
-3. Individuare l'eseguibile di **Powershell** nella stessa cartella.
+3. Scaricare e avviare l'installer `.msi` di **PowerShell 7** (x64) dalla pagina [Installare PowerShell in Windows](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-windows).
 4. Completare l'installazione guidata.
 5. Riavviare la VM.
 

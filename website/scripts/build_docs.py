@@ -147,8 +147,8 @@ def main(src, site):
             shutil.copytree(mod / "images", docs / mod.name / "images")
         # nel menu solo "Modulo N"; il titolo completo resta nella pagina
         nav.append(f'  - "{re.split(r" [–·] ", h1(mod / "README.md"))[0]}":')
-        # pagina del modulo senza voce propria: si apre cliccando "Modulo N" (navigation.indexes)
-        nav.append(f"    - {mod.name}/index.md")
+        # la pagina del modulo non è nel menu: "Modulo N" apre solo l'elenco degli esercizi
+        # (la pagina resta raggiungibile dalle schede della pagina iniziale)
         for ex in sorted(mod.glob("Esercizio-*.md")):
             copy_md(ex, docs / mod.name / ex.name)
             # nel menu solo "Esercizio N"

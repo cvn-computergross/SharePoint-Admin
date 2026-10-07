@@ -1,5 +1,6 @@
-// Menu di navigazione chiuso di default: si aprono solo le sezioni che il lettore
-// ha aperto lui, e restano aperte (anche ricaricando o cambiando pagina).
+// Menu di navigazione chiuso di default: sono aperti solo il modulo della pagina
+// corrente e le sezioni aperte dal lettore, che restano aperte anche ricaricando
+// o cambiando pagina.
 (function () {
   var KEY = "nav-open";
 
@@ -20,6 +21,11 @@
       if (t.id === "__drawer" || t.id === "__toc") return;
       var name = label(t);
       t.classList.remove("md-toggle--indeterminate");
+      // il modulo della pagina aperta resta sempre aperto (e viene ricordato)
+      if (t.parentElement.classList.contains("md-nav__item--active") && open.indexOf(name) === -1) {
+        open.push(name);
+        save(open);
+      }
       t.checked = open.indexOf(name) !== -1;
       t.addEventListener("change", function () {
         var list = load().filter(function (n) { return n !== name; });

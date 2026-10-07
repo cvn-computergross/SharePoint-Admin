@@ -101,7 +101,15 @@ def add_checkboxes(lines):
         if line.lstrip().startswith("```"):
             in_fence = not in_fence
         m = None if in_fence else re.match(r"^(\d+)\.\s+(.*)$", line)
-        out.append(f"- [ ] **{m.group(1)}.** {m.group(2)}" if m else line)
+        if m:
+            # MkDocs riconosce una lista solo se preceduta da una riga vuota
+            # (GitHub no): senza, il passo resterebbe senza casella
+            prev = out[-1] if out else ""
+            if prev.strip() and not prev.startswith(("- ", " ")):
+                out.append("")
+            out.append(f"- [ ] **{m.group(1)}.** {m.group(2)}")
+        else:
+            out.append(line)
     return out
 
 

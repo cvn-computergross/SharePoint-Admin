@@ -1,4 +1,4 @@
-# Modulo 5 – Esercizio 2: Preparazione del file server
+# Modulo 5 · Esercizio 2: Preparazione del file server
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 

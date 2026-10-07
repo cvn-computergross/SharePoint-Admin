@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 5: Pagine e web part
+# Modulo 3 · Esercizio 5: Pagine e web part
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 
@@ -86,7 +86,7 @@
 
 5. Ripetere la stessa procedura sulla pagina originale (**Home**) per **ripristinarla come Home Page**: da **Pages**, selezionare i tre puntini sulla pagina **Home** e scegliere nuovamente **Promote > Make homepage**.
 
-## Passo 5 · Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 5 · Verifica lato User03 (membro) su SEA-DEV3
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.

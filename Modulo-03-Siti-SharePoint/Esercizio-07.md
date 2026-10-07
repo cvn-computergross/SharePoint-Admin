@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 7: Impostazioni del sito
+# Modulo 3 · Esercizio 7: Impostazioni del sito
 
 [← Esercizio 6](Esercizio-06.md) · [Indice modulo](README.md) · [Esercizio 8 →](Esercizio-08.md)
 

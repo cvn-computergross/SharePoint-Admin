@@ -119,3 +119,13 @@
 .checklist-progress--side .checklist-track { flex-basis: 100%; order: 3; }
 @media screen and (min-width: 76.25em) { .checklist-progress--top { display: none; } }
 @media screen and (max-width: 76.234375em) { .checklist-progress--side { display: none; } }
+
+/* Schermi larghi: menu tutto a sinistra, indice tutto a destra, guida al centro
+   con larghezza di lettura comoda; colonne separate da un filo grigio */
+@media screen and (min-width: 76.25em) {
+  .md-header__inner.md-grid, .md-main__inner.md-grid { max-width: none; }
+  .md-main__inner.md-grid { padding: 0 1rem; }
+  .md-content { max-width: 52rem; margin: 0 auto; padding: 0 2rem; }
+  .md-sidebar--primary { border-right: 1px solid var(--md-default-fg-color--lightest); }
+  .md-sidebar--secondary { border-left: 1px solid var(--md-default-fg-color--lightest); }
+}

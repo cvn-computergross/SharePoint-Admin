@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 1: Gestione del OneDrive di un utente
+# Modulo 4 · Esercizio 1: Gestione del OneDrive di un utente
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 
@@ -50,7 +50,7 @@
 >
 > [Accedere ai file OneDrive di un altro utente](https://learn.microsoft.com/sharepoint/user-onedrive-access)
 
-## Passo 3 · Verifica lato User02 su `SEA-DEV2`
+## Passo 3 · Verifica lato User02 su SEA-DEV2
 
 **Accedere alla VM `SEA-DEV2` con le credenziali di User02**
 

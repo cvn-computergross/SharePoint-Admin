@@ -1,4 +1,4 @@
-# Modulo 1 – Identità e accesso con Microsoft Entra ID
+# Modulo 1 · Identità e accesso con Microsoft Entra ID
 
 [Home](../README.md) · [Modulo 2 →](../Modulo-02-OneDrive/README.md)
 

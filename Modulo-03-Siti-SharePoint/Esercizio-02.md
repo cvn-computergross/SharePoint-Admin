@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 2: Navigazione e aspetto del sito
+# Modulo 3 · Esercizio 2: Navigazione e aspetto del sito
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 

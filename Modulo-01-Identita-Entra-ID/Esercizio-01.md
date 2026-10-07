@@ -1,4 +1,4 @@
-# Modulo 1 – Esercizio 1: MFA e Conditional Access
+# Modulo 1 · Esercizio 1: MFA e Conditional Access
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 

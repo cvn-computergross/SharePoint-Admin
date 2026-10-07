@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 3: Librerie, metadati e viste
+# Modulo 3 · Esercizio 3: Librerie, metadati e viste
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 
@@ -101,7 +101,7 @@
 >
 > [Gestire elenchi e raccolte di grandi dimensioni](https://support.microsoft.com/office/b8588dae-9387-48c2-9248-c24122f07c59)
 
-## Passo 6 · Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 6 · Verifica lato User03 (membro) su SEA-DEV3
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito:

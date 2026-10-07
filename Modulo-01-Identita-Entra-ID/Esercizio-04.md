@@ -1,4 +1,4 @@
-# Modulo 1 – Esercizio 4: Strumenti PowerShell (Graph, PnP, SPO)
+# Modulo 1 · Esercizio 4: Strumenti PowerShell (Graph, PnP, SPO)
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 

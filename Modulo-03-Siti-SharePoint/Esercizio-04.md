@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 4: Liste e moduli
+# Modulo 3 · Esercizio 4: Liste e moduli
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 
@@ -92,7 +92,7 @@
 
 ![Esercizio 4 – Passo 4 – Personalizzazione del modulo (Form) della lista](images/es04-06.png)
 
-## Passo 5 · Verifica lato User03 (membro) su `SEA-DEV3`
+## Passo 5 · Verifica lato User03 (membro) su SEA-DEV3
 
 1. Accedere alla **VM `SEA-DEV3` con le credenziali di User03**.
 2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito.

@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 6: Permessi del sito e delle librerie
+# Modulo 3 · Esercizio 6: Permessi del sito e delle librerie
 
 [← Esercizio 5](Esercizio-05.md) · [Indice modulo](README.md) · [Esercizio 7 →](Esercizio-07.md)
 

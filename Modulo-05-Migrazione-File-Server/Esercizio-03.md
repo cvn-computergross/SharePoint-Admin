@@ -1,4 +1,4 @@
-# Modulo 5 – Esercizio 3: Sito di destinazione e Migration Manager agent
+# Modulo 5 · Esercizio 3: Sito di destinazione e Migration Manager agent
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 

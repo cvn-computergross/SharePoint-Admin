@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 5: Report di utilizzo e Data access governance
+# Modulo 4 · Esercizio 5: Report di utilizzo e Data access governance
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 

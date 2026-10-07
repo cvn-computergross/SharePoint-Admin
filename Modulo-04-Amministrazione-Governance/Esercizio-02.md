@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 2: Condivisione esterna e idle session sign-out
+# Modulo 4 · Esercizio 2: Condivisione esterna e idle session sign-out
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 
@@ -72,7 +72,7 @@ Raggiungere **Access control > Idle session sign-out**
 >
 > [Idle session timeout per Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/manage/idle-session-timeout-web-apps)
 
-## Passo 4 · Verifica lato User03 su `SEA-DEV3`
+## Passo 4 · Verifica lato User03 su SEA-DEV3
 
 **Accedere alla VM `SEA-DEV3` con le credenziali di User03**
 

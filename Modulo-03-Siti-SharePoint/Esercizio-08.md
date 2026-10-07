@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 8: Team di Microsoft Teams da un gruppo esistente
+# Modulo 3 · Esercizio 8: Team di Microsoft Teams da un gruppo esistente
 
 [← Esercizio 7](Esercizio-07.md) · [Indice modulo →](README.md)
 

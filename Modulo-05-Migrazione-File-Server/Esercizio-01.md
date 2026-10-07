@@ -1,4 +1,4 @@
-# Modulo 5 – Esercizio 1: Utenti e gruppi (cloud e locali)
+# Modulo 5 · Esercizio 1: Utenti e gruppi (cloud e locali)
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 

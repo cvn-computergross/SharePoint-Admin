@@ -1,4 +1,4 @@
-# Modulo 1 – Esercizio 5: App registration e autenticazione con certificato
+# Modulo 1 · Esercizio 5: App registration e autenticazione con certificato
 
 [← Esercizio 4](Esercizio-04.md) · [Indice modulo](README.md) · [Esercizio 6 →](Esercizio-06.md)
 

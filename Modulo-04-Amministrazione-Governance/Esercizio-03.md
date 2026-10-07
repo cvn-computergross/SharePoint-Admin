@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 3: Impostazioni di SharePoint e OneDrive
+# Modulo 4 · Esercizio 3: Impostazioni di SharePoint e OneDrive
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 

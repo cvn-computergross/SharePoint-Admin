@@ -1,4 +1,4 @@
-# Modulo 3 – Siti SharePoint Online
+# Modulo 3 · Siti SharePoint Online
 
 [← Modulo 2](../Modulo-02-OneDrive/README.md) · [Home](../README.md) · [Modulo 4 →](../Modulo-04-Amministrazione-Governance/README.md)
 

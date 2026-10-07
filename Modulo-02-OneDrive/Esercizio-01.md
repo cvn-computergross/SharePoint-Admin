@@ -1,4 +1,4 @@
-# Modulo 2 – Esercizio 1: Client OneDrive, condivisione e criteri di gruppo
+# Modulo 2 · Esercizio 1: Client OneDrive, condivisione e criteri di gruppo
 
 [← Indice modulo](README.md) · [Indice modulo →](README.md)
 
@@ -260,7 +260,7 @@
 
 ![Esercizio 1 – Passo 9 – "Always keep on this device" e "Free up space"](images/es01-39.png)
 
-## Passo 10 · Configurazione delle policy OneDrive tramite GPEDIT (da `SEA-DEV3`, User03)
+## Passo 10 · Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)
 
 1. Andare su `SEA-DEV3` come **User03**.
 2. Copiare il file **`onedrive.admx`** da **MATERIALE_STUDENTI/Modulo2/Installer/** (da [Modulo2.zip](../Materiale/README.md)) nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.

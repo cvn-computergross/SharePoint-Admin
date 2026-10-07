@@ -140,12 +140,12 @@ def main(src, site):
         if (mod / "images").is_dir():
             shutil.copytree(mod / "images", docs / mod.name / "images")
         # nel menu solo "Modulo N"; il titolo completo resta nella pagina
-        nav.append(f'  - "{h1(mod / "README.md").split(" – ")[0]}":')
+        nav.append(f'  - "{re.split(r" [–·] ", h1(mod / "README.md"))[0]}":')
         nav.append(f"    - Panoramica: {mod.name}/index.md")
         for ex in sorted(mod.glob("Esercizio-*.md")):
             copy_md(ex, docs / mod.name / ex.name)
             # nel menu solo "Esercizio N"
-            label = re.sub(r"^Modulo \d+ – ", "", h1(ex)).split(":")[0]
+            label = re.sub(r"^Modulo \d+ [–·] ", "", h1(ex)).split(":")[0]
             nav.append(f'    - "{label}": {mod.name}/{ex.name}')
     if (src / "Materiale" / "README.md").is_file():
         copy_md(src / "Materiale" / "README.md", docs / "Materiale" / "index.md")

@@ -1,4 +1,4 @@
-# Modulo 4 – Amministrazione e governance
+# Modulo 4 · Amministrazione e governance
 
 [← Modulo 3](../Modulo-03-Siti-SharePoint/README.md) · [Home](../README.md) · [Modulo 5 →](../Modulo-05-Migrazione-File-Server/README.md)
 

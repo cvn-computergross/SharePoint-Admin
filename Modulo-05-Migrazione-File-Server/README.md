@@ -1,4 +1,4 @@
-# Modulo 5 – Migrazione da file server con Migration Manager
+# Modulo 5 · Migrazione da file server con Migration Manager
 
 [← Modulo 4](../Modulo-04-Amministrazione-Governance/README.md) · [Home](../README.md)
 

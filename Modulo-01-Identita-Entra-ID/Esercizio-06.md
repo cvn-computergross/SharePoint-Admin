@@ -1,11 +1,11 @@
-# Modulo 1 – Esercizio 6: Microsoft Entra join, Windows Hello e SSO
+# Modulo 1 · Esercizio 6: Microsoft Entra join, Windows Hello e SSO
 
 [← Esercizio 5](Esercizio-05.md) · [Indice modulo →](README.md)
 
 > [!IMPORTANT]
 > Disattivare l'**Enhanced session mode** della VM (Hyper-V) se attiva.
 
-## Blocco 1 · Cloud Join di User02 su `SEA-DEV2`
+## Blocco 1 · Cloud Join di User02 su SEA-DEV2
 
 > [!WARNING]
 >Questo blocco deve essere svolto **in parallelo** al [Blocco 2](#blocco-2--cloud-join-di-user03-su-sea-dev3) .
@@ -75,7 +75,7 @@
 3. Verificare che l'accesso avvenga **senza richiesta di login** (SSO sulle app installate).
 4. Se non esegue il **SSO** mettere l'email e chiederà solo **MFA**.
 
-## Blocco 2 · Cloud Join di User03 su `SEA-DEV3`
+## Blocco 2 · Cloud Join di User03 su SEA-DEV3
 
 > [!WARNING]
 >Questo blocco deve essere svolto **in parallelo** al [Blocco 1](#blocco-1--cloud-join-di-user02-su-sea-dev2).

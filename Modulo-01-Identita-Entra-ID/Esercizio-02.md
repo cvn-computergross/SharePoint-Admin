@@ -1,4 +1,4 @@
-# Modulo 1 – Esercizio 2: Utenti e gruppi dinamici
+# Modulo 1 · Esercizio 2: Utenti e gruppi dinamici
 
 [← Esercizio 1](Esercizio-01.md) · [Indice modulo](README.md) · [Esercizio 3 →](Esercizio-03.md)
 

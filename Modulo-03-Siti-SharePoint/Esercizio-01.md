@@ -1,4 +1,4 @@
-# Modulo 3 – Esercizio 1: Creazione dei siti
+# Modulo 3 · Esercizio 1: Creazione dei siti
 
 [← Indice modulo](README.md) · [Esercizio 2 →](Esercizio-02.md)
 

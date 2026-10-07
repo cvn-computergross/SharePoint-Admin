@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 6: Report e audit con PowerShell
+# Modulo 4 · Esercizio 6: Report e audit con PowerShell
 
 [← Esercizio 5](Esercizio-05.md) · [Indice modulo →](README.md)
 

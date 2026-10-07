@@ -1,11 +1,11 @@
-# Modulo 1 – Esercizio 3: Gruppi, licenze e utenti guest
+# Modulo 1 · Esercizio 3: Gruppi, licenze e utenti guest
 
 [← Esercizio 2](Esercizio-02.md) · [Indice modulo](README.md) · [Esercizio 4 →](Esercizio-04.md)
 
 > [!NOTE]
 > In questo esercizio le password temporanee sono valori **di laboratorio**: non riutilizzarle in ambienti reali.
 
-## Passo 1 · Creazione di USER02 e primo accesso da `SEA-DEV2`
+## Passo 1 · Creazione di USER02 e primo accesso da SEA-DEV2
 
 Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
@@ -36,7 +36,7 @@ Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 
 ![Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2](images/es03-03.png)
 
-## Passo 2 · Creazione di USER03 e primo accesso da `SEA-DEV3`
+## Passo 2 · Creazione di USER03 e primo accesso da SEA-DEV3
 
 Ripartendo dalla VM `SEA-DEV1` andare su https://entra.microsoft.com/.
 1. Andare su **Users > All Users > Create new user.**
@@ -144,7 +144,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 
 6. Selezionare **Create Group** per salvare il gruppo.
 
-## Passo 6 · Verifica lato USER03 (da `SEA-DEV3`) e invito guest
+## Passo 6 · Verifica lato USER03 (da SEA-DEV3) e invito guest
 
 1. Accedere alla **VM `SEA-DEV3` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User03**.
@@ -184,7 +184,7 @@ Tornare su https://admin.cloud.microsoft/ e procedere su **Teams & Groups > Acti
 >
 > [Configurare le impostazioni di collaborazione esterna](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
 
-## Passo 7 · Verifica lato USER02 (da `SEA-DEV2`): approvazione della richiesta
+## Passo 7 · Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta
 
 1. Accedere alla **VM `SEA-DEV2` come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.

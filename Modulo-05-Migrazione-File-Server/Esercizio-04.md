@@ -1,4 +1,4 @@
-# Modulo 5 – Esercizio 4: Migrazione e verifica dei permessi
+# Modulo 5 · Esercizio 4: Migrazione e verifica dei permessi
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo →](README.md)
 

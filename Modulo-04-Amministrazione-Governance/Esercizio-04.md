@@ -1,4 +1,4 @@
-# Modulo 4 – Esercizio 4: Eliminazione e ripristino di un sito
+# Modulo 4 · Esercizio 4: Eliminazione e ripristino di un sito
 
 [← Esercizio 3](Esercizio-03.md) · [Indice modulo](README.md) · [Esercizio 5 →](Esercizio-05.md)
 

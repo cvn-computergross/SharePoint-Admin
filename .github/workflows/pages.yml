@@ -1,73 +1,49 @@
-# Pubblica il sito GitHub Pages a partire da:
-#   - branch main        -> contenuti (guide, immagini, materiale)
-#   - branch GitHub-Page -> componenti del sito (tema MkDocs, CSS, loghi, script di build)
-# Il sito viene pubblicato con il metodo ufficiale "GitHub Actions" (nessun branch gh-pages).
-name: Pubblica sito GitHub Pages
+# Aggiorna il sito GitHub Pages.
+#   main        -> guide (Modulo-*, Materiale, README) + sorgenti del sito (cartella sito/)
+#   GitHub-Page -> sito compilato (HTML), riscritto a ogni esecuzione: non modificarlo a mano
+# GitHub Pages pubblica il branch GitHub-Page (Settings > Pages > Deploy from a branch).
+name: Aggiorna sito GitHub Pages
 
 on:
   push:
     branches: [main]
-  workflow_dispatch: # avvio manuale da Actions > Run workflow (es. dopo modifiche a GitHub-Page)
+  workflow_dispatch: # avvio manuale da Actions > Run workflow
 
-# Permessi minimi: di default il workflow può solo leggere la repo.
+# Permessi minimi per tutto il workflow; il job sotto chiede solo la scrittura sul codice.
 permissions:
   contents: read
 
-# Una sola pubblicazione alla volta; quelle in coda non annullano quella in corso.
+# Un aggiornamento alla volta.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
+    permissions:
+      contents: write # serve solo per fare push sul branch GitHub-Page
     steps:
-      - name: Checkout contenuti (main)
-        uses: actions/checkout@v7
-        with:
-          ref: main
-          path: content
-          persist-credentials: false
-
-      - name: Checkout componenti del sito (GitHub-Page)
-        uses: actions/checkout@v7
-        with:
-          ref: GitHub-Page
-          path: site
-          persist-credentials: false
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: site/requirements.txt
+          cache-dependency-path: sito/requirements.txt
 
       - name: Installa MkDocs
-        run: pip install -r site/requirements.txt
+        run: pip install -r sito/requirements.txt
 
-      - name: Genera le pagine dalle guide di main
-        run: python site/scripts/build_docs.py content site
+      - name: Genera le pagine dalle guide
+        run: python sito/scripts/build_docs.py . sito
 
-      - name: Compila il sito
-        run: mkdocs build --strict -f site/mkdocs.gen.yml -d "$GITHUB_WORKSPACE/_site"
-
-      - uses: actions/configure-pages@v6
-
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: _site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-24.04
-    # Solo questo job può pubblicare su Pages.
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Compila e pubblica sul branch GitHub-Page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --strict --force --no-history \
+            --config-file sito/mkdocs.gen.yml \
+            --remote-branch GitHub-Page \
+            --message "Aggiornamento sito da main {sha}"

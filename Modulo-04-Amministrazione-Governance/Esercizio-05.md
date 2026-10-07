@@ -16,6 +16,7 @@
 3. Nel menu laterale, selezionare **Reports**.
 
 ![Esercizio 5 – Passo 1 – Accesso al SharePoint Admin Center](images/es05-01.png)
+
 ## Passo 2 – Report Data Access Governance: Sharing Links
 
 Aprire **Reports > Data access governance**

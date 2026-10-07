@@ -49,6 +49,7 @@ Andare su **Policies > Sharing**
 > Il livello di **OneDrive** può essere uguale o più restrittivo di quello di **SharePoint**, mai più permissivo. Ogni sito ha a sua volta un proprio livello, che non può superare quello del tenant. Se si restringe la condivisione esterna, i guest perdono l'accesso in genere **entro un'ora**.
 >
 > [Gestire le impostazioni di condivisione per SharePoint e OneDrive](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
+
 ## Passo 3 – Access Control: Idle session sign-out
 
 Raggiungere **Access control > Idle session sign-out**
@@ -70,6 +71,7 @@ Raggiungere **Access control > Idle session sign-out**
 > L'idle session sign-out **non disconnette** gli utenti che: accedono con SSO da un dispositivo joined, hanno scelto **Stay signed in**, o usano un dispositivo gestito/conforme. Per questo la verifica al Passo 4 va fatta da una finestra InPrivate su un PC non gestito.
 >
 > [Idle session timeout per Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/manage/idle-session-timeout-web-apps)
+
 ## Passo 4 – Verifica lato User03 su SEA-DEV3
 
 **Accedere alla VM SEA-DEV3 con le credenziali di User03**

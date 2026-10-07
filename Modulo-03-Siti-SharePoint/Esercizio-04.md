@@ -13,6 +13,7 @@
    ```
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
+
 ## Passo 2 – Creazione di una nuova lista da zero
 
 1. Nella home del sito, selezionare **+ New > List**.

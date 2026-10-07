@@ -15,15 +15,19 @@
 2. Nel menu laterale, selezionare **Users > Active users**.
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center](images/es01-01.png)
+
 ## Passo 2 – Gestione delle impostazioni OneDrive di User02
 
 1. Nell'elenco degli utenti attivi, selezionare **User02**.
 2. Nel pannello laterale che si apre, selezionare la scheda **OneDrive**.
 
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-02.png)
+
 3. Selezionare **Create link to files**.
 4. Aprire il link generato: si accede direttamente al **OneDrive di User02** con **accesso completo** come amministratore, senza dover impersonare l'utente o richiedere credenziali aggiuntive.
+
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-03.png)
+
 ![Esercizio 1 – Passo 2 – Gestione delle impostazioni OneDrive di User02](images/es01-04.png)
 
 5. Tornare sull'admin center 365 e individuare la sezione **Storage Used** e selezionare **Edit**.

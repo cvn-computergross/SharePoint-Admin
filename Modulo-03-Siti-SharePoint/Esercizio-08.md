@@ -15,6 +15,7 @@
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 
 ![Esercizio 8 – Passo 1 – Accesso a Microsoft Teams con User02](images/es08-01.png)
+
 ## Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente
 
 1. Nel menu laterale di Teams, selezionare **Chat**.
@@ -26,11 +27,11 @@
 
 ![Esercizio 8 – Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente](images/es08-03.png)
 
-4. Selezionare l'opzione **More create team option** e  **From a group**.
+4. Selezionare l'opzione **More create team option** e **From a group**.
 
 ![Esercizio 8 – Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente](images/es08-04.png)
 
-5. Nella schermata successiva, selezionare la scheda **Microsoft 365** e individuare il gruppo **Marketing Department**  lo stesso gruppo Microsoft 365 creato insieme al sito SharePoint nell'Esercizio 1.
+5. Nella schermata successiva, selezionare la scheda **Microsoft 365** e individuare il gruppo **Marketing Department** lo stesso gruppo Microsoft 365 creato insieme al sito SharePoint nell'Esercizio 1.
 6. Selezionare il gruppo e confermare con **Create** (o **Choose team**).
 7. Attendere il completamento dell'operazione: Teams crea il nuovo Team riutilizzando automaticamente:
 - il **Microsoft 365 Group** già esistente (nessun nuovo gruppo viene creato);
@@ -43,7 +44,7 @@
 
 ![Esercizio 8 – Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente](images/es08-06.png)
 
-9. Notare che la pagina di condivisione del team non è altro che una cartella nella document library  del sito SharePoint Marketing Department.
+9. Notare che la pagina di condivisione del team non è altro che una cartella nella document library del sito SharePoint Marketing Department.
 
 ![Esercizio 8 – Passo 2 – Creazione del Team a partire dal gruppo Microsoft 365 esistente](images/es08-07.png)
 

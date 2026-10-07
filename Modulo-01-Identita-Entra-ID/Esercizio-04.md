@@ -20,6 +20,7 @@ Modulo1/Installer
 3. Individuare l'eseguibile di **Powershell** nella stessa cartella.
 4. Completare l'installazione guidata.
 5. Riavviare la VM.
+
 ## Passo 2 – Abilitare la modalità "PowerShell ISE" in VS Code
 
 1. Aprire **Visual Studio Code**.

@@ -70,6 +70,7 @@
 > Il valore ammesso va da **30 a 3650 giorni**. Il periodo inizia quando l'account viene **eliminato** da Microsoft Entra ID (non quando viene bloccato o perde la licenza). Al termine il OneDrive passa nel cestino della raccolta siti per altri **93 giorni**.
 >
 > [Impostare la retention di OneDrive per gli utenti eliminati](https://learn.microsoft.com/sharepoint/set-retention) · [OneDrive retention and deletion](https://learn.microsoft.com/sharepoint/retention-and-deletion)
+
 ## Passo 5 – OneDrive: Storage Limit
 
 1. Nella pagina **Settings**, sezione **OneDrive**, selezionare **Storage limit**.
@@ -80,6 +81,7 @@
 
 > [!NOTE]
 > Questa impostazione definisce il limite di spazio di archiviazione OneDrive per **tutti gli utenti** (nuovi) che dispongono di una licenza idonea. **Non si applica retroattivamente** agli utenti per i quali sia già stato impostato un limite specifico e diverso (come, ad esempio, User02 al Passo 2 dell'Esercizio 1, dove la quota è stata limitata manualmente a 512 GB): quella impostazione individuale resta prioritaria.
+
 ## Passo 6 – OneDrive: Sync (blocco estensioni file)
 
 1. Nella pagina **Settings**, sezione **OneDrive**, selezionare **Sync**.
@@ -115,8 +117,9 @@ msi
 | **Nome utente**       | `User04@XXXXXX`   |
 | **Password**          | `TempPassword04!` |
 | **Usage Location**    | Italy             |
-2. Assegnare le seguenti licenze andando su Billing Licenses :
-   - Office 365 E5(no Teams)
+
+2. Assegnare le seguenti licenze andando su **Billing > Licenses**:
+   - Office 365 E5 (no Teams)
    - Microsoft Teams Enterprise
 
 3. Aspettare qualche minuto, e poi aprire una finestra in Privato.

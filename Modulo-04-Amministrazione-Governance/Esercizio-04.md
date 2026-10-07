@@ -15,6 +15,7 @@
 2. Aprire **Show all > Admin centers > SharePoint**.
 
 ![Esercizio 4 – Passo 1 – Accesso al SharePoint Admin Center](images/es04-01.png)
+
 ## Passo 2 – Eliminazione del sito Communication
 
 1. Aprire **Sites > Active sites**

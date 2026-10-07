@@ -32,9 +32,10 @@
    Computergross@!
    ```
 
-5. Terminare la creazione e salvare UPN  .
+5. Terminare la creazione e salvare UPN .
 
 ![Esercizio 1 – Passo 1 – Creazione Utenti e Gruppi su Entra](images/es01-01.png)
+
 6. Andare su Users -> Active Users -> Add a User.
 7. Procedere con la creazione di User07 con le seguenti info e licenze:
    `First Name`: User

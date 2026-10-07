@@ -85,6 +85,7 @@
 > Formato del file di mapping (CSV **senza riga di intestazione**): colonna A login sorgente (`DOMINIO\utente`), colonna B UPN di destinazione, colonna C `TRUE` se la destinazione è un gruppo AD/Entra, altrimenti `FALSE`. Per preservare i permessi con un mapping personalizzato disattivare **Microsoft Entra ID lookup**.
 >
 > [Creare un file di mapping utenti](https://learn.microsoft.com/sharepointmigration/mm-user-mapping-file) · [Impostazioni di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-settings)
+
 ## Passo 3 – Migrazione della cartella Paghe verso SharePoint
 
 1. Tornare su **Migration > File share > View task**, sezione **Scan**, individuare l'elemento **`\\SEA-DEV1\Paghe`**.
@@ -205,6 +206,7 @@
 > Il OneDrive di destinazione deve essere **già provisionato** (l'utente deve avervi acceduto almeno una volta, oppure va pre-provisionato con `Request-SPOPersonalSite`), altrimenti il task fallisce.
 >
 > [Pre-provisioning di OneDrive](https://learn.microsoft.com/sharepoint/pre-provision-accounts)
+
 ## Passo 6 – Monitoraggio dell'avanzamento
 
 1. Su **Migrations > File share**, selezionare la scheda **Migration**.
@@ -217,6 +219,7 @@
 > Per ogni task è possibile scaricare il **report** (riepilogo, errori, elementi migrati) per analizzare eventuali file saltati.
 >
 > [Risolvere i problemi di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-troubleshoot)
+
 ## Passo 7 – Verifica lato user06
 
 1. Aprire una finestra del browser in **modalità anonima/InPrivate**.
@@ -245,7 +248,7 @@
 
 5. Eseguire i seguenti test aprendo l'URL del sito in nuove schede del browser:
 
-**TEST 1**  `https://tenant_name.sharepoint.com/sites/Amministrazione/` → **Dà errore** (accesso negato). Questo è il comportamento atteso: i permessi sono stati assegnati alle **singole document library**, non all'intero sito.
+**TEST 1** `https://tenant_name.sharepoint.com/sites/Amministrazione/` → **Dà errore** (accesso negato). Questo è il comportamento atteso: i permessi sono stati assegnati alle **singole document library**, non all'intero sito.
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/
@@ -253,7 +256,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/
 
 ![Esercizio 4 – Passo 7 – Verifica lato user06](images/es04-15.png)
 
-**TEST 2**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Generale` → **Fa entrare** (accesso consentito, tramite il gruppo Fatture di cui user06 è membro).
+**TEST 2** `https://tenant_name.sharepoint.com/sites/Amministrazione/Generale` → **Fa entrare** (accesso consentito, tramite il gruppo Fatture di cui user06 è membro).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Generale
@@ -261,7 +264,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Generale
 
 ![Esercizio 4 – Passo 7 – Verifica lato user06](images/es04-16.png)
 
-**TEST 3**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture` → **Fa entrare** (accesso consentito: user06 appartiene al gruppo Fatture).
+**TEST 3** `https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture` → **Fa entrare** (accesso consentito: user06 appartiene al gruppo Fatture).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture
@@ -269,7 +272,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture
 
 ![Esercizio 4 – Passo 7 – Verifica lato user06](images/es04-17.png)
 
-**TEST 4**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe` → **Mostra una pagina vuota (blank), senza possibilità di eseguire azioni** (user06 non appartiene al gruppo Paghe, quindi non ha permessi su questa libreria).
+**TEST 4** `https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe` → **Mostra una pagina vuota (blank), senza possibilità di eseguire azioni** (user06 non appartiene al gruppo Paghe, quindi non ha permessi su questa libreria).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
@@ -278,6 +281,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
 ![Esercizio 4 – Passo 7 – Verifica lato user06](images/es04-18.png)
 
 6. Al termine dei test, effettuare **Sign out** e chiudere il browser.
+
 ## Passo 8 – Verifica lato user07
 
 1. Aprire una nuova finestra del browser in **modalità anonima/InPrivate**.
@@ -301,7 +305,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
 
 4. Eseguire gli stessi test del Passo 7, aprendo l'URL del sito in nuove schede:
 
-**TEST 1**  `https://tenant_name.sharepoint.com/sites/Amministrazione/` → **Dà errore** (stesso motivo del Passo 7: permessi assegnati alle library, non al sito).
+**TEST 1** `https://tenant_name.sharepoint.com/sites/Amministrazione/` → **Dà errore** (stesso motivo del Passo 7: permessi assegnati alle library, non al sito).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/
@@ -309,7 +313,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/
 
 ![Esercizio 4 – Passo 8 – Verifica lato user07](images/es04-20.png)
 
-**TEST 2**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Generale` → **Fa entrare** (accesso consentito, tramite il gruppo Paghe di cui user07 è membro).
+**TEST 2** `https://tenant_name.sharepoint.com/sites/Amministrazione/Generale` → **Fa entrare** (accesso consentito, tramite il gruppo Paghe di cui user07 è membro).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Generale
@@ -317,7 +321,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Generale
 
 ![Esercizio 4 – Passo 8 – Verifica lato user07](images/es04-21.png)
 
-**TEST 3**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe` → **Fa entrare** (accesso consentito: user07 appartiene al gruppo Paghe).
+**TEST 3** `https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe` → **Fa entrare** (accesso consentito: user07 appartiene al gruppo Paghe).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
@@ -325,7 +329,7 @@ https://tenant_name.sharepoint.com/sites/Amministrazione/Paghe
 
 ![Esercizio 4 – Passo 8 – Verifica lato user07](images/es04-22.png)
 
-**TEST 4**  `https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture` → **Mostra una pagina vuota (blank), senza possibilità di eseguire azioni** (user07 non appartiene al gruppo Fatture).
+**TEST 4** `https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture` → **Mostra una pagina vuota (blank), senza possibilità di eseguire azioni** (user07 non appartiene al gruppo Fatture).
 
 ```text
 https://tenant_name.sharepoint.com/sites/Amministrazione/Fatture

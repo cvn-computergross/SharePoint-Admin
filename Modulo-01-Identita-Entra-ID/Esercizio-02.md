@@ -27,7 +27,7 @@ Entrare su **Entra ID > Users > New user > Create new user**.
 
 ![Esercizio 2 – Passo 2 – Creazione del nuovo utente](images/es02-02.png)
 
-2. Nella sezione **Properties**, compilare gli attributi richiesti impostando un **attributo "parlante"**  `Department` con un valore riconoscibile, questo attributo sarà usato al Passo 3 come criterio di appartenenza per il gruppo dinamico.
+2. Nella sezione **Properties**, compilare gli attributi richiesti impostando un **attributo "parlante"** `Department` con un valore riconoscibile, questo attributo sarà usato al Passo 3 come criterio di appartenenza per il gruppo dinamico.
 
 ![Esercizio 2 – Passo 2 – Creazione del nuovo utente](images/es02-03.png)
 
@@ -64,7 +64,9 @@ Configurare il gruppo seguendo queste specifiche:
 1. Selezionare **Add dynamic query**.
 
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-06.png)
+
 ![Esercizio 2 – Passo 3 – Creazione del gruppo dinamico](images/es02-07.png)
+
 2. Nell'editor della regola (**Rule builder** oppure **Edit** per la sintassi avanzata), impostare la condizione in base all'attributo scelto per `usertmp01`, ad esempio:
 
 ```text

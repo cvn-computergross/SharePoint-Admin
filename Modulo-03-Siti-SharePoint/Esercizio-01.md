@@ -48,6 +48,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
     - **Group owner**: aggiungere **User02**.
 
 ![Esercizio 1 – Sezione 1 – Informazioni di base](images/es01-04.png)
+
 ### Sezione 2 – Impostazioni aggiuntive
 
 4. Selezionare **Next** e compilare:
@@ -98,6 +99,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 5. Selezionare **Crea** per completare la creazione.
 
 ![Esercizio 1 – 3.1 – Communication Site](images/es01-06.png)
+
 ### 3.2 – Team Site senza Microsoft 365 Group
 
 1. Ripetere la procedura da **Create**, selezionando questa volta **Browse more site**.
@@ -120,7 +122,9 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
     - **Select language**: `English`
     - **Time zone**: `UTC+1`
 4. Selezionare **Create Site** per completare la creazione.
+
 ![Esercizio 1 – 3.2 – Team Site senza Microsoft 365 Group](images/es01-07.png)
+
 > [!NOTE]
 > A differenza del Team Site collegato a un gruppo (creato al Passo 2), un **Team site senza Microsoft 365 Group** non genera automaticamente una cassetta postale condivisa né un calendario di gruppo, e non può diventare la base per un Team di Microsoft Teams tramite l'opzione "crea da gruppo esistente" (Esercizio 8).
 

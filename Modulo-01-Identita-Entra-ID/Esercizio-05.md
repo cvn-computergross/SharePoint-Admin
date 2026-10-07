@@ -4,7 +4,7 @@
 
 ## Passo 1 – Registrazione della nuova Enterprise Application (App ID)
 
-Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
+Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/ e successivamente **Entra ID > App registrations > New registration**
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-01.png)
 
@@ -29,7 +29,9 @@ Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/ e succe
 - `User.ReadWrite.All`
 **Sharepoint**:
 - `Sites.FullControl.All`
+
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-05.png)
+
 6. Aggiungere anche quello di SharePoint e proseguire.
 
 ![Esercizio 5 – Passo 1 – Registrazione della nuova Enterprise Application (App ID)](images/es05-06.png)
@@ -45,6 +47,7 @@ Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/ e succe
 > `Sites.FullControl.All`, `User.ReadWrite.All` e `Group.ReadWrite.All` sono permessi applicativi **molto ampi**: l'app agisce su tutto il tenant senza utente connesso. In produzione applicare il principio del **least privilege** (es. `Sites.Selected` per limitare l'accesso a siti specifici).
 >
 > [Panoramica dei permessi Microsoft Graph](https://learn.microsoft.com/graph/permissions-overview)
+
 ## Passo 2 – Generazione del certificato da PowerShell
 
 1. Aprire su Visual Studio Code il file:
@@ -62,7 +65,7 @@ New-PnPAzureCertificate -OutPfx "C:\Cert\cert.pfx" -OutCert "C:\Cert\cert.cer"
 ```
 
 5. Al termine, verranno generati due file:
-    - **`cert.pfx`**:  contiene la chiave privata, va importato **sulla VM** (nel certificate store locale).
+    - **`cert.pfx`**: contiene la chiave privata, va importato **sulla VM** (nel certificate store locale).
     - **`cert.cer`**: contiene solo la parte pubblica, va caricato **sull'Enterprise Application** in Entra ID.
 
 ![Esercizio 5 – Passo 2 – Generazione del certificato da PowerShell](images/es05-08.png)
@@ -71,17 +74,18 @@ New-PnPAzureCertificate -OutPfx "C:\Cert\cert.pfx" -OutCert "C:\Cert\cert.cer"
 
 1. Fare doppio clic sul file **`cert.pfx`** generato al passo precedente.
 2. Si apre la procedura guidata **Certificate Import Wizard**.
-3. Selezionare come archivio  **Local Machine**.
+3. Selezionare come archivio **Local Machine**.
 4. Lasciare **Automatically select the certificate store** .
 5. Completare l'importazione.
 
 ![Esercizio 5 – Passo 3 – Importazione del certificato PFX sulla VM](images/es05-09.png)
+
 6. Verificare l'importazione da PowerShell:
  ```powershell
  Get-ChildItem Cert:\LocalMachine\My
  ```
 
-Annotare il valore di **Thumbprint** del certificato appena importato: servirà  per autenticarsi con Microsoft Graph.
+Annotare il valore di **Thumbprint** del certificato appena importato: servirà per autenticarsi con Microsoft Graph.
 
 ![Esercizio 5 – Passo 3 – Importazione del certificato PFX sulla VM](images/es05-10.png)
 
@@ -91,6 +95,7 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 2. Andare su **Certificates & secrets > Certificates > Upload certificate**.
 
 ![Esercizio 5 – Passo 4 – Caricamento del certificato pubblico sull'Enterprise Application](images/es05-11.png)
+
 3. Selezionare il file **`cert.cer`** generato al Passo 2 e caricarlo manualmente.
 4. Selezionare **Add**.
 
@@ -107,9 +112,10 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 > Microsoft raccomanda i **certificati** al posto dei client secret per l'autenticazione app-only. Tenere traccia della **data di scadenza** e pianificare la rotazione prima che il certificato scada.
 >
 > [Credenziali con certificato per le applicazioni](https://learn.microsoft.com/entra/identity-platform/certificate-credentials)
+
 ## Passo 5 – Verifica con comandi Microsoft Graph tramite l'Enterprise Application
 
-1. Tornare su **Visual Studio Code**  con il seguente file aperto:
+1. Tornare su **Visual Studio Code** con il seguente file aperto:
 
    ```text
    LAB/Modulo1/Script/Es5.ps1

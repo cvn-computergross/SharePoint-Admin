@@ -4,6 +4,7 @@
 
 > [!IMPORTANT]
 > Disattivare l'**Enhanced session mode** della VM (Hyper-V) se attiva.
+
 ## Blocco 1 – Cloud Join di User02 su SEA-DEV2
 
 > [!WARNING]
@@ -20,6 +21,7 @@
    ```
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-01.png)
+
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-02.png)
 
 3. Al termine dell'installazione, andare su **Impostazioni (Settings) > Accounts > Access work or school** (in italiano: **Impostazioni > Account > Accesso a lavoro o istituto di istruzione**).
@@ -27,6 +29,7 @@
 4. Selezionare **Connect** e avviare la procedura di **Cloud Join** (Microsoft Entra join), inserendo le credenziali dell'amministratore del tenant quando richiesto.
 
  ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-03.png)
+
 3. Completare la procedura guidata.
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-04.png)
@@ -41,6 +44,7 @@
 > Con **Microsoft Entra join** il dispositivo è registrato solo nel cloud (nessun Active Directory on-premises). Per default gli utenti autorizzati a eseguire il join sono definiti in **Entra ID > Devices > Device settings**.
 >
 > [Dispositivi Microsoft Entra joined](https://learn.microsoft.com/entra/identity/devices/concept-directory-join)
+
 ### Passo 2 – Primo accesso con User02 (utente non amministratore)
 
 1. Tornare su **SEA-DEV2**.
@@ -50,6 +54,7 @@
 ![Esercizio 6 – Passo 2 – Primo accesso con User02 (utente non amministratore)](images/es06-06.png)
 
 3. Il sistema guiderà l'utente nella configurazione di **Windows Hello for Business (WHFB)**, richiede **MFA** e impostazione del **PIN** mettere `137900`.
+
 ![Esercizio 6 – Passo 2 – Primo accesso con User02 (utente non amministratore)](images/es06-07.png)
 
 > [!NOTE]
@@ -59,6 +64,7 @@
 > Windows Hello for Business sostituisce la password con una credenziale legata al dispositivo (PIN o biometria) basata su chiavi asimmetriche: il PIN **non lascia mai il dispositivo**.
 >
 > [Panoramica di Windows Hello for Business](https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/)
+
 ### Passo 3 – Verifica del Single Sign-On (SSO)
 
 1. Aspettare 1 minuto dal login sul PC.
@@ -68,6 +74,7 @@
 
 3. Verificare che l'accesso avvenga **senza richiesta di login** (SSO sulle app installate).
 4. Se non esegue il **SSO** mettere l'email e chiederà solo **MFA**.
+
 ## Blocco 2 – Cloud Join di User03 su SEA-DEV3
 
 > [!WARNING]
@@ -108,6 +115,7 @@
 
 > [!NOTE]
 > Da questo momento in poi, User03 dovrà accedere alla VM **utilizzando WHFB** invece della password.
+
 ### Passo 3 – Verifica del Single Sign-On (SSO)
 
 1. Aspettare 1 minuto dal login sul PC.

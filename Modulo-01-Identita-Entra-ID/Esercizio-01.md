@@ -36,6 +36,7 @@ Entrare su **Entra ID > Authentication methods > Policy**.
 - **Email OTP**
 
 ![Esercizio 1 – Passo 3 – Verificare/configurare i metodi di autenticazione](images/es01-03.png)
+
  Procedura: cliccare sul metodo interessato → nella sezione **Enable and target** selezionare **Disable**
 
 ![Esercizio 1 – Passo 3 – Verificare/configurare i metodi di autenticazione](images/es01-04.png)
@@ -58,6 +59,7 @@ MFA Required - All User (exclude administrator)
 ```
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-06.png)
+
 In Users configurare:
 
 - **Include:** `All users`

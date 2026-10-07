@@ -113,6 +113,7 @@ $report | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-02.png)
 
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-03.png)
+
 ## Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples
 
 1. Scaricare **Script2.ps1** presente in:
@@ -196,6 +197,7 @@ $permessi | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 ![Esercizio 6 – Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples](images/es06-04.png)
 
 ![Esercizio 6 – Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples](images/es06-05.png)
+
 ## Script 3 – Elenco utenti guest in tutti i siti del tenant
 
 Per questo script è necessario avere almeno un **Guest** in un sito SharePoint.
@@ -287,6 +289,7 @@ Write-Host "Trovati $($guestReport.Count) guest totali." -ForegroundColor Green
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-08.png)
 
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-09.png)
+
 ## Script 4 – Audit file nelle librerie documentali
 
 1. Scaricare **Script4.ps1** presente in:

@@ -82,6 +82,7 @@
 6. Selezionare **Add > Select a principal**, cercare e selezionare il gruppo **`Fatture`**.
 7. Impostare il permesso su **Full control**.
 8. Selezionare **OK**, poi nuovamente **OK**.
+
 ## Passo 4 – Condivisione e permessi della cartella Paghe
 
 1. Selezionare la cartella **`Paghe`** (dentro `Amministrazione`), tasto destro **> Properties**.
@@ -98,6 +99,7 @@
 ![Esercizio 2 – Passo 4 – Condivisione e permessi della cartella Paghe](images/es02-13.png)
 
 8. Selezionare **OK**, poi nuovamente **OK**.
+
 ## Passo 5 – Condivisione e permessi della cartella Generale
 
 1. Selezionare la cartella **`Generale`** (dentro `Amministrazione`), tasto destro **> Properties**.
@@ -123,6 +125,7 @@
 ![Esercizio 2 – Passo 5 – Condivisione e permessi della cartella Generale](images/es02-16.png)
 
 12. Selezionare **OK**, poi nuovamente **OK** per chiudere la finestra avanzata.
+
 ## Passo 6 – Copia dei file del materiale del corso
 
 1. Aprire la cartella del materiale del corso **Modulo5/Data/**.

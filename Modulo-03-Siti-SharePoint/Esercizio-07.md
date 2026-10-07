@@ -12,6 +12,7 @@
    ```
 
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
+
 ## Passo 2 – Site Information
 
 1. Selezionare la rotella delle impostazioni (in alto a destra) e scegliere **Site information**.
@@ -38,6 +39,7 @@
 3. Cercare Approval System e premere su Request aggiungere un commento a piacere e inviare la richiesta..
 
    ![Esercizio 7 – Passo 3 – Add an App](images/es07-05.png)
+
 > [!WARNING]
 >E' possibile che l'invio della richiesta per l'app dallo store non parta e dia questo errore:
 >`Can't send request. Refresh your page and try again. If the issue persists, contact a SharePoint Administrator`
@@ -71,6 +73,7 @@
 ![Esercizio 7 – Passo 5 – View all site settings (solo visualizzazione)](images/es07-09.png)
 
 ![Esercizio 7 – Passo 5 – View all site settings (solo visualizzazione)](images/es07-10.png)
+
 2. Aprire (solo per visualizzare, **senza modificare**) le seguenti sezioni, evidenziandone lo scopo:
 
 - **Regional Settings**: permette di cambiare il **formato di data e ora**, il fuso orario predefinito e il calendario utilizzato dal sito. Cambiare Locale e mettere Italian e mettere ok.

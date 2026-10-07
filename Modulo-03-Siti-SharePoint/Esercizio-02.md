@@ -6,7 +6,7 @@
 
 **Accedere alla VM SEA-DEV2 con le credenziali di User02**
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`  (dove `tenant_name` è il nome del proprio tenant)
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment` (dove `tenant_name` è il nome del proprio tenant)
 
    ```text
    https://tenant_name.sharepoint.com/sites/MarketingDepartment
@@ -36,37 +36,41 @@
 
 > [!NOTE]
 > Le modifiche alla navigazione sono visibili immediatamente a tutti gli utenti che accedono al sito, in base ai permessi di visualizzazione di ciascuna voce.
+
 ## Passo 3 – Change the Look del sito
 
 Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look**
 
 ![Esercizio 2 – Passo 3 – Change the Look del sito](images/es02-05.png)
+
 ### Tema
 
 1. Nella sezione **Theme**, selezionare il tema **Blue** (tema aziendale coerente con il reparto Marketing).
 
 ![Esercizio 2 – Tema](images/es02-06.png)
 
-### Header  Layout
+### Header – Layout
 
 2. Nella sezione **Header**, impostare il **Layout** su **Extended** (esteso), per un'intestazione più ampia e visivamente d'impatto.
 
-![Esercizio 2 – Header  Layout](images/es02-07.png)
-### Header  Design
+![Esercizio 2 – Header Layout](images/es02-07.png)
+
+### Header – Design
 
 3. Configurare le seguenti opzioni nella sezione **Header > Design**:
 - **Theme**: selezionare `#1267B5 background, white accent`.
 
-![Esercizio 2 – Header  Design](images/es02-08.png)
+![Esercizio 2 – Header Design](images/es02-08.png)
 
 - **Image (opzionale)**: selezionare un'immagine da **Stock Images** (a tema ufficio/collaborazione).
 
-![Esercizio 2 – Header  Design](images/es02-09.png)
+![Esercizio 2 – Header Design](images/es02-09.png)
 
 - **Overlay color**: selezionare l'ultima opzione della tavolozza colori proposta (la tonalità più scura/intensa).
 - **Gradient direction**: impostare su **Bottom to top** (dal basso verso l'alto).
 
-![Esercizio 2 – Header  Design](images/es02-10.png)
+![Esercizio 2 – Header Design](images/es02-10.png)
+
 ### Logo
 
 4. Configurare i loghi del sito:

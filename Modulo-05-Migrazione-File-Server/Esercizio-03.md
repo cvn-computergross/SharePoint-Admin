@@ -29,7 +29,8 @@
 6. Durante la fase di **provisioning**, nel campo relativo all'amministratore del sito, impostare **admin** (l'account amministratore del tenant) come **Primary administrator**.
 
 ![Esercizio 3 – Passo 1 – Creazione del sito Amministrazione](images/es03-02.png)
-7. Come **Time Zone** impostare UTC+01:00 .
+
+7. Come **Time Zone** impostare UTC+01:00.
 
 ![Esercizio 3 – Passo 1 – Creazione del sito Amministrazione](images/es03-03.png)
 
@@ -63,6 +64,7 @@
    ```
 
 ![Esercizio 3 – Passo 2 – Creazione delle document library](images/es03-06.png)
+
 ## Passo 3 – Installazione del Migration Agent
 
 1. Tornare su **SEA-DEV1** e aprire lo **SharePoint Admin Center**, andare su **Migration > File share**.

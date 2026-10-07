@@ -32,7 +32,8 @@
 4. Notare che nei Teams Site con gruppo 365 non è possibile editare direttamente i permessi del gruppo.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-03.png)
-5. Per effettuare l'operazione  e aggirare le limitazioni è necessario usare SharePoint Online Management Shell.
+
+5. Per effettuare l'operazione e aggirare le limitazioni è necessario usare SharePoint Online Management Shell.
 6. Aggiungere ai Site Collection Administrator MOD Administrator.
 
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-04.png)
@@ -96,6 +97,7 @@ Get-SPOSiteGroup `
 > Aggiungersi come **Site Collection Administrator** concede accesso completo a tutti i contenuti del sito. In produzione registrarlo come intervento amministrativo e rimuovere il ruolo al termine.
 >
 > [Gestire gli amministratori dei siti](https://learn.microsoft.com/sharepoint/manage-site-collection-administrators)
+
 ## Passo 3 – Permessi univoci sulla libreria "File Condivisi02"
 
 1. Aprire la libreria **File Condivisi02**.
@@ -109,6 +111,7 @@ Get-SPOSiteGroup `
 5. Una volta interrotta l'ereditarietà, modificare il permesso assegnato al gruppo **Marketing Department Members**, impostandolo su **Read**, rimuovendo l'eventuale permesso di modifica precedentemente ereditato dal sito.
 
 ![Esercizio 6 – Passo 3 – Permessi univoci sulla libreria "File Condivisi02"](images/es06-09.png)
+
 6. Salvare le modifiche.
 
 > [!NOTE]
@@ -116,6 +119,7 @@ Get-SPOSiteGroup `
 
 > [!TIP]
 > Rompere l'ereditarietà a livello di libreria è accettabile; evitare invece permessi univoci su **molti singoli file o cartelle**: rendono la gestione e l'audit difficili e possono degradare le prestazioni.
+
 ## Passo 4 – Verifica lato User03 dopo le modifiche ai permessi
 
 **Accedere alla VM SEA-DEV3 con le credenziali di User03**
@@ -127,6 +131,7 @@ Get-SPOSiteGroup `
 - Possa **solo visualizzare e scaricare** i file in **File Condivisi02**, senza poter caricare, modificare o eliminare nulla (permesso Read Only, impostato con permessi univoci).
 
 ![Esercizio 6 – Passo 4 – Verifica lato User03 dopo le modifiche ai permessi](images/es06-10.png)
+
 ## Passo 5 – Collegamento del sito a OneDrive lato User03
 
 1. Sempre da **SEA-DEV3 con User03**, aprire il browser e accedere a `https://portal.office.com` oppure direttamente a `https://tenant_name-my.sharepoint.com` per aprire **OneDrive sul Web**.

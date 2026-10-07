@@ -47,7 +47,7 @@ Aprire **Reports > Data access governance**
 > [!IMPORTANT]
 > I report di **Data access governance** richiedono **SharePoint Advanced Management** (incluso in Microsoft 365 Copilot o come add-on).
 >
-> 📖 [Report di Data access governance](https://learn.microsoft.com/sharepoint/data-access-governance-reports)
+> [Report di Data access governance](https://learn.microsoft.com/sharepoint/data-access-governance-reports)
 
 ## Passo 3 – Reports da Admin Center 365
 
@@ -97,7 +97,7 @@ E' possibile visualizzare anche l'Activity e lo Usage di OneDrive.
 > [!NOTE]
 > Per default i report di utilizzo mostrano nomi **pseudonimizzati**. La modifica dell'impostazione di privacy richiede un amministratore con ruolo adeguato (es. Global Administrator) e può richiedere alcuni minuti prima di riflettersi nei report.
 >
-> 📖 [Report di attività nell'interfaccia di amministrazione di Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/activity-reports/activity-reports)
+> [Report di attività nell'interfaccia di amministrazione di Microsoft 365](https://learn.microsoft.com/microsoft-365/admin/activity-reports/activity-reports)
 
 ---
 

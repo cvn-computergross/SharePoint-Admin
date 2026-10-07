@@ -40,7 +40,7 @@
 > [!NOTE]
 > Con **Microsoft Entra join** il dispositivo è registrato solo nel cloud (nessun Active Directory on-premises). Per default gli utenti autorizzati a eseguire il join sono definiti in **Entra ID > Devices > Device settings**.
 >
-> 📖 [Dispositivi Microsoft Entra joined](https://learn.microsoft.com/entra/identity/devices/concept-directory-join)
+> [Dispositivi Microsoft Entra joined](https://learn.microsoft.com/entra/identity/devices/concept-directory-join)
 ### Passo 2 – Primo accesso con User02 (utente non amministratore)
 
 1. Tornare su **SEA-DEV2**.
@@ -58,7 +58,7 @@
 > [!TIP]
 > Windows Hello for Business sostituisce la password con una credenziale legata al dispositivo (PIN o biometria) basata su chiavi asimmetriche: il PIN **non lascia mai il dispositivo**.
 >
-> 📖 [Panoramica di Windows Hello for Business](https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/)
+> [Panoramica di Windows Hello for Business](https://learn.microsoft.com/windows/security/identity-protection/hello-for-business/)
 ### Passo 3 – Verifica del Single Sign-On (SSO)
 
 1. Aspettare 1 minuto dal login sul PC.

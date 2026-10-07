@@ -50,7 +50,7 @@
 > [!NOTE]
 > Ogni Team crea (o riusa) un **gruppo Microsoft 365** e un **sito SharePoint**: ogni canale standard corrisponde a una **cartella** nella libreria *Documents* del sito. I canali **privati** e **condivisi** hanno invece un proprio sito SharePoint dedicato.
 >
-> 📖 [Come SharePoint e OneDrive interagiscono con Microsoft Teams](https://learn.microsoft.com/microsoftteams/sharepoint-onedrive-interact)
+> [Come SharePoint e OneDrive interagiscono con Microsoft Teams](https://learn.microsoft.com/microsoftteams/sharepoint-onedrive-interact)
 
 ---
 

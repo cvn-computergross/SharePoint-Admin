@@ -90,12 +90,12 @@ Get-SPOSiteGroup `
 > [!NOTE]
 > Livelli di autorizzazione predefiniti: **Full Control** (Owners), **Edit** (Members: possono anche creare/eliminare liste e librerie), **Contribute** (aggiungere/modificare/eliminare elementi ma **non** gestire liste), **Read** (Visitors).
 >
-> 📖 [Informazioni sui livelli di autorizzazione](https://learn.microsoft.com/sharepoint/understanding-permission-levels)
+> [Informazioni sui livelli di autorizzazione](https://learn.microsoft.com/sharepoint/understanding-permission-levels)
 
 > [!CAUTION]
 > Aggiungersi come **Site Collection Administrator** concede accesso completo a tutti i contenuti del sito. In produzione registrarlo come intervento amministrativo e rimuovere il ruolo al termine.
 >
-> 📖 [Gestire gli amministratori dei siti](https://learn.microsoft.com/sharepoint/manage-site-collection-administrators)
+> [Gestire gli amministratori dei siti](https://learn.microsoft.com/sharepoint/manage-site-collection-administrators)
 ## Passo 3 – Permessi univoci sulla libreria "File Condivisi02"
 
 1. Aprire la libreria **File Condivisi02**.

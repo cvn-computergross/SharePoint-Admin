@@ -51,7 +51,7 @@
 > [!NOTE]
 > Le richieste di app dallo Store arrivano agli amministratori in **SharePoint admin center > More features > Apps > App requests**. Gli amministratori possono anche impedire agli utenti di accedere allo Store.
 >
-> 📖 [Gestire le app con il sito App Catalog](https://learn.microsoft.com/sharepoint/use-app-catalog)
+> [Gestire le app con il sito App Catalog](https://learn.microsoft.com/sharepoint/use-app-catalog)
 
 ## Passo 4 – Site Usage
 
@@ -86,7 +86,7 @@
 > [!TIP]
 > Il **Term store** a livello di tenant si gestisce da **SharePoint admin center > Content services > Term store**.
 >
-> 📖 [Introduzione ai metadati gestiti](https://learn.microsoft.com/sharepoint/managed-metadata)
+> [Introduzione ai metadati gestiti](https://learn.microsoft.com/sharepoint/managed-metadata)
 
 ---
 

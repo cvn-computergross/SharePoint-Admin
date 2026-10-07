@@ -69,7 +69,7 @@
 > [!TIP]
 > Le colonne create nella libreria valgono solo lì. Per riutilizzare gli stessi metadati in più librerie o siti usare **colonne del sito** e **tipi di contenuto**, o meglio il **Content type gallery** a livello di tenant.
 >
-> 📖 [Creare e gestire i tipi di contenuto](https://learn.microsoft.com/sharepoint/create-content-type)
+> [Creare e gestire i tipi di contenuto](https://learn.microsoft.com/sharepoint/create-content-type)
 ## Passo 5 – Esempi di viste (condivise o personali)
 
 1. Nella libreria **File Condivisi01**, selezionare **Add view** (accanto al nome della vista corrente, es. "All Documents").
@@ -92,7 +92,7 @@
 >
 > Le viste aiutano anche con le librerie molto grandi (oltre la soglia di **5.000 elementi** per vista): usare filtri su colonne **indicizzate**.
 >
-> 📖 [Gestire elenchi e raccolte di grandi dimensioni](https://support.microsoft.com/office/b8588dae-9387-48c2-9248-c24122f07c59)
+> [Gestire elenchi e raccolte di grandi dimensioni](https://support.microsoft.com/office/b8588dae-9387-48c2-9248-c24122f07c59)
 ## Passo 6 – Verifica lato User03 (membro) su SEA-DEV3
 
 1. Accedere alla **VM SEA-DEV3 con le credenziali di User03**.

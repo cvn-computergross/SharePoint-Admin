@@ -31,7 +31,7 @@
 > [!NOTE]
 > L'installazione **per-machine** (`/allusers`) installa il client in `Program Files` ed è consigliata per i dispositivi condivisi e per gli ambienti VDI.
 >
-> 📖 [Installare l'app di sincronizzazione per-machine](https://learn.microsoft.com/sharepoint/per-machine-installation)
+> [Installare l'app di sincronizzazione per-machine](https://learn.microsoft.com/sharepoint/per-machine-installation)
 ## Passo 1 – Primo accesso al client OneDrive con User02
 
 1. Avviare il client **OneDrive** (di solito parte automaticamente dopo l'installazione, oppure cercarlo nel menu Start).
@@ -73,7 +73,7 @@
 > [!NOTE]
 > L'app di sincronizzazione **non sincronizza i file `.tmp` e `.ini`** e rifiuta nomi o tipi di file non validi (es. `.lock`, `desktop.ini`, caratteri non consentiti).
 >
-> 📖 [Nomi e tipi di file non validi in OneDrive e SharePoint](https://support.microsoft.com/office/64883a5d-228e-48f5-b3d2-eb39e07630fa)
+> [Nomi e tipi di file non validi in OneDrive e SharePoint](https://support.microsoft.com/office/64883a5d-228e-48f5-b3d2-eb39e07630fa)
 
 ## Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)
 
@@ -136,7 +136,7 @@
 > [!WARNING]
 > I link **Anyone** non richiedono autenticazione: chiunque riceva il link (anche inoltrato) accede al file e non è possibile tracciare chi lo ha aperto. Usarli solo per contenuti non sensibili e sempre con **scadenza**.
 >
-> 📖 [Best practice per la condivisione con utenti non autenticati](https://learn.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing)
+> [Best practice per la condivisione con utenti non autenticati](https://learn.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing)
 ## Passo 5 – Co-authoring e cronologia versioni
 
 1. Tornare su **SEA-DEV2** con **User02** e aprire **`Powerpoint01.pptx`** dalla cartella OneDrive locale.
@@ -228,7 +228,7 @@
 > [!NOTE]
 > In SharePoint e OneDrive gli elementi eliminati sono conservati per **93 giorni** complessivi tra cestino di primo e di secondo livello. Il cestino di secondo livello ha una capacità pari al **200%** della quota del sito.
 >
-> 📖 [Ripristinare elementi dal cestino della raccolta siti](https://learn.microsoft.com/sharepoint/restore-deleted-items-from-site-collection-recycle-bin)
+> [Ripristinare elementi dal cestino della raccolta siti](https://learn.microsoft.com/sharepoint/restore-deleted-items-from-site-collection-recycle-bin)
 ## Passo 9 – "Always keep on this device" e "Free up space"
 
 1. Su **SEA-DEV2**, fare clic destro sull'icona **OneDrive** nella barra delle applicazioni (o sulla cartella OneDrive in Esplora file) e selezionare **"Always keep on this device"** (Mantieni sempre su questo dispositivo).
@@ -299,7 +299,7 @@ Premere **Enabled** e poi Ok.
 > [!TIP]
 > I file `OneDrive.admx`/`.adml` aggiornati si trovano anche nella cartella di installazione del client (`...\Microsoft OneDrive\<versione>\adm\`). In ambienti cloud-only le stesse impostazioni si distribuiscono tramite **Intune** (Settings catalog).
 >
-> 📖 [Usare i criteri OneDrive per controllare la sincronizzazione](https://learn.microsoft.com/sharepoint/use-group-policy)
+> [Usare i criteri OneDrive per controllare la sincronizzazione](https://learn.microsoft.com/sharepoint/use-group-policy)
 ## Passo 11 – Ulteriori policy OneDrive
 
 **D) Use OneDrive Files On-Demand**
@@ -328,7 +328,7 @@ Riavviare **SEA-DEV3** per applicare tutte le policy configurate ai Passi 10 e 1
 > [!IMPORTANT]
 > Il **Tenant ID** si trova in **Entra ID > Overview**. Le policy **Silently move Windows known folders** e **Silent sign-in** funzionano solo con account di lavoro su dispositivi Microsoft Entra joined o ibridi.
 >
-> 📖 [Reindirizzare e spostare le cartelle note di Windows in OneDrive](https://learn.microsoft.com/sharepoint/redirect-known-folders)
+> [Reindirizzare e spostare le cartelle note di Windows in OneDrive](https://learn.microsoft.com/sharepoint/redirect-known-folders)
 ## Passo 12 – Login con User03 e verifica delle policy applicate
 
 1. Dopo il riavvio, accedere a **SEA-DEV3 con le credenziali di User03**.

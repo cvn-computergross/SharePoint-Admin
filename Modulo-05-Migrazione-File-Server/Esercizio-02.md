@@ -67,7 +67,7 @@
 > [!NOTE]
 > Migration Manager migra tre tipi di permesso del file system: **Read** → *Read*, **Write** → *Contribute*, **Full control** → *Full Control*. I permessi speciali (es. **Deny**) **non vengono migrati**.
 >
-> 📖 [Permessi di file e cartelle durante la migrazione](https://learn.microsoft.com/sharepointmigration/understanding-permissions-when-migrating)
+> [Permessi di file e cartelle durante la migrazione](https://learn.microsoft.com/sharepointmigration/understanding-permissions-when-migrating)
 
 ## Passo 3 – Condivisione e permessi della cartella Fatture
 

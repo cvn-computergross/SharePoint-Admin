@@ -84,7 +84,7 @@
 > [!IMPORTANT]
 > Formato del file di mapping (CSV **senza riga di intestazione**): colonna A login sorgente (`DOMINIO\utente`), colonna B UPN di destinazione, colonna C `TRUE` se la destinazione è un gruppo AD/Entra, altrimenti `FALSE`. Per preservare i permessi con un mapping personalizzato disattivare **Microsoft Entra ID lookup**.
 >
-> 📖 [Creare un file di mapping utenti](https://learn.microsoft.com/sharepointmigration/mm-user-mapping-file) · [Impostazioni di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-settings)
+> [Creare un file di mapping utenti](https://learn.microsoft.com/sharepointmigration/mm-user-mapping-file) · [Impostazioni di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-settings)
 ## Passo 3 – Migrazione della cartella Paghe verso SharePoint
 
 1. Tornare su **Migration > File share > View task**, sezione **Scan**, individuare l'elemento **`\\SEA-DEV1\Paghe`**.
@@ -204,7 +204,7 @@
 > [!WARNING]
 > Il OneDrive di destinazione deve essere **già provisionato** (l'utente deve avervi acceduto almeno una volta, oppure va pre-provisionato con `Request-SPOPersonalSite`), altrimenti il task fallisce.
 >
-> 📖 [Pre-provisioning di OneDrive](https://learn.microsoft.com/sharepoint/pre-provision-accounts)
+> [Pre-provisioning di OneDrive](https://learn.microsoft.com/sharepoint/pre-provision-accounts)
 ## Passo 6 – Monitoraggio dell'avanzamento
 
 1. Su **Migrations > File share**, selezionare la scheda **Migration**.
@@ -216,7 +216,7 @@
 > [!TIP]
 > Per ogni task è possibile scaricare il **report** (riepilogo, errori, elementi migrati) per analizzare eventuali file saltati.
 >
-> 📖 [Risolvere i problemi di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-troubleshoot)
+> [Risolvere i problemi di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-troubleshoot)
 ## Passo 7 – Verifica lato user06
 
 1. Aprire una finestra del browser in **modalità anonima/InPrivate**.

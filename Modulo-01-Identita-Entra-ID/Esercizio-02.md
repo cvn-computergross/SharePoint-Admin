@@ -85,7 +85,7 @@ Configurare il gruppo seguendo queste specifiche:
 > [!TIP]
 > Nel **Rule builder** si possono combinare più condizioni con `-and`/`-or`. Usare **Validate rules** per testare la regola su utenti specifici prima di salvare.
 >
-> 📖 [Regole di membership dinamica per i gruppi](https://learn.microsoft.com/entra/identity/users/groups-dynamic-membership)
+> [Regole di membership dinamica per i gruppi](https://learn.microsoft.com/entra/identity/users/groups-dynamic-membership)
 
 ## Passo 4 – Verifica dell'appartenenza al gruppo
 

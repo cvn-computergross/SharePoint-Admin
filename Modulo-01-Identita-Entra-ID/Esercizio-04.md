@@ -95,12 +95,12 @@ Import-Module Microsoft.Online.SharePoint.PowerShell
 > - **PnP.PowerShell** (v2 e successive) richiede **PowerShell 7.4** o superiore.
 > - **Microsoft.Online.SharePoint.PowerShell** è pensato per **Windows PowerShell 5.1**; in PowerShell 7 può essere necessario importarlo con `Import-Module Microsoft.Online.SharePoint.PowerShell -UseWindowsPowerShell`.
 >
-> 📖 [Introduzione a SharePoint Online Management Shell](https://learn.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+> [Introduzione a SharePoint Online Management Shell](https://learn.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!IMPORTANT]
 > Dal 2024 PnP PowerShell **non fornisce più un'app multi-tenant condivisa**: per connettersi è necessario registrare una propria app in Microsoft Entra ID (cosa che faremo nell'[Esercizio 5](Esercizio-05.md)), oppure usare `Register-PnPEntraIDAppForInteractiveLogin`.
 >
-> 📖 [Register an Entra ID application for PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html)
+> [Register an Entra ID application for PnP PowerShell](https://pnp.github.io/powershell/articles/registerapplication.html)
 
 ---
 

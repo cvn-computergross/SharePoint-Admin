@@ -47,4 +47,4 @@ Laboratori pratici SharePoint Online per amministratori, da eseguire a partire d
 > [!CAUTION]
 > Operazioni rischiose o irreversibili.
 
-I callout con 📖 rimandano alla documentazione ufficiale su [Microsoft Learn](https://learn.microsoft.com/sharepoint/).
+I callout con un link rimandano alla documentazione ufficiale su [Microsoft Learn](https://learn.microsoft.com/sharepoint/).

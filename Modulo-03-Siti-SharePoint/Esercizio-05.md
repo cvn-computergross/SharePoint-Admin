@@ -55,7 +55,7 @@
 > [!TIP]
 > La web part **Embed** accetta solo domini consentiti dalle impostazioni **HTML Field Security** del sito; YouTube è consentito per default.
 >
-> 📖 [Usare le web part nelle pagine SharePoint](https://support.microsoft.com/office/336e8e92-3e2d-4298-ae01-d404bbe751e0)
+> [Usare le web part nelle pagine SharePoint](https://support.microsoft.com/office/336e8e92-3e2d-4298-ae01-d404bbe751e0)
 ## Passo 3 – Creazione di una nuova pagina
 
 1. Nel menu laterale, selezionare **Home > + New > Page**.

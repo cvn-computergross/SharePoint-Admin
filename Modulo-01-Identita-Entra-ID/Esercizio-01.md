@@ -43,7 +43,7 @@ Entrare su **Entra ID > Authentication methods > Policy**.
 > [!TIP]
 > Microsoft consiglia di gestire i metodi dalla policy unificata **Authentication methods** e di preferire metodi resistenti al phishing (Authenticator, passkey). La disattivazione di Passkey/OATH/Email OTP qui serve solo a semplificare il lab.
 >
-> 📖 [Gestire i metodi di autenticazione in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods-manage)
+> [Gestire i metodi di autenticazione in Microsoft Entra ID](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-methods-manage)
 
 ## Passo 4 – Creare la Conditional Access Policy per la MFA
 
@@ -97,12 +97,12 @@ Premere **Create** per salvare la policy.
 > [!CAUTION]
 > In produzione l'esclusione va fatta su **account di emergenza (break-glass)** dedicati, non sull'account amministrativo di uso quotidiano. Microsoft raccomanda inoltre di creare le nuove policy in **Report-only**, verificarne l'impatto e solo dopo portarle su **On**.
 >
-> 📖 [Gestire gli account di accesso di emergenza](https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access) · [Modalità report-only](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-report-only)
+> [Gestire gli account di accesso di emergenza](https://learn.microsoft.com/entra/identity/role-based-access-control/security-emergency-access) · [Modalità report-only](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-report-only)
 
 > [!IMPORTANT]
 > Conditional Access richiede licenze **Microsoft Entra ID P1** (incluse in Microsoft 365 E3/E5). Prima di creare policy personalizzate, verificare che i **Security defaults** siano disabilitati: le due funzionalità non possono coesistere.
 >
-> 📖 [Policy comuni di Conditional Access](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-policy-common)
+> [Policy comuni di Conditional Access](https://learn.microsoft.com/entra/identity/conditional-access/concept-conditional-access-policy-common)
 
 ---
 

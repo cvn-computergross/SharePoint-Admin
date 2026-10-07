@@ -73,7 +73,7 @@ Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -Cert
 > [!TIP]
 > Su tenant con molti OneDrive lo script può impiegare parecchio tempo e incorrere in **throttling** (HTTP 429). Per report su larga scala valutare **Microsoft Graph Data Connect** o i report di utilizzo.
 >
-> 📖 [Evitare il throttling in SharePoint Online](https://learn.microsoft.com/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
+> [Evitare il throttling in SharePoint Online](https://learn.microsoft.com/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 # Report OneDrive: storage in MB, cestini in KB
 # Requisiti: Microsoft.Online.SharePoint.PowerShell + PnP.PowerShell
 # Connessione app-only gia' eseguita. Riusa $AppId, $TenantId, $Thumbprint.

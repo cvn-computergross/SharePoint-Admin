@@ -44,7 +44,7 @@ Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/ e succe
 > [!CAUTION]
 > `Sites.FullControl.All`, `User.ReadWrite.All` e `Group.ReadWrite.All` sono permessi applicativi **molto ampi**: l'app agisce su tutto il tenant senza utente connesso. In produzione applicare il principio del **least privilege** (es. `Sites.Selected` per limitare l'accesso a siti specifici).
 >
-> 📖 [Panoramica dei permessi Microsoft Graph](https://learn.microsoft.com/graph/permissions-overview)
+> [Panoramica dei permessi Microsoft Graph](https://learn.microsoft.com/graph/permissions-overview)
 ## Passo 2 – Generazione del certificato da PowerShell
 
 1. Aprire su Visual Studio Code il file:
@@ -106,7 +106,7 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 > [!TIP]
 > Microsoft raccomanda i **certificati** al posto dei client secret per l'autenticazione app-only. Tenere traccia della **data di scadenza** e pianificare la rotazione prima che il certificato scada.
 >
-> 📖 [Credenziali con certificato per le applicazioni](https://learn.microsoft.com/entra/identity-platform/certificate-credentials)
+> [Credenziali con certificato per le applicazioni](https://learn.microsoft.com/entra/identity-platform/certificate-credentials)
 ## Passo 5 – Verifica con comandi Microsoft Graph tramite l'Enterprise Application
 
 1. Tornare su **Visual Studio Code**  con il seguente file aperto:

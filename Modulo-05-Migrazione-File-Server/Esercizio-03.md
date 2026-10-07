@@ -94,7 +94,7 @@
 > [!IMPORTANT]
 > Prerequisiti dell'agent: Windows Server 2016+/Windows 10+ a 64 bit, .NET Framework 4.6.2+, accesso agli **endpoint** Microsoft richiesti e account Windows con **lettura** sulle condivisioni sorgente. Il server sorgente deve supportare **SMB 2.0** o superiore. Per migrare serve essere **Global** o **SharePoint Administrator**.
 >
-> 📖 [Prerequisiti di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-prerequisites) · [Panoramica migrazione file share](https://learn.microsoft.com/sharepointmigration/mm-get-started)
+> [Prerequisiti di Migration Manager](https://learn.microsoft.com/sharepointmigration/mm-prerequisites) · [Panoramica migrazione file share](https://learn.microsoft.com/sharepointmigration/mm-get-started)
 
 ---
 

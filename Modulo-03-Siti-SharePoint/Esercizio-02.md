@@ -91,7 +91,7 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 > [!TIP]
 > Gli amministratori possono aggiungere **temi personalizzati** con i colori aziendali (`Add-SPOTheme`) e nascondere i temi predefiniti, così che i site owner scelgano solo tra quelli approvati.
 >
-> 📖 [Temi dei siti SharePoint](https://learn.microsoft.com/sharepoint/dev/declarative-customization/site-theming/sharepoint-site-theming-overview)
+> [Temi dei siti SharePoint](https://learn.microsoft.com/sharepoint/dev/declarative-customization/site-theming/sharepoint-site-theming-overview)
 
 ---
 

@@ -1,6 +1,6 @@
 # Modulo 5 – Migrazione da file server con Migration Manager
 
-[← Modulo 4](../Modulo-04-Amministrazione-Governance/README.md) · [🏠 Home](../README.md)
+[← Modulo 4](../Modulo-04-Amministrazione-Governance/README.md) · [Home](../README.md)
 
 Migrazione di un file server on-premises verso SharePoint e OneDrive con Migration Manager, preservando i permessi tramite file di mapping utenti.
 

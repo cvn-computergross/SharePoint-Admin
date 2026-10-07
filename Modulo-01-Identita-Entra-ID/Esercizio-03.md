@@ -115,7 +115,7 @@ Andare su https://admin.cloud.microsoft/ , **Billing** e successivamente **Licen
 > [!IMPORTANT]
 > L'assegnazione delle licenze **basata su gruppo** richiede **Microsoft Entra ID P1** (o superiore). Per assegnare licenze è necessario impostare la **Usage location** dell'utente, altrimenti l'assegnazione fallisce.
 >
-> 📖 [Assegnare licenze tramite appartenenza a gruppi](https://learn.microsoft.com/entra/identity/users/licensing-groups-assign)
+> [Assegnare licenze tramite appartenenza a gruppi](https://learn.microsoft.com/entra/identity/users/licensing-groups-assign)
 
 ## Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
 
@@ -169,7 +169,7 @@ Tornare su https://admin.cloud.microsoft/ e  procedere su **Teams & Groups > Act
 > [!TIP]
 > Chi può invitare guest è definito dalle **External collaboration settings** di Microsoft Entra ID, che si combinano con le impostazioni di condivisione di Microsoft 365 Groups e SharePoint.
 >
-> 📖 [Configurare le impostazioni di collaborazione esterna](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
+> [Configurare le impostazioni di collaborazione esterna](https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure)
 
 ## Passo 7 – Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta
 

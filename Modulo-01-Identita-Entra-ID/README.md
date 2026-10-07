@@ -1,6 +1,6 @@
 # Modulo 1 – Identità e accesso con Microsoft Entra ID
 
-[🏠 Home](../README.md) · [Modulo 2 →](../Modulo-02-OneDrive/README.md)
+[Home](../README.md) · [Modulo 2 →](../Modulo-02-OneDrive/README.md)
 
 Preparazione del tenant: MFA e Conditional Access, utenti e gruppi (statici, dinamici, Microsoft 365), licenze, utenti guest, strumenti PowerShell, autenticazione app-only con certificato e Microsoft Entra join dei client.
 

@@ -1,6 +1,6 @@
 # Modulo 3 – Siti SharePoint Online
 
-[← Modulo 2](../Modulo-02-OneDrive/README.md) · [🏠 Home](../README.md) · [Modulo 4 →](../Modulo-04-Amministrazione-Governance/README.md)
+[← Modulo 2](../Modulo-02-OneDrive/README.md) · [Home](../README.md) · [Modulo 4 →](../Modulo-04-Amministrazione-Governance/README.md)
 
 Creazione e personalizzazione dei siti: tipologie di sito, navigazione e aspetto, librerie, metadati e viste, liste e moduli, pagine e web part, permessi, impostazioni del sito e integrazione con Microsoft Teams.
 

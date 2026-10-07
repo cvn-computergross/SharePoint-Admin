@@ -69,7 +69,7 @@
 > [!NOTE]
 > Il valore ammesso va da **30 a 3650 giorni**. Il periodo inizia quando l'account viene **eliminato** da Microsoft Entra ID (non quando viene bloccato o perde la licenza). Al termine il OneDrive passa nel cestino della raccolta siti per altri **93 giorni**.
 >
-> 📖 [Impostare la retention di OneDrive per gli utenti eliminati](https://learn.microsoft.com/sharepoint/set-retention) · [OneDrive retention and deletion](https://learn.microsoft.com/sharepoint/retention-and-deletion)
+> [Impostare la retention di OneDrive per gli utenti eliminati](https://learn.microsoft.com/sharepoint/set-retention) · [OneDrive retention and deletion](https://learn.microsoft.com/sharepoint/retention-and-deletion)
 ## Passo 5 – OneDrive: Storage Limit
 
 1. Nella pagina **Settings**, sezione **OneDrive**, selezionare **Storage limit**.
@@ -101,7 +101,7 @@ msi
 > [!TIP]
 > Per escludere file senza mostrare errori agli utenti (o con wildcard come `*.pst`) si può usare la policy di gruppo **Exclude specific kinds of files from being uploaded** (`EnableODIgnoreListFromGPO`).
 >
-> 📖 [Bloccare la sincronizzazione di tipi di file specifici](https://learn.microsoft.com/sharepoint/block-file-types)
+> [Bloccare la sincronizzazione di tipi di file specifici](https://learn.microsoft.com/sharepoint/block-file-types)
 
 ## Passo 7 – Verifica con User04 e User03
 

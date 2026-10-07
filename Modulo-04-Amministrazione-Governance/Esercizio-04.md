@@ -48,12 +48,12 @@
 > [!NOTE]
 > Ripristinando un sito collegato a un **gruppo Microsoft 365** viene ripristinato anche il gruppo con tutte le sue risorse; queste però sono conservate solo **30 giorni**, mentre il sito resta disponibile per **93**. Dopo l'eliminazione definitiva, Microsoft conserva backup per ulteriori **14 giorni**, recuperabili solo tramite supporto.
 >
-> 📖 [Ripristinare i siti eliminati](https://learn.microsoft.com/sharepoint/restore-deleted-site-collection)
+> [Ripristinare i siti eliminati](https://learn.microsoft.com/sharepoint/restore-deleted-site-collection)
 
 > [!CAUTION]
 > `Remove-SPODeletedSite` elimina il sito **definitivamente** dal cestino: l'operazione non è reversibile.
 >
-> 📖 [Eliminare un sito](https://learn.microsoft.com/sharepoint/delete-site-collection)
+> [Eliminare un sito](https://learn.microsoft.com/sharepoint/delete-site-collection)
 
 ---
 

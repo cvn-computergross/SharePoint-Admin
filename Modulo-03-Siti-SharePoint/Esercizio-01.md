@@ -66,7 +66,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 > [!TIP]
 > Per default **qualsiasi utente** può creare gruppi Microsoft 365 (e quindi Team site). In molte organizzazioni la creazione viene limitata a un gruppo di sicurezza specifico.
 >
-> 📖 [Gestire chi può creare gruppi Microsoft 365](https://learn.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+> [Gestire chi può creare gruppi Microsoft 365](https://learn.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
 ## Passo 3 – Creazione guidata di un Site Communication e di un Team Site senza gruppo M365
 
@@ -127,7 +127,7 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 > [!NOTE]
 > Riepilogo: **Team site** (con gruppo M365) per la collaborazione di un team; **Communication site** per pubblicare contenuti a un pubblico ampio; **Team site senza gruppo** quando serve un sito di collaborazione gestito solo con i permessi SharePoint.
 >
-> 📖 [Pianificare i siti SharePoint](https://learn.microsoft.com/sharepoint/planning-hub-sites)
+> [Pianificare i siti SharePoint](https://learn.microsoft.com/sharepoint/planning-hub-sites)
 
 ---
 

@@ -44,7 +44,7 @@
 > [!NOTE]
 > Il link **Create link to files** aggiunge l'amministratore come **Site Collection Administrator** del OneDrive dell'utente. È un accesso a dati personali: usarlo solo con motivazione documentata e rimuoverlo al termine.
 >
-> 📖 [Accedere ai file OneDrive di un altro utente](https://learn.microsoft.com/sharepoint/user-onedrive-access)
+> [Accedere ai file OneDrive di un altro utente](https://learn.microsoft.com/sharepoint/user-onedrive-access)
 
 ## Passo 3 – Verifica lato User02 su SEA-DEV2
 
@@ -76,7 +76,7 @@
 > [!TIP]
 > Il setting per utente può essere solo **uguale o più restrittivo** di quello a livello di organizzazione: non è possibile concedere a un singolo OneDrive più condivisione esterna di quanta ne consenta il tenant.
 >
-> 📖 [Gestire le impostazioni di condivisione](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
+> [Gestire le impostazioni di condivisione](https://learn.microsoft.com/sharepoint/turn-external-sharing-on-or-off)
 
 ---
 

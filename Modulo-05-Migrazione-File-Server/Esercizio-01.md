@@ -19,6 +19,19 @@
    `Select location`: Italy
    `Licenses`: Microsoft Teams Enterprise, Office 365 E5 (no Teams).
 4. Togliere la spunta a `Automatically create a password` e a `Require this user to change their password when they first sign in` e impostare `Computergross@!` .
+
+   ```text
+   Automatically create a password
+   ```
+
+   ```text
+   Require this user to change their password when they first sign in
+   ```
+
+   ```text
+   Computergross@!
+   ```
+
 5. Terminare la creazione e salvare UPN  .
 
 ![Esercizio 1 – Passo 1 – Creazione Utenti e Gruppi su Entra](images/es01-01.png)
@@ -31,6 +44,19 @@
    `Select location`: Italy
    `Licenses`: Microsoft Teams Enterprise, Office 365 E5 (no Teams).
 8. Togliere la spunta a `Automatically create a password` e a `Require this user to change their password when they first sign in` e impostare `Computergross@!` .
+
+   ```text
+   Automatically create a password
+   ```
+
+   ```text
+   Require this user to change their password when they first sign in
+   ```
+
+   ```text
+   Computergross@!
+   ```
+
 9. Terminare la creazione e salvare UPN .
 10. Andare su Teams & Groups -> Active Teams & Groups -> Security Groups.
 11. Premere **+ Add a security group** e inserire le seguenti informazioni:
@@ -56,18 +82,48 @@
 ### Utente user06
 
 2. Compilare i campi:
-    - **User name**: `user06`
-    - **Full name**: `user06`
-3. Impostare **Password**: `Password0!`
+    - **User name**:
+
+      ```text
+      user06
+      ```
+
+    - **Full name**:
+
+      ```text
+      user06
+      ```
+
+3. Impostare **Password**:
+
+   ```text
+   Password0!
+   ```
+
 4. **Togliere la spunta** da **User must change password at next logon**.
 5. Selezionare Create.
 
 ### Utente user07
 
 1. Ripetere la procedura: tasto destro su **Users** e selezionare **New User**.
-    - **User name**: `user07`
-	- **Full name**: `user07`
+    - **User name**:
+
+      ```text
+      user07
+      ```
+
+    - **Full name**:
+
+      ```text
+      user07
+      ```
+
 2. **Password**: `Password0!`, con la stessa spunta **User must change password at next logon** rimossa.
+
+   ```text
+   Password0!
+   ```
+
 3. Selezionare Create.
 
 ![Esercizio 1 – Utente user07](images/es01-04.png)
@@ -79,12 +135,22 @@ Andare su Computer Management, andare su System Tools > Local Users and Groups >
 ### Gruppo Fatture
 
 1. Premere tasto destro e New Group.
-2. **Group name**: `Fatture`.
+2. **Group name**:
+
+   ```text
+   Fatture
+   ```
+
 3. Selezionare **Create**.
 
 ### Gruppo Paghe
 
 1. Ripetere la procedura: **New Group**, **Group name**: `Paghe`, impostazioni base predefinite.
+
+   ```text
+   Paghe
+   ```
+
 2. Selezionare **Create**.
 
 ![Esercizio 1 – Gruppo Paghe](images/es01-05.png)

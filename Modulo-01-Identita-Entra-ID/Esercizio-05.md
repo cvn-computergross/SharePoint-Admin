@@ -47,7 +47,12 @@ Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/ e succe
 > 📖 [Panoramica dei permessi Microsoft Graph](https://learn.microsoft.com/graph/permissions-overview)
 ## Passo 2 – Generazione del certificato da PowerShell
 
-1. Aprire su Visual Studio Code il file: `LAB/Modulo1/Script/Es5.ps1`
+1. Aprire su Visual Studio Code il file:
+
+   ```text
+   LAB/Modulo1/Script/Es5.ps1
+   ```
+
 2. Sulla VM SEA-DEV1, aprire **PowerShell (Run as administrator)** da VSC.
 3. Creare la cartella **C:\Cert**.
 4. Eseguire il comando per generare il certificato in formato PFX e CER:
@@ -104,7 +109,12 @@ Annotare il valore di **Thumbprint** del certificato appena importato: servirà 
 > 📖 [Credenziali con certificato per le applicazioni](https://learn.microsoft.com/entra/identity-platform/certificate-credentials)
 ## Passo 5 – Verifica con comandi Microsoft Graph tramite l'Enterprise Application
 
-1. Tornare su **Visual Studio Code**  con il seguente file aperto: `LAB/Modulo1/Script/Es5.ps1`
+1. Tornare su **Visual Studio Code**  con il seguente file aperto:
+
+   ```text
+   LAB/Modulo1/Script/Es5.ps1
+   ```
+
 2. Eseguire sul **PowerShell** i seguenti comandi:
 
 ```powershell

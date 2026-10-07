@@ -5,7 +5,12 @@
 ## Passo 1 – Accesso al sito con User02
 
 **Accedere alla VM SEA-DEV2 con le credenziali di User02**
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 ## Passo 2 – Site Information
 

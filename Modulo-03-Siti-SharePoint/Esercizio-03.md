@@ -6,7 +6,12 @@
 
 **Accesso alla VM SEA-DEV2 con le credenziali di User02**
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 ## Passo 2 – Creazione della libreria "File Condivisi02"
 
@@ -14,7 +19,12 @@
 
 ![Esercizio 3 – Passo 2 – Creazione della libreria "File Condivisi02"](images/es03-01.png)
 
-2. Assegnare come nome della libreria **`File Condivisi02`**.
+2. Assegnare come nome della libreria:
+
+   ```text
+   File Condivisi02
+   ```
+
 3. Selezionare **Create** per completare la creazione.
 ![Esercizio 3 – Passo 2 – Creazione della libreria "File Condivisi02"](images/es03-02.png)
 > [!NOTE]
@@ -33,6 +43,10 @@
 1. Aprire la libreria **File Condivisi01**.
 2. Selezionare **+ Add column** e creare le seguenti colonne di esempio:
 - **Reparto** (tipo _Choice_, con valori: `Marketing`, `Vendite`, `Comunicazione` e spuntare il **Require that this column contains information**)
+
+  ```text
+  Marketing
+  ```
 
 ![Esercizio 3 – Passo 4 – Esempi di metadati e colonne personalizzate](images/es03-04.png)
 
@@ -82,7 +96,11 @@
 ## Passo 6 – Verifica lato User03 (membro) su SEA-DEV3
 
 1. Accedere alla **VM SEA-DEV3 con le credenziali di User03**.
-2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+2. Aprire **Microsoft Edge** e accedere allo stesso indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
 
 ![Esercizio 3 – Passo 6 – Verifica lato User03 (membro) su SEA-DEV3](images/es03-12.png)
 

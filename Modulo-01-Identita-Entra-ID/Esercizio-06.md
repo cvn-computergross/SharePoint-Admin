@@ -14,6 +14,11 @@
 1. Accedere alla **VM SEA-DEV2 come administrator**.
 2. **Disinstallare la versione di Office già presente** sulla VM: **Settings > Apps > Installed apps**, selezionare **Microsoft 365 / Office** > **Uninstall** e riavviare se richiesto.
 3. Aprire il browser e accedere a `https://portal.office.com` per scaricare e **reinstallare** le **app di Microsoft 365** (Word, Excel, Outlook, ecc.).
+
+   ```text
+   https://portal.office.com
+   ```
+
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-01.png)
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-02.png)
 
@@ -73,6 +78,10 @@
 1. Accedere alla **VM SEA-DEV3 come administrator**.
 2. **Disinstallare la versione di Office già presente** sulla VM: **Settings > Apps > Installed apps**, selezionare **Microsoft 365 / Office** > **Uninstall** e riavviare se richiesto.
 3. Aprire il browser e accedere a `https://portal.office.com` per scaricare e **reinstallare** le **app di Microsoft 365**.
+
+   ```text
+   https://portal.office.com
+   ```
 
 ![Esercizio 6 – Passo 1 – Installazione app Microsoft 365 e Cloud Join](images/es06-09.png)
 

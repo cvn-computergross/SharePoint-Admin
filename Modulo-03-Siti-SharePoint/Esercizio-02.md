@@ -8,6 +8,10 @@
 
 1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito creato nell'Esercizio 1: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`  (dove `tenant_name` è il nome del proprio tenant)
 
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 ![Esercizio 2 – Passo 1 – Accesso al sito con User02](images/es02-01.png)
 
 2. Inserire le credenziali di **User02** solo se richiesto: essendo User02 già autenticato su Windows/Microsoft 365, l'accesso dovrebbe avvenire in automatico tramite SSO, senza richiedere nuovamente le credenziali.
@@ -66,8 +70,18 @@ Premere sulla **rotella delle impostazioni (in alto a destra) > Change the look*
 ### Logo
 
 4. Configurare i loghi del sito:
-    - **Site logo thumbnail**: caricare il file `icon1.png` dal percorso materiale `/Modulo3/Data/icon1.png`.
-    - **Site logo**: caricare il file `icon2.png` dal percorso materiale `/Modulo3/Data/icon2.png`.
+    - **Site logo thumbnail**: caricare il file `icon1.png` dal percorso materiale:
+
+      ```text
+      /Modulo3/Data/icon1.png
+      ```
+
+    - **Site logo**: caricare il file `icon2.png` dal percorso materiale:
+
+      ```text
+      /Modulo3/Data/icon2.png
+      ```
+
     - **Logo alignment**: impostare su **Right** (tutto allineato a destra).
 
 ![Esercizio 2 – Logo](images/es02-11.png)

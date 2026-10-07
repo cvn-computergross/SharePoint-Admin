@@ -6,7 +6,12 @@
 
 **Accesso alla VM SEA-DEV2 con le credenziali di User02**
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 ## Passo 2 – Modifica della Home Page
 
@@ -23,11 +28,24 @@
 - **Calendario condiviso**: Group Calendar.
 - **Document library**: web part **Document Library**, puntata sulla libreria **Documents**.
 - **List**: web part **List**, puntata sulla lista **Richieste Marketing** (quella con il modulo personalizzato dell'Esercizio 4).
-- **Quick Links**: web part **Quick Links**, con un link di esempio verso `https://learn.microsoft.com`.
-- **Button**: web part **Button**, con testo `Visita il sito aziendale`, puntata su `https://computergross.it`.
+- **Quick Links**: web part **Quick Links**, con un link di esempio verso:
+
+  ```text
+  https://learn.microsoft.com
+  ```
+
+- **Button**: web part **Button**, con testo `Visita il sito aziendale`, puntata su:
+
+  ```text
+  https://computergross.it
+  ```
 
 ![Esercizio 5 – Passo 2 – Modifica della Home Page](images/es05-03.png)
 4. Aggiungere una sesta web part **Video** o **Embed**, incorporando il video `https://www.youtube.com/watch?v=nEwl1ZPRyMc` come contenuto multimediale di esempio (ad es. una clip di presentazione o formazione per il team).
+
+   ```text
+   https://www.youtube.com/watch?v=nEwl1ZPRyMc
+   ```
 
 5. Selezionare **Republish** (o **Publish**) per pubblicare le modifiche alla Home Page.
 

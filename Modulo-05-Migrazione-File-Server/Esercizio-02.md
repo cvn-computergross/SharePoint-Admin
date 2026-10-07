@@ -7,7 +7,12 @@
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin**
 
 1. Aprire **Esplora file** e accedere all'unità **C:\**.
-2. Creare una nuova cartella chiamata **`Fileserver`**.
+2. Creare una nuova cartella chiamata:
+
+   ```text
+   Fileserver
+   ```
+
 3. All'interno di **`Fileserver`**, incollare le due sottocartelle:
 - **`Amministrazione`**
 - **`HomeUsers`**

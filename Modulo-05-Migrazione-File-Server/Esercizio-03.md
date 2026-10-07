@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 2. Aprire **Show all > Admin centers > SharePoint**.
 3. Andare su **Sites > Active sites > Create**.
 
@@ -14,7 +19,12 @@
 
 4. Selezionare **Browse more sites**, quindi scegliere l'opzione **Team site** (ovvero il Teams site senza gruppo 365)
 5. Compilare i campi:
-- **Site name**: `Amministrazione`
+- **Site name**:
+
+  ```text
+  Amministrazione
+  ```
+
 - **Site address**: lasciare il valore proposto di default.
 6. Durante la fase di **provisioning**, nel campo relativo all'amministratore del sito, impostare **admin** (l'account amministratore del tenant) come **Primary administrator**.
 
@@ -34,10 +44,23 @@
 
 3. Creare la libreria **`Generale`** e selezionare **Create**.
 
+   ```text
+   Generale
+   ```
+
 ![Esercizio 3 – Passo 2 – Creazione delle document library](images/es03-05.png)
 
-4. Ripetere la procedura per creare la libreria **`Paghe`**.
-5. Ripetere nuovamente la procedura per creare la libreria **`Fatture`**.
+4. Ripetere la procedura per creare la libreria:
+
+   ```text
+   Paghe
+   ```
+
+5. Ripetere nuovamente la procedura per creare la libreria:
+
+   ```text
+   Fatture
+   ```
 
 ![Esercizio 3 – Passo 2 – Creazione delle document library](images/es03-06.png)
 ## Passo 3 – Installazione del Migration Agent
@@ -53,9 +76,14 @@
 ![Esercizio 3 – Passo 3 – Installazione del Migration Agent](images/es03-08.png)
 
 5. Seguire gli step della procedura di installazione guidata:
-	Login con `admin@TENANT.onmicrosoft.com` (dove TENANT è da sostituire con il proprio)
-	Login con la Password di Administrator.
-	Selezionare il path della File Share per testare.
+   - Login con l'account amministratore del tenant (sostituire `TENANT` con il proprio):
+
+     ```text
+     admin@TENANT.onmicrosoft.com
+     ```
+
+   - Login con la password di Administrator.
+   - Selezionare il path della file share per testare.
 
 ![Esercizio 3 – Passo 3 – Installazione del Migration Agent](images/es03-09.png)
 

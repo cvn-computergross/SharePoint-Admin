@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 2. Aprire **Show all > Admin centers > SharePoint**.
 3. Nel menu laterale, selezionare **Reports**.
 

@@ -22,6 +22,11 @@ Ripartendo dalla VM **SEA-DEV1**  andare su https://entra.microsoft.com/.
 
 3. Accedere alla **VM SEA-DEV2 come administrator locale**.
 4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER02**.
+
+   ```text
+   https://portal.office.com
+   ```
+
 5. Seguire il flusso guidato al primo accesso:
     - **Configurazione MFA** (es. Microsoft Authenticator), se richiesta dalle policy configurate negli esercizi precedenti.
 
@@ -46,6 +51,11 @@ Ripartendo dalla VM **SEA-DEV1** andare su https://entra.microsoft.com/.
 
 3. Accedere alla **VM SEA-DEV3 come administrator locale**.
 4. Aprire il browser e accedere a `https://portal.office.com` **via Web** con le credenziali di **USER03**.
+
+   ```text
+   https://portal.office.com
+   ```
+
 5. Seguire il flusso guidato di **cambio password** e **configurazione MFA** se richiesta.
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-05.png)
 ![Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3](images/es03-06.png)
@@ -60,8 +70,17 @@ Andare su **Groups > All groups > New group**
 Configurare il gruppo con le seguenti specifiche:
 1. **Group type:** `Security`
 2. **Membership type:** `Assigned` (statico).
-3. **Group name**:`GRP_SEC_STATIC`
-4. **Group description**: `Gruppo di sicurezza statico per l'assegnazione centralizzata delle licenze Microsoft 365 E5`
+3. **Group name**:
+
+   ```text
+   GRP_SEC_STATIC
+   ```
+
+4. **Group description**:
+
+   ```text
+   Gruppo di sicurezza statico per l'assegnazione centralizzata delle licenze Microsoft 365 E5
+   ```
 
 5. In **Members**, aggiungere manualmente:
     - **User02**
@@ -119,6 +138,10 @@ Tornare su https://admin.cloud.microsoft/ e  procedere su **Teams & Groups > Act
 1. Accedere alla **VM SEA-DEV3 come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User03**.
 
+   ```text
+   https://outlook.com
+   ```
+
 ![Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest](images/es03-16.png)
 
 3. Verificare che **User03**:
@@ -137,7 +160,11 @@ Tornare su https://admin.cloud.microsoft/ e  procedere su **Teams & Groups > Act
 > [!WARNING]
 >Un **membro** del gruppo può solo *proporre* l'aggiunta di un guest: la richiesta deve essere approvata da un **owner** (vedi Passo 7). Solo l'owner può invitare direttamente utenti esterni (Passo 8).
 
-5. Provare ora a invitare **Alex Wilber** tramite il suo UPN `alexw@XXXXXX`.
+5. Provare ora a invitare **Alex Wilber** tramite il suo UPN:
+
+   ```text
+   alexw@XXXXXX
+   ```
 
 > [!TIP]
 > Chi può invitare guest è definito dalle **External collaboration settings** di Microsoft Entra ID, che si combinano con le impostazioni di condivisione di Microsoft 365 Groups e SharePoint.
@@ -148,6 +175,11 @@ Tornare su https://admin.cloud.microsoft/ e  procedere su **Teams & Groups > Act
 
 1. Accedere alla **VM SEA-DEV2 come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.
+
+   ```text
+   https://outlook.com
+   ```
+
 3. Controllare l'arrivo della mail di richiesta e andare sul gruppo.
 
 ![Esercizio 3 – Passo 7 – Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta](images/es03-21.png)
@@ -162,12 +194,26 @@ Tornare su https://admin.cloud.microsoft/ e  procedere su **Teams & Groups > Act
 
 1. Accedere alla **VM SEA-DEV2 come administrator locale**.
 2. Aprire il browser e accedere a `https://outlook.com` **via Web** con le credenziali di **User02**.
+
+   ```text
+   https://outlook.com
+   ```
+
 3. Andare sul gruppo **GRP_365_STATIC** e andare su **members**.
-4. Premere su Add members e invitare una mail personale del tipo`personal@xxx.com`.
+4. Premere su Add members e invitare una mail personale del tipo:
+
+   ```text
+   personal@xxx.com
+   ```
 
 ![Esercizio 3 – Passo 8 – Invitare external users da Owner](images/es03-23.png)
 
 5. Sulla casella di posta personale **`personal@xxx.com`**, verificare la ricezione dell'email di invito ("Microsoft Invitations" per conto del tenant).
+
+   ```text
+   personal@xxx.com
+   ```
+
 6. Aprire l'email e selezionare **Accept invitation**.
 
 ![Esercizio 3 – Passo 8 – Invitare external users da Owner](images/es03-24.png)

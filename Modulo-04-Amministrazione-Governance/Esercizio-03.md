@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 ## Passo 2 – SharePoint: Pages
 
 1. Aprire **Show all > Admin centers > SharePoint**.
@@ -117,9 +122,18 @@ msi
 3. Aspettare qualche minuto, e poi aprire una finestra in Privato.
 4. Accedere via **Web** a `https://portal.office.com` con le credenziali di User04, quindi aprire **OneDrive**, e verificare che lo **spazio disponibile** mostrato risulti **2048 GB** (2TB).
 
+   ```text
+   https://portal.office.com
+   ```
+
 ![Esercizio 3 – Passo 7 – Verifica con User04 e User03](images/es03-06.png)
 
-5. Andare sulla VM SEA-DEV3 con le credenziali di User03 e scaricare i seguenti materiali `Modulo4\Data\File .msi e .exe demo`.
+5. Andare sulla VM SEA-DEV3 con le credenziali di User03 e scaricare i seguenti materiali:
+
+   ```text
+   Modulo4\Data\File .msi e .exe demo
+   ```
+
 6. Sul client OneDrive desktop di SEA-DEV3, provare a sincronizzare (copiare nella cartella OneDrive locale) due file di prova:
 
 - **`7z2603.exe`**

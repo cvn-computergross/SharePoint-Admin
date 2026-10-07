@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come User01 con credenziali admin**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 2. Nel menu laterale, aprire **Show all** (Mostra tutto) e selezionare **Admin centers > SharePoint**, per accedere all'**Admin Center di SharePoint**.
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center e a SharePoint](images/es01-01.png)
@@ -26,8 +31,18 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 ### Sezione 1 – Informazioni di base
 
 3. Compilare i campi:
-    - **Site Name**: `Marketing Department`
-    - **Site Description**: `Sito dedicato al reparto Marketing per la collaborazione su campagne, materiali e progetti condivisi.`
+    - **Site Name**:
+
+      ```text
+      Marketing Department
+      ```
+
+    - **Site Description**:
+
+      ```text
+      Sito dedicato al reparto Marketing per la collaborazione su campagne, materiali e progetti condivisi.
+      ```
+
     - **Group email address**: lasciare il valore proposto di default.
     - **Site address**: lasciare il valore proposto di default.
     - **Group owner**: aggiungere **User02**.
@@ -63,8 +78,18 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 2. Selezionare il tipo **Communication site**.
 3. Scegliere il template **Standard Communication**.
 4. Compilare i campi con valori uniformi e prestabiliti:
-    - **Site name**: `Comunicazioni Aziendali`
-    - **Site description**: `Sito di comunicazione per annunci e notizie aziendali.`
+    - **Site name**:
+
+      ```text
+      Comunicazioni Aziendali
+      ```
+
+    - **Site description**:
+
+      ```text
+      Sito di comunicazione per annunci e notizie aziendali.
+      ```
+
     - **Site address**: lasciare il valore proposto di default.
     - **Owner**: User02
     - **Select language**: `English`
@@ -78,8 +103,18 @@ Percorso: **SharePoint Admin Center > Sites > Active sites > Create**
 1. Ripetere la procedura da **Create**, selezionando questa volta **Browse more site**.
 2. Nella scelta del tipo di collaborazione, selezionare l'opzione **Team site**.
 3. Compilare i campi con valori uniformi e prestabiliti:
-    - **Site name**: `Sito Team Base`
-    - **Site description**: `Sito team di prova, non collegato a un gruppo Microsoft 365.`
+    - **Site name**:
+
+      ```text
+      Sito Team Base
+      ```
+
+    - **Site description**:
+
+      ```text
+      Sito team di prova, non collegato a un gruppo Microsoft 365.
+      ```
+
     - **Site address**: lasciare il valore proposto di default.
     - **Primary Administrator**: User02
     - **Select language**: `English`

@@ -50,7 +50,12 @@
 ![Esercizio 1 – Passo 1 – Primo accesso al client OneDrive con User02](images/es01-07.png)
 ## Passo 2 – Copia dei file da Modulo2/Dati sulla root di OneDrive
 
-1. Aprire la cartella del materiale del corso `Modulo2/Dati/`.
+1. Aprire la cartella del materiale del corso:
+
+   ```text
+   Modulo2/Dati/
+   ```
+
 2. Copiare i seguenti elementi sulla **root della cartella OneDrive** di User02:
 - File **Word** (es. `Word01.docx`)
 - File **PowerPoint** (`Powerpoint01.pptx`)
@@ -73,6 +78,10 @@
 ## Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)
 
 1. Da **User02**, fare clic destro su **`Powerpoint01.pptx`** nella cartella OneDrive e selezionare **Share** (Condividi).
+
+   ```text
+   Powerpoint01.pptx
+   ```
 
 ![Esercizio 1 – Passo 3 – Condivisione di Powerpoint01.pptx in modifica (Can Edit)](images/es01-10.png)
 
@@ -146,6 +155,10 @@
 
 1. Sempre da **User02** su SEA-DEV2, fare clic destro su **`Powerpoint01.pptx`** > **OneDrive** > **Manage Access** (Gestisci accesso).
 
+   ```text
+   Powerpoint01.pptx
+   ```
+
 ![Esercizio 1 – Passo 6 – Gestione degli accessi condivisi (Manage Access)](images/es01-22.png)
 
 2. Nella sezione **People**, osservare che **User03** compare con diritti di **modifica (edit)** e che **non è disponibile un'opzione di scadenza** per le condivisioni dirette con persone specifiche.
@@ -167,6 +180,11 @@
 
 1. Accedere a **SEA-DEV3 con User03** e aprire **Microsoft Edge**.
 2. Accedere a OneDrive via Web (`https://portal.office.com` e poi OneDrive).
+
+   ```text
+   https://portal.office.com
+   ```
+
 3. Aprire la sezione **Shared > Shared with me** (Condivisi con me): verificare che **`Powerpoint01.pptx`** compaia nell'elenco.
 
 ![Esercizio 1 – Passo 7 – OneDrive lato User03 via Web (Edge)](images/es01-27.png)
@@ -233,9 +251,17 @@
 1. Andare su **SEA-DEV3** come **User03**.
 2. Copiare il file **`onedrive.admx`** da **Materiale/Modulo2/Installer/** nella cartella locale **`C:\Windows\PolicyDefinitions\`**, richiede permessi da amministratore.
 
+   ```text
+   C:\Windows\PolicyDefinitions\
+   ```
+
 ![Esercizio 1 – Passo 10 – Configurazione delle policy OneDrive tramite GPEDIT (da SEA-DEV3, User03)](images/es01-40.png)
 
 3. Copiare il file **`onedrive.adml`** da **Materiale/Modulo2/Installer/** nella cartella locale **`C:\Windows\PolicyDefinitions\en-US\`**, richiede permessi da amministratore.
+
+   ```text
+   C:\Windows\PolicyDefinitions\en-US\
+   ```
 
 4. Avviare **`GPEDIT.MSC`** (Editor Criteri di gruppo locali).
 

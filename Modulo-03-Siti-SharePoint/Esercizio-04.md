@@ -6,7 +6,12 @@
 
 **Accesso alla VM SEA-DEV2 con le credenziali di User02**
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 2. Inserire le credenziali di **User02** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 ## Passo 2 – Creazione di una nuova lista da zero
 
@@ -21,7 +26,17 @@
 
 4. Aggiungere le seguenti colonne, tramite **+ Add column**:
     - **Tipo Richiesta**: colonna a **scelta multipla** (_Choice_), con opzioni: `Grafica`, `Contenuti Social`, `Evento`, `Materiale Stampa`.
+
+      ```text
+      Grafica
+      ```
+
     - **Priorità**: colonna _Choice_ a scelta singola, con opzioni: `Bassa`, `Media`, `Alta`.
+
+      ```text
+      Bassa
+      ```
+
     - **Data Scadenza**: colonna di tipo _Date and time_.
     - **Completata**: colonna di tipo _Yes/No_.
     - **Assegnato a**: colonna di tipo _Person_.
@@ -55,8 +70,18 @@
 2. Selezionare **Forms**.
 3. Premere **Create new form**
 4. Personalizzare il modulo, ad esempio:
-    - **Title**: `Form Input`
-    - **Logo**: `Icon.png`
+    - **Title**:
+
+      ```text
+      Form Input
+      ```
+
+    - **Logo**:
+
+      ```text
+      Icon.png
+      ```
+
     - Riordinare i campi (spostare "Priorità" subito sotto "Titolo").
     - Modificare il colore di sfondo dell'intestazione del modulo tramite **Themes > Create your own Style**.
 

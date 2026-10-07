@@ -9,7 +9,12 @@
 
 ## Passo 2 – Accedere a Microsoft Entra
 
-1. Accedere come **amministratore del tenant Microsoft 365** al portale:  `https://entra.microsoft.com`
+1. Accedere come **amministratore del tenant Microsoft 365** al portale:
+
+   ```text
+   https://entra.microsoft.com
+   ```
+
 2. Se richiesto, **impostare la MFA (Multi-Factor Authentication)** seguendo la procedura guidata proposta dal portale.
 
 ## Passo 3 – Verificare/configurare i metodi di autenticazione
@@ -46,7 +51,11 @@ Entrare su **Entra ID > Conditional Access > + Create new policy**.
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-05.png)
 
-Inserire nel campo Name: `MFA Required - All User (exclude administrator)`.
+Inserire nel campo Name:
+
+```text
+MFA Required - All User (exclude administrator)
+```
 
 ![Esercizio 1 – Passo 4 – Creare la Conditional Access Policy per la MFA](images/es01-06.png)
 In Users configurare:

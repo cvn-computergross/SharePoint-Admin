@@ -53,8 +53,18 @@ Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -Cert
 ## Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)
 
 1. Prerequisito: su **SEA-DEV3** con **User03** cancellare un documento per metterlo nel cestino di OneDrive.
-2. Su **SEA-DEV1** come Administrator creare la cartella **Temp** in `C:\Temp`.
-3. Scaricare lo **Script1.ps1** presente in `Modulo4\Scripts`.
+2. Su **SEA-DEV1** come Administrator creare la cartella **Temp** in:
+
+   ```text
+   C:\Temp
+   ```
+
+3. Scaricare lo **Script1.ps1** presente in:
+
+   ```text
+   Modulo4\Scripts
+   ```
+
 4. Aprire il file su **Visual Studio Code**.
 5. Eseguire lo script su **Power Shell**.
 
@@ -105,7 +115,12 @@ $report | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-03.png)
 ## Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples
 
-1. Scaricare **Script2.ps1** presente in `Modulo4\Scripts`.
+1. Scaricare **Script2.ps1** presente in:
+
+   ```text
+   Modulo4\Scripts
+   ```
+
 2. Aprire lo Script su **Visual Studio Code**.
 3. Sostituire il **tenant_name** con il proprio tenant del lab.
 4. Eseguire lo Script sul **Power Shell**.
@@ -195,7 +210,12 @@ Per questo script è necessario avere almeno un **Guest** in un sito SharePoint.
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-07.png)
 
 4. Tornare su **SEA-DEV1** come **Administrator**.
-5. Scaricare **Script3.ps1** presente in `Modulo4\Scripts`.
+5. Scaricare **Script3.ps1** presente in:
+
+   ```text
+   Modulo4\Scripts
+   ```
+
 6. Aprire il file su **Visual Studio Code.**
 7. Eseguire lo Script sul **Power Shell.**
 
@@ -269,7 +289,12 @@ Write-Host "Trovati $($guestReport.Count) guest totali." -ForegroundColor Green
 ![Esercizio 6 – Script 3 – Elenco utenti guest in tutti i siti del tenant](images/es06-09.png)
 ## Script 4 – Audit file nelle librerie documentali
 
-1. Scaricare **Script4.ps1** presente in `Modulo4\Scripts`.
+1. Scaricare **Script4.ps1** presente in:
+
+   ```text
+   Modulo4\Scripts
+   ```
+
 2. Aprire lo Script su **Visual Studio Code**.
 3. Sostituire il **tenant_name** con il proprio.
 4. Eseguire lo Script sul **Power Shell**.

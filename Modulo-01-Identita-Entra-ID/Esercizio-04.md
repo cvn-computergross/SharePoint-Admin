@@ -6,7 +6,11 @@
 
 Accedere alla VM **SEA-DEV1** come administrator locale.
 
-Prendere il materiale in: `Modulo1/Installer`
+Prendere il materiale in:
+
+```text
+Modulo1/Installer
+```
 
 1. Individuare e avviare l'eseguibile di **Visual Studio Code** nella stessa cartella.
 2. Completare l'installazione guidata.
@@ -41,7 +45,11 @@ Prendere il materiale in: `Modulo1/Installer`
 
 ## Passo 3 – Installazione dei moduli PowerShell (MS Graph, PnP, SPO)
 
-1. In VS Code, aprire il file di script fornito dal corso: `LAB/Modulo1/Script/Es4.ps1`
+1. In VS Code, aprire il file di script fornito dal corso:
+
+   ```text
+   LAB/Modulo1/Script/Es4.ps1
+   ```
 
 2. Selezionare ed **eseguire i comandi** presenti nello script per installare i moduli richiesti e importarli in sessione.
 3. Usare **Run Selection** (`F8`) per eseguire i comandi dopo aver evidenziato.

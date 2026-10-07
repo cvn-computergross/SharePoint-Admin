@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 2. Aprire **Show all > Admin centers > SharePoint**.
 
 ![Esercizio 2 – Passo 1 – Accesso al SharePoint Admin Center](images/es02-01.png)
@@ -70,6 +75,10 @@ Raggiungere **Access control > Idle session sign-out**
 **Accedere alla VM SEA-DEV3 con le credenziali di User03**
 
 1. Accedere via **Web** con **Microsoft Edge** a `https://portal.office.com`, quindi aprire **OneDrive**.
+
+   ```text
+   https://portal.office.com
+   ```
 
 ![Esercizio 2 – Passo 4 – Verifica lato User03 su SEA-DEV3](images/es02-08.png)
 

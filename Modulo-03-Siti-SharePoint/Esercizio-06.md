@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV3 con le credenziali di User03**
 
-1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito: `https://tenant_name.sharepoint.com/sites/MarketingDepartment`
+1. Aprire **Microsoft Edge** e accedere all'indirizzo del sito:
+
+   ```text
+   https://tenant_name.sharepoint.com/sites/MarketingDepartment
+   ```
+
 2. Inserire le credenziali di **User03** solo se richiesto (l'accesso dovrebbe avvenire in automatico via SSO).
 3. Verificare che User03, in qualità di **Member**, possa attualmente:
 - Accedere e caricare file in **File Condivisi01** e **File Condivisi02**.
@@ -33,6 +38,11 @@
 ![Esercizio 6 – Passo 2 – Restrizione dei permessi a livello di sito (da Owner)](images/es06-04.png)
 
 7. Andare su SEA-DEV1 con MOD Administrator aprire Visual Studio Code con il seguente script: `Modulo3\Script\SPO.ps1`.Seguire i seguenti comandi (dove `TENANT` è un segnaposto per il nome del proprio tenant) per cambiare i permessi al gruppo members.
+
+   ```text
+   Modulo3\Script\SPO.ps1
+   ```
+
 8. Installare il modulo SharePoint Online Management Shell (se non già presente).
 
 ```powershell
@@ -120,6 +130,15 @@ Get-SPOSiteGroup `
 ## Passo 5 – Collegamento del sito a OneDrive lato User03
 
 1. Sempre da **SEA-DEV3 con User03**, aprire il browser e accedere a `https://portal.office.com` oppure direttamente a `https://tenant_name-my.sharepoint.com` per aprire **OneDrive sul Web**.
+
+   ```text
+   https://portal.office.com
+   ```
+
+   ```text
+   https://tenant_name-my.sharepoint.com
+   ```
+
 2. Nel menu laterale di OneDrive, verificare la presenza del sito **Marketing Department** tra i siti SharePoint a cui si ha accesso.
 
 ![Esercizio 6 – Passo 5 – Collegamento del sito a OneDrive lato User03](images/es06-11.png)

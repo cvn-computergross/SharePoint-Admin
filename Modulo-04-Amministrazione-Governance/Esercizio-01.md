@@ -6,7 +6,12 @@
 
 **Accedere alla VM SEA-DEV1 come administrator, con credenziali admin del tenant**
 
-1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a `https://admin.microsoft.com`.
+1. Aprire il browser e accedere come **amministratore del tenant Microsoft 365** a:
+
+   ```text
+   https://admin.microsoft.com
+   ```
+
 2. Nel menu laterale, selezionare **Users > Active users**.
 
 ![Esercizio 1 – Passo 1 – Accesso all'Admin Center](images/es01-01.png)
@@ -46,6 +51,11 @@
 **Accedere alla VM SEA-DEV2 con le credenziali di User02**
 
 1. Aprire il browser e accedere a `https://portal.office.com`, quindi aprire **OneDrive**.
+
+   ```text
+   https://portal.office.com
+   ```
+
 2. Verificare che la **quota disponibile** mostrata risulti ora **512 GB** (invece di 1 TB).
 
 ![Esercizio 1 – Passo 3 – Verifica lato User02 su SEA-DEV2](images/es01-08.png)

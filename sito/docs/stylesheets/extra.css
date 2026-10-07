@@ -1,5 +1,5 @@
-/* Tema neutro — unico accento: verde CVN */
-:root { --cvn-teal: #00957f; }
+/* Tema neutro — link e accento nel blu standard dei link */
+:root { --link-blue: #0969da; }
 
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: #ffffff;
@@ -7,8 +7,8 @@
   --md-primary-fg-color--dark: #f5f5f5;
   --md-primary-bg-color: #1a1a1a;
   --md-primary-bg-color--light: #555555;
-  --md-accent-fg-color: var(--cvn-teal);
-  --md-typeset-a-color: var(--cvn-teal);
+  --md-accent-fg-color: var(--link-blue);
+  --md-typeset-a-color: var(--link-blue);
 }
 
 /* Header e tab sottili, separati da un filo grigio */
@@ -113,3 +113,9 @@
 .checklist-fill { height: 100%; width: 0; background: var(--md-accent-fg-color); transition: width .25s; }
 .checklist-reset { font: inherit; color: inherit; background: none; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; padding: .1rem .5rem; cursor: pointer; }
 .checklist-reset:hover { color: var(--md-accent-fg-color); border-color: var(--md-accent-fg-color); }
+
+/* Barra di avanzamento nella colonna dell'indice (schermi larghi) */
+.checklist-progress--side { flex-wrap: wrap; gap: .4rem .6rem; margin: 0 .6rem 1rem; padding-bottom: .8rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); }
+.checklist-progress--side .checklist-track { flex-basis: 100%; order: 3; }
+@media screen and (min-width: 76.25em) { .checklist-progress--top { display: none; } }
+@media screen and (max-width: 76.234375em) { .checklist-progress--side { display: none; } }

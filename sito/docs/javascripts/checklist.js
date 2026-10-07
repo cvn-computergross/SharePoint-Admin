@@ -23,24 +23,35 @@
       });
     });
 
-    // Barra di avanzamento sotto il titolo
-    var bar = document.createElement("div");
-    bar.className = "checklist-progress";
-    bar.innerHTML = '<span class="checklist-label"></span><div class="checklist-track"><div class="checklist-fill"></div></div>' +
-                    '<button type="button" class="checklist-reset">Azzera</button>';
+    // Barra di avanzamento: nella colonna laterale dell'indice (sempre visibile
+    // scorrendo) e, sugli schermi stretti dove la colonna è nascosta, sotto il titolo.
+    var bars = [];
+    function makeBar(extraClass) {
+      var bar = document.createElement("div");
+      bar.className = "checklist-progress " + extraClass;
+      bar.innerHTML = '<span class="checklist-label"></span><div class="checklist-track"><div class="checklist-fill"></div></div>' +
+                      '<button type="button" class="checklist-reset">Azzera</button>';
+      bar.querySelector(".checklist-reset").addEventListener("click", function () {
+        boxes.forEach(function (b) { b.checked = false; });
+        saved = {};
+        try { localStorage.removeItem(key); } catch (e) {}
+        update();
+      });
+      bars.push(bar);
+      return bar;
+    }
+    var side = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
+    if (side) side.insertAdjacentElement("afterbegin", makeBar("checklist-progress--side"));
     var h1 = document.querySelector(".md-content h1");
-    (h1 || document.querySelector(".md-content__inner")).insertAdjacentElement(h1 ? "afterend" : "afterbegin", bar);
-    bar.querySelector(".checklist-reset").addEventListener("click", function () {
-      boxes.forEach(function (b) { b.checked = false; });
-      saved = {};
-      try { localStorage.removeItem(key); } catch (e) {}
-      update();
-    });
+    (h1 || document.querySelector(".md-content__inner"))
+      .insertAdjacentElement(h1 ? "afterend" : "afterbegin", makeBar("checklist-progress--top"));
 
     function update() {
       var done = [].filter.call(boxes, function (b) { return b.checked; }).length;
-      bar.querySelector(".checklist-label").textContent = done + " / " + boxes.length + " completati";
-      bar.querySelector(".checklist-fill").style.width = (100 * done / boxes.length) + "%";
+      bars.forEach(function (bar) {
+        bar.querySelector(".checklist-label").textContent = done + " / " + boxes.length + " completati";
+        bar.querySelector(".checklist-fill").style.width = (100 * done / boxes.length) + "%";
+      });
     }
     update();
   }

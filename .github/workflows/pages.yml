@@ -20,24 +20,24 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - name: Checkout contenuti (main)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: main
           path: content
           persist-credentials: false
 
       - name: Checkout componenti del sito (GitHub-Page)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: GitHub-Page
           path: site
           persist-credentials: false
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -52,15 +52,15 @@ jobs:
       - name: Compila il sito
         run: mkdocs build --strict -f site/mkdocs.gen.yml -d "$GITHUB_WORKSPACE/_site"
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     # Solo questo job può pubblicare su Pages.
     permissions:
       pages: write
@@ -70,4 +70,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

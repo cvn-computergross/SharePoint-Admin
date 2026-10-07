@@ -1,0 +1,73 @@
+# Pubblica il sito GitHub Pages a partire da:
+#   - branch main        -> contenuti (guide, immagini, materiale)
+#   - branch GitHub-Page -> componenti del sito (tema MkDocs, CSS, loghi, script di build)
+# Il sito viene pubblicato con il metodo ufficiale "GitHub Actions" (nessun branch gh-pages).
+name: Pubblica sito GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # avvio manuale da Actions > Run workflow (es. dopo modifiche a GitHub-Page)
+
+# Permessi minimi: di default il workflow può solo leggere la repo.
+permissions:
+  contents: read
+
+# Una sola pubblicazione alla volta; quelle in coda non annullano quella in corso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout contenuti (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: content
+          persist-credentials: false
+
+      - name: Checkout componenti del sito (GitHub-Page)
+        uses: actions/checkout@v4
+        with:
+          ref: GitHub-Page
+          path: site
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: site/requirements.txt
+
+      - name: Installa MkDocs
+        run: pip install -r site/requirements.txt
+
+      - name: Genera le pagine dalle guide di main
+        run: python site/scripts/build_docs.py content site
+
+      - name: Compila il sito
+        run: mkdocs build --strict -f site/mkdocs.gen.yml -d "$GITHUB_WORKSPACE/_site"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    # Solo questo job può pubblicare su Pages.
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

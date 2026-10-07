@@ -2,6 +2,8 @@
 
 Laboratori pratici SharePoint Online per amministratori, da eseguire a partire dall'ambiente dei lab MD-102: identità, OneDrive, siti SharePoint, governance e migrazione.
 
+Versione navigabile (con caselle per segnare i passi completati): <https://cvn-computergross.github.io/SharePoint-Admin/>
+
 ## Moduli
 
 | Modulo | Argomento | Esercizi |

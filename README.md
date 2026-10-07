@@ -41,22 +41,3 @@ Ogni zip contiene la cartella `MATERIALE_STUDENTI/ModuloN` con le sottocartelle 
 
 > [!CAUTION]
 > Password, permessi applicativi ampi ed esclusioni dalle policy sono configurati per semplicità **di laboratorio**. Non replicarli così come sono in un tenant di produzione: ogni esercizio segnala con dei callout le best practice da applicare.
-
-## Legenda dei callout
-
-> [!NOTE]
-> Informazioni di contesto e approfondimenti.
-
-> [!TIP]
-> Suggerimenti e best practice.
-
-> [!IMPORTANT]
-> Requisiti (licenze, ruoli, prerequisiti) da rispettare.
-
-> [!WARNING]
-> Comportamenti da conoscere per evitare errori.
-
-> [!CAUTION]
-> Operazioni rischiose o irreversibili.
-
-I callout con un link rimandano alla documentazione ufficiale su [Microsoft Learn](https://learn.microsoft.com/sharepoint/).

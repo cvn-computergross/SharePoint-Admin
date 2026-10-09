@@ -1,0 +1,1832 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Laboratori pratici SharePoint Online per amministratori">
+      
+      
+        <meta name="author" content="Alessandro Lapi">
+      
+      
+        <link rel="canonical" href="https://cvn-computergross.github.io/SharePoint-Admin/Modulo-01-Identita-Entra-ID/Esercizio-03/">
+      
+      
+        <link rel="prev" href="../Esercizio-02/">
+      
+      
+        <link rel="next" href="../Esercizio-04/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Esercizio 3 - SharePoint Admin Labs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#modulo-1-esercizio-3-gruppi-licenze-e-utenti-guest" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="SharePoint Admin Labs" class="md-header__button md-logo" aria-label="SharePoint Admin Labs" data-md-component="logo">
+      
+  <img src="../../assets/img/edulabs-cvn.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SharePoint Admin Labs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Esercizio 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cvn-computergross/SharePoint-Admin" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SharePoint-Admin
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SharePoint Admin Labs" class="md-nav__button md-logo" aria-label="SharePoint Admin Labs" data-md-component="logo">
+      
+  <img src="../../assets/img/edulabs-cvn.png" alt="logo">
+
+    </a>
+    SharePoint Admin Labs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cvn-computergross/SharePoint-Admin" title="Apri repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SharePoint-Admin
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida al laboratorio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulo 1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modulo 1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Esercizio-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Esercizio-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passo-1-creazione-di-user02-e-primo-accesso-da-sea-dev2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 1 · Creazione di USER02 e primo accesso da SEA-DEV2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-2-creazione-di-user03-e-primo-accesso-da-sea-dev3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 2 · Creazione di USER03 e primo accesso da SEA-DEV3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-3-creazione-del-security-group-statico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 3 · Creazione del Security Group statico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-4-assegnazione-licenze-microsoft-365-e5-al-gruppo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 4 · Assegnazione licenze Microsoft 365 E5 al gruppo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-5-creazione-del-gruppo-microsoft-365-grp_365_static" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 5 · Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-6-verifica-lato-user03-da-sea-dev3-e-invito-guest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 6 · Verifica lato USER03 (da SEA-DEV3) e invito guest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-7-verifica-lato-user02-da-sea-dev2-approvazione-della-richiesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 7 · Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-8-invitare-external-users-da-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 8 · Invitare external users da Owner
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Esercizio-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Esercizio-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Esercizio-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulo 2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modulo 2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-02-OneDrive/Esercizio-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulo 3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modulo 3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 7
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-03-Siti-SharePoint/Esercizio-08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 8
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulo 4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modulo 4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-04-Amministrazione-Governance/Esercizio-06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulo 5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modulo 5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-05-Migrazione-File-Server/Esercizio-01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-05-Migrazione-File-Server/Esercizio-02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-05-Migrazione-File-Server/Esercizio-03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Modulo-05-Migrazione-File-Server/Esercizio-04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Esercizio 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Materiale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Materiale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#passo-1-creazione-di-user02-e-primo-accesso-da-sea-dev2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 1 · Creazione di USER02 e primo accesso da SEA-DEV2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-2-creazione-di-user03-e-primo-accesso-da-sea-dev3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 2 · Creazione di USER03 e primo accesso da SEA-DEV3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-3-creazione-del-security-group-statico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 3 · Creazione del Security Group statico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-4-assegnazione-licenze-microsoft-365-e5-al-gruppo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 4 · Assegnazione licenze Microsoft 365 E5 al gruppo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-5-creazione-del-gruppo-microsoft-365-grp_365_static" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 5 · Creazione del gruppo Microsoft 365 (GRP_365_STATIC)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-6-verifica-lato-user03-da-sea-dev3-e-invito-guest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 6 · Verifica lato USER03 (da SEA-DEV3) e invito guest
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-7-verifica-lato-user02-da-sea-dev2-approvazione-della-richiesta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 7 · Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#passo-8-invitare-external-users-da-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Passo 8 · Invitare external users da Owner
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="modulo-1-esercizio-3-gruppi-licenze-e-utenti-guest">Modulo 1 · Esercizio 3: Gruppi, licenze e utenti guest</h1>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>In questo esercizio le password temporanee sono valori <strong>di laboratorio</strong>: non riutilizzarle in ambienti reali.</p>
+</div>
+<h2 id="passo-1-creazione-di-user02-e-primo-accesso-da-sea-dev2">Passo 1 · Creazione di USER02 e primo accesso da SEA-DEV2</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Ripartendo dalla VM <code>SEA-DEV1</code> andare su https://entra.microsoft.com/.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Andare su <strong>Users &gt; All Users &gt; Create new user.</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Creare <strong>USER02</strong>, compilando gli attributi richiesti:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome visualizzato</strong></td>
+<td><code>User02</code></td>
+</tr>
+<tr>
+<td><strong>Nome utente</strong></td>
+<td><code>User02@XXXXXX</code></td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td><code>TempPassword02!</code></td>
+</tr>
+<tr>
+<td><strong>Usage Location</strong></td>
+<td>Italy</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2" src="../images/es03-01.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Accedere alla <strong>VM <code>SEA-DEV2</code> come administrator locale</strong>.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Aprire il browser e accedere a <code>https://portal.office.com</code> <strong>via Web</strong> con le credenziali di <strong>USER02</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>https://portal.office.com
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> Seguire il flusso guidato al primo accesso:</p>
+<ul>
+<li><strong>Configurazione MFA</strong> (es. Microsoft Authenticator), se richiesta dalle policy configurate negli esercizi precedenti.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2" src="../images/es03-02.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>7.</strong> Cambiare <strong>password</strong> come da procedura guidata e salvarla.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 1 – Creazione di USER02 e primo accesso da SEA-DEV2" src="../images/es03-03.png" /></p>
+<h2 id="passo-2-creazione-di-user03-e-primo-accesso-da-sea-dev3">Passo 2 · Creazione di USER03 e primo accesso da SEA-DEV3</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Ripartendo dalla VM <code>SEA-DEV1</code> andare su https://entra.microsoft.com/.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Andare su <strong>Users &gt; All Users &gt; Create new user.</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Creare <strong>USER03</strong>, compilando gli attributi richiesti:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Nome visualizzato</strong></td>
+<td><code>User03</code></td>
+</tr>
+<tr>
+<td><strong>Nome utente</strong></td>
+<td><code>User03@XXXXXX</code></td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td><code>TempPassword03!</code></td>
+</tr>
+<tr>
+<td><strong>Usage Location</strong></td>
+<td>Italy</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3" src="../images/es03-04.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Accedere alla <strong>VM <code>SEA-DEV3</code> come administrator locale</strong>.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Aprire il browser e accedere a <code>https://portal.office.com</code> <strong>via Web</strong> con le credenziali di <strong>USER03</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://portal.office.com
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> Seguire il flusso guidato di <strong>cambio password</strong> e <strong>configurazione MFA</strong> se richiesta.</p>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3" src="../images/es03-05.png" /></p>
+<p><img alt="Esercizio 3 – Passo 2 – Creazione di USER03 e primo accesso da SEA-DEV3" src="../images/es03-06.png" /></p>
+<h2 id="passo-3-creazione-del-security-group-statico">Passo 3 · Creazione del Security Group statico</h2>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Riaprire la VM <code>SEA-DEV1</code> e recarsi su https://entra.microsoft.com/.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Andare su <strong>Groups &gt; All groups &gt; New group</strong></p>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 3 – Creazione del Security Group statico" src="../images/es03-07.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Configurare il gruppo con le seguenti specifiche:</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> <strong>Group type:</strong> <code>Security</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> <strong>Membership type:</strong> <code>Assigned</code> (statico).</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> <strong>Group name</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GRP_SEC_STATIC
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>7.</strong> <strong>Group description</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Gruppo di sicurezza statico per l'assegnazione centralizzata delle licenze Microsoft 365 E5
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>8.</strong> In <strong>Members</strong>, aggiungere manualmente:</p>
+<ul>
+<li><strong>User02</strong></li>
+<li><strong>User03</strong></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 3 – Creazione del Security Group statico" src="../images/es03-08.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>9.</strong> Selezionare <strong>Create</strong> per salvare il gruppo.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 3 – Creazione del Security Group statico" src="../images/es03-09.png" /></p>
+<h2 id="passo-4-assegnazione-licenze-microsoft-365-e5-al-gruppo">Passo 4 · Assegnazione licenze Microsoft 365 E5 al gruppo</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Andare su https://admin.cloud.microsoft/ , <strong>Billing</strong> e successivamente <strong>Licenses</strong>.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo" src="../images/es03-10.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Selezionare il prodotto <strong>Office 365 E5</strong> e premere <strong>Assign licenses</strong>.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo" src="../images/es03-11.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Aggiungere il gruppo <strong><code>GRP_SEC_STATIC</code></strong> come destinatario della licenza.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo" src="../images/es03-12.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Confermare l'assegnazione con <strong>Assign</strong>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>L'assegnazione tramite gruppo può richiedere alcuni minuti prima che le licenze risultino effettivamente attive sugli account di <strong>User02</strong> e <strong>User03</strong>.</p>
+</div>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Ripetere anche per le licenze <strong>Microsoft Teams Enterprise</strong>.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 4 – Assegnazione licenze Microsoft 365 E5 al gruppo" src="../images/es03-13.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> Controllare che l'assegnazione delle licenze ai due utenti sia andata a buon fine.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Importante</p>
+<p>L'assegnazione delle licenze <strong>basata su gruppo</strong> richiede <strong>Microsoft Entra ID P1</strong> (o superiore). Per assegnare licenze è necessario impostare la <strong>Usage location</strong> dell'utente, altrimenti l'assegnazione fallisce.</p>
+<p><a href="https://learn.microsoft.com/entra/identity/users/licensing-groups-assign">Assegnare licenze tramite appartenenza a gruppi</a></p>
+</div>
+<h2 id="passo-5-creazione-del-gruppo-microsoft-365-grp_365_static">Passo 5 · Creazione del gruppo Microsoft 365 (GRP_365_STATIC)</h2>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Tornare su https://admin.cloud.microsoft/ e procedere su <strong>Teams &amp; Groups &gt; Active Teams &amp; Groups &gt; Add a Microsoft 365 group</strong> con le seguenti specifiche:</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> <strong>Group name</strong> <code>GRP_365_STATIC</code></p>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> <strong>Group description</strong> <code>Gruppo Microsoft 365 statico per collaborazione tra User02 e User03</code></li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)" src="../images/es03-14.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Inserire <strong>User02</strong> come <strong>Owner</strong>; come <strong>Member</strong> inserire <strong>User02</strong> e <strong>User03</strong>.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Come <strong>Group mail</strong> mettere: GRP_365_STATIC</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> Impostare <strong>Privacy Private</strong>.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 5 – Creazione del gruppo Microsoft 365 (GRP_365_STATIC)" src="../images/es03-15.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>7.</strong> Selezionare <strong>Create Group</strong> per salvare il gruppo.</li>
+</ul>
+<h2 id="passo-6-verifica-lato-user03-da-sea-dev3-e-invito-guest">Passo 6 · Verifica lato USER03 (da SEA-DEV3) e invito guest</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Accedere alla <strong>VM <code>SEA-DEV3</code> come administrator locale</strong>.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Aprire il browser e accedere a <code>https://outlook.com</code> <strong>via Web</strong> con le credenziali di <strong>User03</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>https://outlook.com
+</code></pre></div>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest" src="../images/es03-16.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Verificare che <strong>User03</strong>:</li>
+<li>Riesca ad accedere alla propria posta e a quella del <strong>gruppo GRP_365_STATIC</strong> (cartella gruppo in Outlook).</li>
+<li>Abbia un <strong>calendario condiviso</strong> del gruppo visibile in Outlook.</li>
+<li>Veda il gruppo <strong>GRP_365_STATIC</strong> tra i gruppi a cui appartiene (barra laterale sinistra).</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest" src="../images/es03-17.png" /></p>
+<p><img alt="Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest" src="../images/es03-18.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Dalla pagina del gruppo <strong>GRP_365_STATIC</strong> di Outlook andare nella sezione <strong>Members</strong>, selezionare <strong>Add members</strong> e <strong>invitare un guest</strong> inserendo il proprio indirizzo email personale, come <code>personal@xxx.com</code>.</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest" src="../images/es03-19.png" /></p>
+<p><img alt="Esercizio 3 – Passo 6 – Verifica lato USER03 (da SEA-DEV3) e invito guest" src="../images/es03-20.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Un <strong>membro</strong> del gruppo può solo <em>proporre</em> l'aggiunta di un guest: la richiesta deve essere approvata da un <strong>owner</strong> (vedi Passo 7). Solo l'owner può invitare direttamente utenti esterni (Passo 8).</p>
+</div>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Provare ora a invitare <strong>Alex Wilber</strong> tramite il suo UPN:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>alexw@XXXXXX
+</code></pre></div>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Suggerimento</p>
+<p>Chi può invitare guest è definito dalle <strong>External collaboration settings</strong> di Microsoft Entra ID, che si combinano con le impostazioni di condivisione di Microsoft 365 Groups e SharePoint.</p>
+<p><a href="https://learn.microsoft.com/entra/external-id/external-collaboration-settings-configure">Configurare le impostazioni di collaborazione esterna</a></p>
+</div>
+<h2 id="passo-7-verifica-lato-user02-da-sea-dev2-approvazione-della-richiesta">Passo 7 · Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Accedere alla <strong>VM <code>SEA-DEV2</code> come administrator locale</strong>.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Aprire il browser e accedere a <code>https://outlook.com</code> <strong>via Web</strong> con le credenziali di <strong>User02</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>https://outlook.com
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Controllare l'arrivo della mail di richiesta e andare sul gruppo.</p>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 7 – Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta" src="../images/es03-21.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Verificare l'arrivo di una <strong>richiesta di autorizzazione</strong> per l'accesso di membro al gruppo (in quanto <strong>owner</strong> di GRP_365_STATIC, User02 riceve la richiesta di approvazione per l'aggiunta del membri).</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 7 – Verifica lato USER02 (da SEA-DEV2): approvazione della richiesta" src="../images/es03-22.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> <strong>Autorizzare</strong> la richiesta.</li>
+</ul>
+<h2 id="passo-8-invitare-external-users-da-owner">Passo 8 · Invitare external users da Owner</h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>1.</strong> Accedere alla <strong>VM <code>SEA-DEV2</code> come administrator locale</strong>.</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>2.</strong> Aprire il browser e accedere a <code>https://outlook.com</code> <strong>via Web</strong> con le credenziali di <strong>User02</strong>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>https://outlook.com
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>3.</strong> Andare sul gruppo <strong>GRP_365_STATIC</strong> e andare su <strong>members</strong>.</p>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>4.</strong> Premere su <strong>Add members</strong> e invitare una mail personale del tipo:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>personal@xxx.com
+</code></pre></div>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 8 – Invitare external users da Owner" src="../images/es03-23.png" /></p>
+<ul class="task-list">
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>5.</strong> Sulla casella di posta personale <strong><code>personal@xxx.com</code></strong>, verificare la ricezione dell'email di invito ("Microsoft Invitations" per conto del tenant).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>personal@xxx.com
+</code></pre></div>
+</li>
+<li class="task-list-item">
+<p><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>6.</strong> Aprire l'email e selezionare <strong>Accept invitation</strong>.</p>
+</li>
+</ul>
+<p><img alt="Esercizio 3 – Passo 8 – Invitare external users da Owner" src="../images/es03-24.png" /></p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>7.</strong> Accedere con le proprie credenziali (account Microsoft personale o, se non presente, crearne uno seguendo la procedura guidata).</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>8.</strong> Completare il <strong>consenso</strong> alle informazioni richieste dal tenant.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <strong>9.</strong> Se richiesto dalle policy del tenant, <strong>configurare la MFA</strong> per l'account guest.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">© 2026 Alessandro Lapi · Collaboration Value Next · Computer Gross</div>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["toc.follow", "navigation.top", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../javascripts/checklist.js"></script>
+      
+        <script src="../../javascripts/nav-collapsed.js"></script>
+      
+    
+  </body>
+</html>

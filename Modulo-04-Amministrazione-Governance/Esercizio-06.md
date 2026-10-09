@@ -18,9 +18,6 @@ Install-Module Microsoft.Graph -Scope CurrentUser -Force
 
 ```powershell
 $AppId          = "<APP_ID_dell'Enterprise_Application>"
-
-> [!WARNING]
-> `Connect-SPOService` in app-only richiede un'app con permesso **SharePoint > Sites.FullControl.All** (application) e consenso amministrativo, già configurata nel [Modulo 1 – Esercizio 5](../Modulo-01-Identita-Entra-ID/Esercizio-05.md). Il file `.pfx` contiene la chiave privata: proteggerlo con una password e non condividerlo.
 # da Modulo 1 - Esercizio 5
 $TenantId       = "<TENANT_ID>"
 $Thumbprint     = "<THUMBPRINT_del_certificato>"
@@ -28,6 +25,9 @@ $Thumbprint     = "<THUMBPRINT_del_certificato>"
 $AdminSiteUrl   = "https://tenant_name-admin.sharepoint.com"
 # dove tenant_name è il nome del proprio tenant
 ```
+
+> [!WARNING]
+> `Connect-SPOService` in app-only richiede un'app con permesso **SharePoint > Sites.FullControl.All** (application) e consenso amministrativo, già configurata nel [Modulo 1 – Esercizio 5](../Modulo-01-Identita-Entra-ID/Esercizio-05.md). Il file `.pfx` contiene la chiave privata: proteggerlo con una password e non condividerlo.
 
 4. Connettersi con **Microsoft Graph** usando il certificato (come già fatto nel Modulo 1 - Esercizio 5):
 
@@ -69,11 +69,6 @@ Connect-SPOService -Url $AdminSiteUrl -ClientId $AppId -TenantId $TenantId -Cert
 5. Eseguire lo script su **Power Shell**.
 
 ```powershell
-
-> [!TIP]
-> Su tenant con molti OneDrive lo script può impiegare parecchio tempo e incorrere in **throttling** (HTTP 429). Per report su larga scala valutare **Microsoft Graph Data Connect** o i report di utilizzo.
->
-> [Evitare il throttling in SharePoint Online](https://learn.microsoft.com/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 # Report OneDrive: storage in MB, cestini in KB
 # Requisiti: Microsoft.Online.SharePoint.PowerShell + PnP.PowerShell
 # Connessione app-only gia' eseguita. Riusa $AppId, $TenantId, $Thumbprint.
@@ -110,6 +105,11 @@ $report | Format-Table -AutoSize
 $report | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 ```
 
+> [!TIP]
+> Su tenant con molti OneDrive lo script può impiegare parecchio tempo e incorrere in **throttling** (HTTP 429). Per report su larga scala valutare **Microsoft Graph Data Connect** o i report di utilizzo.
+>
+> [Evitare il throttling in SharePoint Online](https://learn.microsoft.com/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
+
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-02.png)
 
 ![Esercizio 6 – Script 1 – Cestino di 1° e 2° livello di tutti i OneDrive (PnP + SPO)](images/es06-03.png)
@@ -127,9 +127,6 @@ $report | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 4. Eseguire lo Script sul **Power Shell**.
 
 ```powershell
-
-> [!NOTE]
-> Lo script è adattato dai [PnP Script Samples](https://pnp.github.io/script-samples/): i campioni della community non hanno supporto ufficiale Microsoft, verificarli sempre in un tenant di test.
 # Richiede il modulo: PnP.PowerShell
 # Login con app registration Full Control (Sites.FullControl.All)
 # Riutilizza $AppId, $TenantId, $Thumbprint
@@ -193,6 +190,9 @@ foreach ($sito in $siti) {
 # 3) Export finale
 $permessi | Export-Csv -Path $OutputCsv -NoTypeInformation -Encoding UTF8
 ```
+
+> [!NOTE]
+> Lo script è adattato dai [PnP Script Samples](https://pnp.github.io/script-samples/): i campioni della community non hanno supporto ufficiale Microsoft, verificarli sempre in un tenant di test.
 
 ![Esercizio 6 – Script 2 – Report permessi dei siti (con sottositi), adattato da PnP Script Samples](images/es06-04.png)
 

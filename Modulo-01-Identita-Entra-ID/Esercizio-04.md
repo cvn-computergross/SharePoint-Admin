@@ -15,6 +15,9 @@ Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1
 
 4. Scaricare e avviare l'installer `.msi` di **PowerShell 7** (x64) dalla pagina [Installare PowerShell in Windows](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-windows).
 5. Completare l'installazione guidata.
+
+![Esercizio 4 – Passo 1 – Installazione di PowerShell 7 completata](images/es04-04.png)
+
 6. **Riavviare** la VM.
 
 ## Passo 2 · Abilitare la modalità "PowerShell ISE" in VS Code
@@ -29,8 +32,6 @@ Gli installer di Visual Studio Code e PowerShell non sono nello zip del Modulo 1
 ![Esercizio 4 – Passo 2 – Abilitare la modalità "PowerShell ISE" in VS Code](images/es04-03.png)
 
 4. Una volta installata l'estensione, andare sul menu in alto: **View > Command Palette...** (oppure `Ctrl+Shift+P`).
-
-![Esercizio 4 – Passo 2 – Abilitare la modalità "PowerShell ISE" in VS Code](images/es04-04.png)
 
 5. Digitare e selezionare **`PowerShell: Enable ISE Mode`** (modalità PowerShell ISE) per applicare il layout/tema in stile ISE all'interno di VS Code.
 

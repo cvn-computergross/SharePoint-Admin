@@ -102,17 +102,18 @@ Get-SPOSiteGroup `
 
 1. Aprire la libreria **File Condivisi02**.
 2. Selezionare la rotella delle impostazioni e scegliere **Library settings** (Impostazioni raccolta).
-3. Selezionare **Permissions for this document library** (Permessi per questa raccolta documenti).
+3. Nel pannello che si apre, selezionare **More library settings** (Altre impostazioni raccolta).
+4. Selezionare **Permissions for this document library** (Permessi per questa raccolta documenti).
 
 ![Esercizio 6 – Passo 3 – Permessi univoci sulla libreria "File Condivisi02"](images/es06-08.png)
 
-4. Selezionare **Stop Inheriting Permissions** (Interrompi ereditarietà) e confermare l'operazione.
+5. Selezionare **Stop Inheriting Permissions** (Interrompi ereditarietà) e confermare l'operazione.
 
-5. Una volta interrotta l'ereditarietà, modificare il permesso assegnato al gruppo **Marketing Department Members**, impostandolo su **Read**, rimuovendo l'eventuale permesso di modifica precedentemente ereditato dal sito.
+6. Una volta interrotta l'ereditarietà, modificare il permesso assegnato al gruppo **Marketing Department Members**, impostandolo su **Read**, rimuovendo l'eventuale permesso di modifica precedentemente ereditato dal sito.
 
 ![Esercizio 6 – Passo 3 – Permessi univoci sulla libreria "File Condivisi02"](images/es06-09.png)
 
-6. **Salvare** le modifiche.
+7. **Salvare** le modifiche.
 
 > [!NOTE]
 > Interrompere l'ereditarietà dei permessi (**Stop Inheriting Permissions**) rende una libreria (o lista, cartella, file) indipendente dalle impostazioni di permesso del sito principale: da questo momento, eventuali modifiche ai permessi del sito non si propagheranno più automaticamente a questa libreria.

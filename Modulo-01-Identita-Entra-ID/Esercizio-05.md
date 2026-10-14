@@ -136,6 +136,13 @@ Connect-MgGraph -ClientId "<APP_ID_dell'Enterprise_Application>" `
 -CertificateThumbprint "<THUMBPRINT_annotato_al_Passo_3>"
 ```
 
+> [!IMPORTANT]
+> Prima di eseguire il comando, sostituire i tre segnaposto con i valori del proprio tenant, mantenendo le virgolette:
+>
+> - `<APP_ID_dell'Enterprise_Application>` con il **Client ID**: campo **Application (client) ID** nella pagina **Overview** dell'app registrata al Passo 1.
+> - `<TENANT_ID>` con il **Tenant ID**: campo **Directory (tenant) ID** nella stessa pagina **Overview**.
+> - `<THUMBPRINT_annotato_al_Passo_3>` con il **Thumbprint** del certificato annotato al Passo 3 (visibile anche in **Certificates & secrets > Certificates**).
+
 4. Verificare che l'autenticazione sia avvenuta in modalità **app-only**:
 
 ```powershell
